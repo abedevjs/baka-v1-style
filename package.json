@@ -1,0 +1,15 @@
+{
+  "name": "baka-v1-style",
+  "version": "1.0.0",
+  "description": "baka style with tailwind",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./css/style.css"
+  },
+  "author": "abe",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
