@@ -14,9 +14,10 @@ module.exports = {
     // },
     extend: {
       colors: {
-        primaryBlue: '#255cff',
+        primaryBlue: '#0343FF',
         primaryBlueBold: '#2e4057',
         secondaryYellow: '#f4D03f',
+        secondaryYellowTint: '#fbf0c0',
         secondaryGrey: '#f5f5f5',
         bodyBackColor: '#f7f8fe',
         textColor: '#0b2471',
