@@ -2,20 +2,28 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    extend: {},
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      'xl': {'max': '1440px'},
+      'lg': {'max': '976px'},
+      'md': {'max': '768px'},
+      'sm': {'max': '480px'},
     },
-    colors: {
-      primaryBlue: '#1E90FF',
-      primaryBlueBold: '#2e4057',
-      secondaryYellow: '#f4D03f',
-      secondaryGrey: '#f5f5f5',
-      bodyBackColor: '#f7f8fe',
+    // container: {
+    //   center: true,
+    //   padding: '2rem',
+    // },
+    extend: {
+      colors: {
+        primaryBlue: '#255cff',
+        primaryBlueBold: '#2e4057',
+        secondaryYellow: '#f4D03f',
+        secondaryGrey: '#f5f5f5',
+        bodyBackColor: '#f7f8fe',
+        textColor: '#0b2471',
+        random: '#40A1FF',
+      },
     },
+    
     fontFamily: {
       sans: ['Lexend', 'sans-serif'],
     },
