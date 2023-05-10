@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Lexend, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -538,6 +538,10 @@ video {
   top: 1rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -548,6 +552,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .h-\[42\.5rem\] {
@@ -562,12 +570,20 @@ video {
   width: 20%;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
 .w-28 {
   width: 7rem;
 }
 
 .w-5 {
   width: 1.25rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-1 {
@@ -584,6 +600,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -613,6 +633,11 @@ video {
 .bg-primaryBlue {
   --tw-bg-opacity: 1;
   background-color: rgb(3 67 255 / var(--tw-bg-opacity));
+}
+
+.bg-primaryBlueBold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 64 87 / var(--tw-bg-opacity));
 }
 
 .bg-secondaryYellow {
@@ -651,6 +676,19 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.font-text {
+  font-family: Lexend, sans-serif;
+}
+
+.font-title {
+  font-family: Livvic, sans-serif;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -659,6 +697,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .text-slate-800 {
@@ -674,6 +716,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .opacity-80 {
@@ -707,6 +753,10 @@ video {
 .hover\:bg-primaryBlueBold:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(46 64 87 / var(--tw-bg-opacity));
+}
+
+.hover\:tracking-wide:hover {
+  letter-spacing: 0.025em;
 }
 
 .hover\:opacity-100:hover {

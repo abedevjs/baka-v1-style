@@ -26,7 +26,8 @@ module.exports = {
     },
     
     fontFamily: {
-      sans: ['Lexend', 'sans-serif'],
+      title: ['Livvic', 'sans-serif'],
+      text: ['Lexend', 'sans-serif'],
     },
   },
   plugins: [],
