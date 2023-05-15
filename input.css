@@ -29,3 +29,51 @@
     /* height: 100vh; */
 }
 
+.th,
+.td {
+    padding: 1rem
+}
+
+
+.WaveTop {
+    position: absolute;
+    top: -21%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.WaveTop img {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+}
+
+.WaveTop .shape-fill {
+    fill: #255CFF;
+}
+
+.WaveBottom {
+    position: absolute;
+    bottom: -21%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.WaveBottom img {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+}
+
+.WaveBottom .shape-fill {
+    fill: #255CFF;
+}
