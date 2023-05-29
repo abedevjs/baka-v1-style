@@ -47,9 +47,9 @@
                     <span class="text-sm">Area Jastip</span>
                 </a>
 
-                <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="user.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Data Pengguna</span>
+                    <span class="text-sm">Area User</span>
                 </a>
 
                 <!-- Nav 2 -->
@@ -83,7 +83,7 @@
             </span>
         </div>
 
-        <!-- Content -->
+        <!-- Wrapper -->
         <div class="flex-1 ml-4 px-6 rounded-xl bg-secondaryYellowTint text-textColor font-text">
 
             <!-- Text Box -->
@@ -95,180 +95,180 @@
                 <h2 class=" text-3xl font-title capitalize">Area Bagasi</h2>
             </div>
 
-            <!-- Subtitle -->
+            <!-- DAFTAR BAGASI Title -->
             <div class="mb-4 flex space-x-2 ">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-auto fill-textColor" viewBox="0 0 24 24"><path d="M8.75 2a.75.75 0 0 0 0 1.5H9V5h-.75A3.25 3.25 0 0 0 5 8.25v9a3.25 3.25 0 0 0 2 3v1a.75.75 0 0 0 1.5 0v-.75h7v.75a.75.75 0 0 0 1.5 0v-1a3.25 3.25 0 0 0 2-3v-9A3.25 3.25 0 0 0 15.75 5H15V3.5h.25a.75.75 0 0 0 0-1.5h-6.5Zm4.75 1.5V5h-3V3.5h3ZM8 9.75A.75.75 0 0 1 8.75 9h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 8 9.75Z"/></svg>
                 <h2 class="text-base uppercase">daftar bagasi</h2>
             </div>
 
-            <!-- Table Container -->
-            <div class="mb-8 w-full flex flex-col">
+            <!-- Daftar & Pagination Container -->
+            <div class="mb-8 px-4 w-full flex flex-col">
 
-                <!-- Table Bagasi Visual -->
+                <!-- DAFTAR BAGASI -->
                 <div class="relative overflow-x-auto mb-7 shadow-md rounded-xl">
                     <table class="w-full mx-auto text-sm text-left text-textColor">
                         <thead class="text-xs text-gray-700 uppercase bg-secondaryYellow">
-                        <tr>
-                        <th scope="col" class="px-6 py-4">Berangkat</th>
-                        <th scope="col" class="px-6 py-4">Tiba</th>
-                        <th scope="col" class="px-6 py-4">Dari</th>
-                        <th scope="col" class="px-6 py-4">Tujuan</th>
-                        <th scope="col" class="px-6 py-4">Total (Kg)</th>
-                        <th scope="col" class="px-6 py-4">Sisa (Kg)</th>
-                        <th scope="col" class="px-6 py-4">Harga (@ Kg)</th>
-                        <th scope="col" class="px-6 py-4">Status</th>
-                        <th scope="col" class="px-6 py-4">Action</th>
-                        </tr>
+                            <tr>
+                                <th scope="col" class="px-6 py-4">Berangkat</th>
+                                <!-- <th scope="col" class="px-6 py-4">Tiba</th> -->
+                                <th scope="col" class="px-6 py-4">Dari</th>
+                                <th scope="col" class="px-6 py-4">Tujuan</th>
+                                <!-- <th scope="col" class="px-6 py-4">Total (Kg)</th> -->
+                                <th scope="col" class="px-6 py-4">Sisa (Kg)</th>
+                                <th scope="col" class="px-6 py-4">Harga (@ Kg)</th>
+                                <th scope="col" class="px-6 py-4">Status</th>
+                                <th scope="col" class="px-6 py-4">Action</th>
+                            </tr>
                         </thead>
 
-                        <tbody class="text-xs">
-                        <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
-                        <td scope="row" class="px-6 py-3">20 Maret 2023</td>
-                        <td scope="row" class="px-6 py-3">21 Maret 2023</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                <span>Jakarta</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/cairo.svg" alt="Cairo">
-                                <span>Cairo</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">60</td>
-                        <td scope="row" class="px-6 py-3">60</td>
-                        <td scope="row" class="px-6 py-3">Rp. 200.000</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/scheduled.svg" alt="Scheduled">
-                                <span>Scheduled</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <a href="orderForm.html" target="_blank" class="text-blue-600 hover:underline">Lihat</a>
-                        </td>
-                        </tr>
+                        <tbody class="text-sm">
+                            <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
+                                <td scope="row" class="px-6 py-3">20 Maret 2023</td>
+                                <!-- <td scope="row" class="px-6 py-3">21 Maret 2023</td> -->
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/cairo.svg" alt="Cairo">
+                                        <span>Cairo</span>
+                                    </div>
+                                </td>
+                                <!-- <td scope="row" class="px-6 py-3">60</td> -->
+                                <td scope="row" class="px-6 py-3">60</td>
+                                <td scope="row" class="px-6 py-3">Rp. 200.000</td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/scheduled.svg" alt="Scheduled">
+                                        <span>Scheduled</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <a href="orderForm.html" class="text-blue-600 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
 
-                        <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
-                        <td scope="row" class="px-6 py-3">25 Maret 2023</td>   
-                        <td scope="row" class="px-6 py-3">27 Maret 2023</td>   
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/istanbul.svg" alt="Istanbul">
-                                <span>Istanbul</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                <span>Jakarta</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">40</td>
-                        <td scope="row" class="px-6 py-3">15</td>
-                        <td scope="row" class="px-6 py-3">Rp. 150.000</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/opened.svg" alt="Opened">
-                                <span>Opened</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <a href="#" class="text-blue-600 hover:underline">Lihat</a>
-                        </td>
-                        </tr>
+                            <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
+                                <td scope="row" class="px-6 py-3">25 Maret 2023</td>   
+                                <!-- <td scope="row" class="px-6 py-3">27 Maret 2023</td>    -->
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/istanbul.svg" alt="Istanbul">
+                                        <span>Istanbul</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <!-- <td scope="row" class="px-6 py-3">40</td> -->
+                                <td scope="row" class="px-6 py-3">15</td>
+                                <td scope="row" class="px-6 py-3">Rp. 150.000</td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/opened.svg" alt="Opened">
+                                        <span>Opened</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <a href="#" class="text-blue-600 hover:underline">Beli</a>
+                                </td>
+                            </tr>
 
-                        <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
-                        <td scope="row" class="px-6 py-3">02 April 2023</td>
-                        <td scope="row" class="px-6 py-3">03 April 2023</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/cairo.svg" alt="Cairo">
-                                <span>Cairo</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                <span>Jakarta</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">30</td>
-                        <td scope="row" class="px-6 py-3">05</td>
-                        <td scope="row" class="px-6 py-3">Rp. 100.000</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/closed.svg" alt="Closed">
-                                <span>Closed</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <a href="#" class="text-blue-600 hover:underline">Lihat</a>
-                        </td>
-                        </tr>
+                            <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
+                                <td scope="row" class="px-6 py-3">02 April 2023</td>
+                                <!-- <td scope="row" class="px-6 py-3">03 April 2023</td> -->
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/cairo.svg" alt="Cairo">
+                                        <span>Cairo</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <!-- <td scope="row" class="px-6 py-3">30</td> -->
+                                <td scope="row" class="px-6 py-3">05</td>
+                                <td scope="row" class="px-6 py-3">Rp. 100.000</td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/closed.svg" alt="Closed">
+                                        <span>Closed</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <a href="#" class="text-blue-600 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
 
-                        <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
-                            <td scope="row" class="px-6 py-3">11 April 2023</td>
-                            <td scope="row" class="px-6 py-3">12 April 2023</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                    <span>Jakarta</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/dubai.svg" alt="Dubai">
-                                    <span>Dubai</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">50</td>
-                            <td scope="row" class="px-6 py-3">10</td>
-                            <td scope="row" class="px-6 py-3">Rp. 90.000</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/opened.svg" alt="Opened">
-                                    <span>Opened</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">
-                                <a href="#" class="text-blue-600 hover:underline">Lihat</a>
-                            </td>
-                        </tr>
+                            <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
+                                <td scope="row" class="px-6 py-3">11 April 2023</td>
+                                <!-- <td scope="row" class="px-6 py-3">12 April 2023</td> -->
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/dubai.svg" alt="Dubai">
+                                        <span>Dubai</span>
+                                    </div>
+                                </td>
+                                <!-- <td scope="row" class="px-6 py-3">50</td> -->
+                                <td scope="row" class="px-6 py-3">10</td>
+                                <td scope="row" class="px-6 py-3">Rp. 90.000</td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/opened.svg" alt="Opened">
+                                        <span>Opened</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <a href="#" class="text-blue-600 hover:underline">Beli</a>
+                                </td>
+                            </tr>
 
-                        <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
-                            <td scope="row" class="px-6 py-3">09 Juni 2023</td>
-                            <td scope="row" class="px-6 py-3">10 Juni 2023</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                    <span>Jakarta</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/istanbul.svg" alt="Istanbul">
-                                    <span>Istanbul</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">60</td>
-                            <td scope="row" class="px-6 py-3">60</td>
-                            <td scope="row" class="px-6 py-3">Rp. 190.000</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/canceled.svg" alt="Canceled">
-                                    <span>Canceled</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">
-                                <a href="#" class="text-blue-600 hover:underline">Lihat</a>
-                            </td>
-                        </tr>
+                            <tr class="bg-bodyBackColor hover:bg-secondaryYellowTint duration-300">
+                                <td scope="row" class="px-6 py-3">09 Juni 2023</td>
+                                <!-- <td scope="row" class="px-6 py-3">10 Juni 2023</td> -->
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
+                                        <span>Jakarta</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/istanbul.svg" alt="Istanbul">
+                                        <span>Istanbul</span>
+                                    </div>
+                                </td>
+                                <!-- <td scope="row" class="px-6 py-3">60</td> -->
+                                <td scope="row" class="px-6 py-3">60</td>
+                                <td scope="row" class="px-6 py-3">Rp. 190.000</td>
+                                <td scope="row" class="px-6 py-3">
+                                    <div class="flex justify-left space-x-2">
+                                        <img src="images/svg/canceled.svg" alt="Canceled">
+                                        <span>Canceled</span>
+                                    </div>
+                                </td>
+                                <td scope="row" class="px-6 py-3">
+                                    <a href="#" class="text-blue-600 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> <!-- DAFTAR BAGASI end -->
                 
                 <!-- Pagination -->
                 <nav class="mx-auto text-sm">
@@ -302,22 +302,22 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div> <!-- Daftar & Pagination Container -->
 
-            <!-- Subtitle -->
+            <!-- JUAL BAGASI Title -->
             <div class="mb-4 flex space-x-2 ">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-auto fill-textColor" viewBox="0 0 24 24"><path d="M8.75 2a.75.75 0 0 0 0 1.5H9V5h-.75A3.25 3.25 0 0 0 5 8.25v9a3.25 3.25 0 0 0 2 3v1a.75.75 0 0 0 1.5 0v-.75h7v.75a.75.75 0 0 0 1.5 0v-1a3.25 3.25 0 0 0 2-3v-9A3.25 3.25 0 0 0 15.75 5H15V3.5h.25a.75.75 0 0 0 0-1.5h-6.5Zm4.75 1.5V5h-3V3.5h3ZM8 9.75A.75.75 0 0 1 8.75 9h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 8 9.75Z"/></svg>
                 <h2 class="text-base uppercase">jual bagasi</h2>
             </div>
 
             
-            <!-- Wrapper Form -->
-            <div class="w-full mb-8 mx-auto">
+            <!-- JUAL BAGASI Wrapper  -->
+            <div class="w-full px-4 mb-8 mx-auto">
                 <!-- Form Jual Bagasi -->
-                <form action="" class="grid grid-cols-4 grid-rows-4 gap-2 p-2 font-text text-textColor">
+                <form action="" class="py-8 px-4 grid grid-cols-4 grid-rows-4 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md">
 
                     <!-- Box 1 Dari - Tujuan -->
-                    <div class="w-full py-2 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
     
                         <!-- Icon -->
                         <img src="images/svg/map-marker.svg" class="w-12" alt="">
@@ -351,7 +351,7 @@
                     </div>
 
                     <!-- Box 2 Berangkat - Tiba -->
-                    <div class="w-full py-2 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
     
                         <!-- Icon -->
                         <img src="images/svg/tear-off-calendar.svg" class="w-12" alt="">
@@ -374,7 +374,7 @@
                     </div>
 
                     <!-- Box 3 Berat -->
-                    <div class="w-full py-2 px-4 col-start-1 col-end-2 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-2 flex justify-around bg-bodyBackColor rounded-lg">
     
                         <!-- Icon -->
                         <img src="images/svg/weight-kilogram.svg" class="w-12" alt="">
@@ -389,7 +389,7 @@
                     </div>
 
                     <!-- Box 4 Harga -->
-                    <div class="w-full py-2 px-4 col-start-2 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-2 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
     
                         <!-- Icon -->
                         <img src="images/svg/payments-outline-rounded.svg" class="w-12" alt="">
@@ -398,13 +398,13 @@
                         <div class="w-[50%] flex flex-col justify-evenly">
                             
                             <label for="harga" class="text-sm text-primaryBlue">Harga&nbsp;<span class="text-xs text-textColor">(Rupiah/Kg)</span></label>
-                            <input type="text" minlength="1" maxlength="7" id="harga" required class="text-base text-center bg-transparent border-b-2 border-textColor outline-none">
+                            <input type="text" minlength="1" maxlength="7" id="harga" required class="text-base text-left bg-transparent border-b-2 border-textColor outline-none">
                             
                         </div>
                     </div>
 
                     <!-- Box 5 Upload Document -->
-                    <div class="w-full py-2 px-4 col-start-1 col-end-3 row-start-4 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-4 flex justify-around bg-bodyBackColor rounded-lg">
     
                         <!-- Icon -->
                         <img src="images/svg/plane-ticket.svg" class="w-12" alt="">
@@ -418,22 +418,8 @@
                         </div>
                     </div>
 
-                    <!-- Box 6 Catatan Traveler -->
-                    <div class="w-full py-2 px-4 col-start-3 col-end-5 row-start-1 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/comment.svg" class="w-12" alt="">
-
-                        <!-- Label + Input Box -->
-                        <div class="w-[80%] flex flex-col justify-evenly">
-                            
-                            <label for="noteTravel" class="text-sm text-primaryBlue">Catatan Traveler <span class="text-xs text-textColor">(Pesan untuk Jastiper)</span></label>
-                            <textarea name="noteTravel" rows="2" maxlength="250" class="p-2 w-full text-sm border-2 border-textColor bg-transparent outline-none rounded-lg" placeholder="Tidak wajib diisi..."></textarea>
-                        </div>
-                    </div>
-
-                    <!-- Box 7 WhatsApp -->
-                    <div class="w-full py-2 px-4 col-start-3 col-end-4 row-start-2 flex justify-around bg-bodyBackColor rounded-lg">
+                    <!-- Box 6 WhatsApp -->
+                    <div class="w-full py-4 px-4 col-start-1 col-end-2 row-start-5 flex justify-around bg-bodyBackColor rounded-lg">
     
                         <!-- Icon -->
                         <img src="images/svg/baseline-whatsapp.svg" class="w-12" alt="">
@@ -447,36 +433,64 @@
                         </div>
                     </div>
 
-                    <!-- Box 8 Terms & Conditions -->
-                    <div class="w-full p-4 col-start-3 col-end-5 row-start-3 self-center text-xs">
+                    <!-- Box 7 Catatan Traveler -->
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-6 flex justify-around bg-bodyBackColor rounded-lg">
+    
+                        <!-- Icon -->
+                        <img src="images/svg/comment.svg" class="w-12" alt="">
+
+                        <!-- Label + Input Box -->
+                        <div class="w-[80%] flex flex-col space-y-2">
+                            
+                            <label for="noteTravel" class="text-sm text-primaryBlue">Catatan Traveler <span class="text-xs text-textColor">(Pesan untuk Jastiper)</span></label>
+                            <textarea name="noteTravel" rows="2" maxlength="250" class="p-2 w-full text-sm border-2 border-textColor bg-transparent outline-none rounded-lg" placeholder="Tidak wajib diisi..."></textarea>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- Box 8 Instruksi -->
+                    <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-5 flex flex-col justify-between bg-slate-100 rounded-lg">
+                        <!-- Paragraf Pendukung Jual Bagasi -->
+                        <p class="text-xs">
+                            Paragraf instruksi selanjutnya untuk Traveler. Isinya: <br>
+                            1. Tiket akan di periksa. <br>
+                            2. Jika valid akan di list. Jika tdk valid minta register lg. <br>
+                            3. Alamat Gudang Baka utk mengambil titipan Jastiper. 
+                        </p>
+
                         <div class="flex space-x-2 justify-center">
                             <input id="default-checkbox" type="checkbox" value="" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                             <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Peraturan & Ketentuan</a> yang berlaku.</label>
                         </div>
-                        
                     </div>
 
                     <!-- Box 9 Tombol -->
-                    <div class="col-start-3 col-end-5 flex flex-col justify-between">
+                    <div class="col-start-3 col-end-5 row-start-5 flex flex-col justify-around">
+
+                        <!-- Tombol Submit -->
                         <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
                             <button type="submit">Jual Bagasi</button>
                         </div>
-                        <span class="p-1 text-xs text-white bg-red-500 rounded-lg">Error MessageError MessageError MessageError MessageError MessageError MessageError Message</span>
+
+                        
+                    </div>
+
+                    <!-- Box 10 Warning Messages -->
+                    <div class="col-start-3 col-end-5 row-start-6 justify-self-center flex flex-col">
+
+                        <!-- Success Message -->
+                        <span class=" py-1 px-2 self-center text-xs text-white text-center bg-green-600 rounded-lg">Permintaan berhasil dikirim 🙂</span>
+
+                        <!-- Error Message -->
+                        <span class=" py-1 px-2 self-center text-xs text-white text-center bg-red-500 rounded-lg">Terjadi gangguan. Coba beberapa saat lagi ya kak..😢</span>
                     </div>
                     
                     
                 </form>
 
-                <p class="p-2 mt-4 text-base">
-                    Paragraf instruksi selanjutnya untuk Traveler. Isinya: <br>
-                    1. Tiket akan di periksa. <br>
-                    2. Jika valid akan di list. Jika tdk valid minta register lg. <br>
-                    3. Alamat Gudang Baka utk mengambil titipan Jastiper. 
-                </p>
-            </div> <!-- Wrapper Form end -->
-            
-            
-
+                
+            </div> <!-- JUAL BAGASI Wrapper end -->
         </div> <!-- Content Container end -->
 
 

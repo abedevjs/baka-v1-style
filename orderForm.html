@@ -49,7 +49,7 @@
 
                 <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Data Pengguna</span>
+                    <span class="text-sm">Area User</span>
                 </a>
 
                 <!-- Nav 2 -->
@@ -86,266 +86,262 @@
         <!-- Wrapper -->
         <div class="flex-1 ml-4 p-6 rounded-xl bg-secondaryYellowTint text-textColor font-text">
 
-            <!-- Content Container -->
-            <div class="mb-8">
-                <!-- Link -->
-                <div class="mb-12 flex items-center justify-start">
-                    <a href="#" class="flex items-center text-sm hover:-translate-x-1 duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="#0b2471" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m14 7l-5 5m0 0l5 5"/></svg>
-                        <span>Kembali ke Area Bagasi</span>
-                    </a>
+            <!-- Link -->
+            <div class="mb-12 flex items-center justify-start">
+                <a href="index.html" class="flex items-center text-sm hover:-translate-x-1 duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="#0b2471" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m14 7l-5 5m0 0l5 5"/></svg>
+                    <span>Kembali ke Area Bagasi</span>
+                </a>
+            </div>
+
+            <!-- Subtitle -->
+            <div class="mb-4 flex space-x-2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-auto fill-textColor" viewBox="0 0 24 24"><path d="M8.75 2a.75.75 0 0 0 0 1.5H9V5h-.75A3.25 3.25 0 0 0 5 8.25v9a3.25 3.25 0 0 0 2 3v1a.75.75 0 0 0 1.5 0v-.75h7v.75a.75.75 0 0 0 1.5 0v-1a3.25 3.25 0 0 0 2-3v-9A3.25 3.25 0 0 0 15.75 5H15V3.5h.25a.75.75 0 0 0 0-1.5h-6.5Zm4.75 1.5V5h-3V3.5h3ZM8 9.75A.75.75 0 0 1 8.75 9h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 8 9.75Z"/></svg>
+                <h2 class="text-base uppercase">beli bagasi</h2>
+            </div>
+
+            <!-- BAGASI DETAIL Container -->
+            <div class="w-full mb-4 px-4 grid grid-cols-4 grid-rows-3 gap-2 mx-auto">
+
+                <!-- Box 1 Title -->
+                <div class="w-full py-2 col-start-1 col-end-3 flex items-center justify-center bg-bodyBackColor rounded-lg">
+                    <span class="text-xl capitalize font-title">Detail Bagasi:</span>
                 </div>
 
-                <!-- Subtitle -->
-                <div class="mb-4 flex space-x-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-auto fill-textColor" viewBox="0 0 24 24"><path d="M8.75 2a.75.75 0 0 0 0 1.5H9V5h-.75A3.25 3.25 0 0 0 5 8.25v9a3.25 3.25 0 0 0 2 3v1a.75.75 0 0 0 1.5 0v-.75h7v.75a.75.75 0 0 0 1.5 0v-1a3.25 3.25 0 0 0 2-3v-9A3.25 3.25 0 0 0 15.75 5H15V3.5h.25a.75.75 0 0 0 0-1.5h-6.5Zm4.75 1.5V5h-3V3.5h3ZM8 9.75A.75.75 0 0 1 8.75 9h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 8 9.75Z"/></svg>
-                    <h2 class="text-base uppercase">beli bagasi</h2>
+                <!-- Box 2 Status -->
+                <div class="w-full py-2 col-start-3 col-end-4 flex items-center justify-around  bg-bodyBackColor rounded-lg">
+                    <!-- Icon -->
+                    <img src="images/svg/opened.svg" class="w-12 h-auto" alt="Date">
+
+                    <!-- Content Box Status -->
+                    <div class="flex flex-col space-y-2">
+                        <span class="text-sm text-primaryBlue">Status</span>
+                        <span class="text-base">Opened</span>
+                    </div>
                 </div>
 
-                <!-- Bagasi Detail Container -->
-                <div class="w-[95%] mb-4 grid grid-cols-4 grid-rows-3 gap-2 mx-auto">
+                <!-- Box 3 Maskapai -->
+                <div class="w-full py-2 col-start-4 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg">
+                    <!-- Icon -->
+                    <img src="images/svg/airlines-rounded.svg" class="w-12 h-auto" alt="Date">
 
-                    <!-- Box 1 Title -->
-                    <div class="w-full py-2 col-start-1 col-end-3 flex items-center justify-center bg-bodyBackColor rounded-lg">
-                        <span class="text-xl capitalize font-title">Detail Bagasi:</span>
+                    <!-- Content Box Status -->
+                    <div class="flex flex-col space-y-2">
+                        <span class="text-sm text-primaryBlue">Maskapai</span>
+                        <span class="text-base">Turkish Airline</span>
                     </div>
+                </div>
 
-                    <!-- Box 2 Status -->
-                    <div class="w-full py-2 col-start-3 col-end-4 flex items-center justify-around  bg-bodyBackColor rounded-lg">
-                        <!-- Icon -->
-                        <img src="images/svg/opened.svg" class="w-12 h-auto" alt="Date">
+                <!-- Box 3 Dari - Tujuan -->
+                <div class="w-full py-2 col-start-1 col-end-3 flex items-center justify-around bg-bodyBackColor rounded-lg">
+                    <!-- Icon -->
+                    <img src="images/svg/map-marker.svg" class="w-12 h-auto" alt="Marker">
 
-                        <!-- Content Box Status -->
-                        <div class="flex flex-col space-y-2">
-                            <span class="text-sm">Status:</span>
-                            <span class="text-base">Opened</span>
-                        </div>
-                    </div>
-
-                    <!-- Box 3 Maskapai -->
-                    <div class="w-full py-2 col-start-4 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg">
-                        <!-- Icon -->
-                        <img src="images/svg/airlines-rounded.svg" class="w-12 h-auto" alt="Date">
-
-                        <!-- Content Box Status -->
-                        <div class="flex flex-col space-y-2">
-                            <span class="text-sm">Maskapai:</span>
-                            <span class="text-base">Turkish Airline</span>
-                        </div>
-                    </div>
-
-                    <!-- Box 3 Dari - Tujuan -->
-                    <div class="w-full py-2 col-start-1 col-end-3 flex items-center justify-around bg-bodyBackColor rounded-lg">
-                        <!-- Icon -->
-                        <img src="images/svg/map-marker.svg" class="w-12 h-auto" alt="Marker">
-
-                        <!-- Content Box Dari dan Tujuan -->
-                        <div class="w-[70%] flex justify-around">
-                            <!-- Content Box Dari -->
-                            <div class="flex flex-col space-y-2">
-                                <span class="text-sm">Dari:</span>
-                                <div class="flex space-x-2 text-base">
-                                    <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                    <span>Jakarta</span>
-                                </div>
-                            </div>
-
-                            <!-- Content Box Tujuan -->
-                            <div class="flex flex-col space-y-2">
-                                <span class="text-sm">Tujuan:</span>
-                                <div class="flex space-x-2 text-base">
-                                    <img src="images/svg/istanbul.svg" alt="Istanbul">
-                                    <span>Istanbul</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Box 4 Berangkat - Tiba -->
-                    <div class="w-full py-2 col-start-3 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg">
-                        <!-- Icon -->
-                        <img src="images/svg/tear-off-calendar.svg" class="w-12 h-auto" alt="Date">
-
-                        <!-- Content Box Berangkat dan Tiba -->
-                        <div class="w-[70%] flex justify-around">
-                            <!-- Content Box Dari -->
-                            <div class="flex flex-col space-y-2">
-                                <span class="text-sm">Berangkat:</span>
-                                <div class="flex space-x-2 text-base">
-                                    <!-- <img src="images/svg/jakarta.svg" alt="Jakarta"> -->
-                                    <span>20 April 2023</span>
-                                </div>
-                            </div>
-
-                            <!-- Content Box Tujuan -->
-                            <div class="flex flex-col space-y-2">
-                                <span class="text-sm">Tiba:</span>
-                                <div class="flex space-x-2 text-base">
-                                    <!-- <img src="images/svg/istanbul.svg" alt="Istanbul"> -->
-                                    <span>21 April 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Box 5 Berat - Sisa -->
-                    <div class="w-full py-2 col-start-1 col-end-3 flex items-center justify-around bg-bodyBackColor rounded-lg">
-                        <!-- Icon -->
-                        <img src="images/svg/weight-kilogram.svg" class="w-12 h-auto" alt="Weight">
-
-                        <!-- Content Box Berangkat dan Tiba -->
-                        <div class="w-[70%] flex justify-around">
-                            <!-- Content Box Dari -->
-                            <div class="flex flex-col space-y-2">
-                                <span class="text-sm">Total (Kg):</span>
-                                <div class="flex space-x-2 text-base">
-                                    <!-- <img src="images/svg/jakarta.svg" alt="Jakarta"> -->
-                                    <span>60</span>
-                                </div>
-                            </div>
-
-                            <!-- Content Box Tujuan -->
-                            <div class="flex flex-col space-y-2">
-                                <span class="text-sm">Sisa (Kg):</span>
-                                <div class="flex space-x-2 text-base">
-                                    <!-- <img src="images/svg/istanbul.svg" alt="Istanbul"> -->
-                                    <span>30</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Box 6 Harga -->
-                    <div class="w-full py-2 flex items-center justify-around bg-bodyBackColor rounded-lg">
-                        <!-- Icon -->
-                        <img src="images/svg/payments-outline-rounded.svg" class="w-12 h-auto" alt="Date">
-
-                        <!-- Content Box Harga -->
-                        <div class="flex flex-col space-y-2">
-                            <span class="text-sm">Harga:</span>
-                            <span class="text-base">Rp. 150.000</span>
-                        </div>
-                    </div>
-
-                    
-
-                    <!-- Bagasi Detail Box 4 -->
-                    <div class="col-start-1 col-end-3 row-start-4 row-end-6 flex space-x-6 w-full px-4 py-2 bg-bodyBackColor rounded-lg">
-                        <!-- Icon -->
-                        <img src="images/svg/warning-solid.svg" class="w-12 h-auto" alt="Date">
-
-                        
+                    <!-- Content Box Dari dan Tujuan -->
+                    <div class="w-[70%] flex justify-around">
                         <!-- Content Box Dari -->
                         <div class="flex flex-col space-y-2">
-                            <span class="text-xs">Catatan Traveler:</span>
-                            <p class="text-sm">
-                                1. Tidak menerima barang terlarang <br>
-                                2. Tidak menerima cairan
+                            <span class="text-sm text-primaryBlue">Dari</span>
+                            <div class="flex space-x-2 text-base">
+                                <img src="images/svg/jakarta.svg" alt="Jakarta">
+                                <span>Jakarta</span>
+                            </div>
+                        </div>
 
-                            </p>
+                        <!-- Content Box Tujuan -->
+                        <div class="flex flex-col space-y-2">
+                            <span class="text-sm text-primaryBlue">Tujuan</span>
+                            <div class="flex space-x-2 text-base">
+                                <img src="images/svg/istanbul.svg" alt="Istanbul">
+                                <span>Istanbul</span>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- Akhir Grid (Bagasi) Container -->
-                
-                <!-- ORDER -->
+                </div>
 
-                <!-- Order Detail -->
-                <div class="w-[95%] mx-auto">
-                    
-                    
-                    <!-- Order Content Container -->
-                    <form class="grid grid-cols-4 grid-rows-4 gap-2 pt-0 pb-4 px-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md">
+                <!-- Box 4 Berangkat - Tiba -->
+                <div class="w-full py-2 col-start-3 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg">
+                        <!-- Icon -->
+                    <img src="images/svg/tear-off-calendar.svg" class="w-12 h-auto" alt="Date">
 
-                        <!-- Box 1 Title -->
-                        <div class="w-full p-2 col-start-1 col-end-3 self-center text-center ">
-                            <span class="text-2xl capitalize font-title">Detail Order:</span>
-                        </div>
-
-                        <!-- Box 2 Kg -->
-                        <div class="w-full py-2 px-6 col-start-1 col-end-2 row-start-2 flex flex-col justify-around bg-secondaryYellowTint rounded-lg">
-                            <label for="berat" class="text-sm text-primaryBlue">Berat (Kg)</label>
-                            <input type="number" min="1" max="60" required class="w-[50%] text-base text-center border-b-2 border-textColor outline-none bg-transparent">
-                        </div>
-
-                        <!-- Box 3 Biaya -->
-                        <div class="w-full py-2 px-6 col-start-2 col-end-3 row-start-2 flex flex-col justify-around bg-secondaryYellowTint rounded-lg">
-                            <label for="biaya" class="text-sm text-primaryBlue">Biaya (Rp)</label>
-                            <span class="text-base"><span>Rp.</span> 150.000,00</span>
-                        </div>
-
-                        <!-- Box 4 Isi -->
-                        <div class="w-full py-2 px-6 col-start-1 col-end-2 row-start-3 flex flex-col justify-around bg-secondaryYellowTint rounded-lg">
-                            <label for="isi" class="text-sm text-primaryBlue">Isi Kiriman:</label>
-                            <select name="tujuan" id="" required class="p-1 text-base bg-transparent border-b-2 border-textColor outline-none">
-                                <option class="text-left text-sm" value>Pilih Isi Kiriman</option>
-                                <option class="text-left text-sm" value="Makanan & Minuman">Makanan & Minuman</option>
-                                <option class="text-left text-sm" value="Pakaian">Pakaian</option>
-                                <option class="text-left text-sm" value="Buku">Buku</option>
-                                <option class="text-left text-sm" value="Bumbu Dapur">Bumbu Dapur</option>
-                                <option class="text-left text-sm" value="Elektronik">Elektronik</option>
-                                <option class="text-left text-sm" value="Lain-lain">Lain-lain</option>
-                            </select>
-                        </div>
-
-                        <!-- Box 5 WA -->
-                        <div class="w-full py-2 px-6 col-start-2 col-end-3 row-start-3 flex flex-col justify-around bg-secondaryYellowTint rounded-lg">
-                            <label for="wa" class="text-sm text-primaryBlue">Nomor WhatsApp</label>
-                            <input type="text" minlength="8" maxlength="15" required class="w-[80%] text-base text-left border-b-2 border-textColor outline-none bg-transparent">
-                        </div>
-
-                        <!-- Box 6 Document -->
-                        <div class="w-full py-2 px-6 col-start-1 col-end-3 row-start-4 flex flex-col space-y-4 bg-secondaryYellowTint rounded-lg">
-                            <label for="docPayment" class="text-sm text-primaryBlue">Upload Bukti Pembayaran <br> <span class="text-xs text-textColor">(File Type: PDF, PNG, JPG, atau JPEG. File Max: 5mb)</span></label> 
-                            <input type="file" id="docPayment" required class="text-base text-center text-textColor bg-transparent border-b-2 border-textColor outline-none cursor-pointer">
-                            <span class="hidden text-xs text-red-600">upload error</span>
-                        </div>
-
-                        <!-- Box 7 Catatan -->
-                        <div class="w-full py-2 px-6 col-start-1 col-end-3 row-start-5 flex flex-col space-y-4 bg-secondaryYellowTint rounded-lg">
-                            <label for="noteOrder" class="text-sm text-primaryBlue">Catatan Order <span class="text-xs text-textColor">(Pesan untuk Traveler)</span></label>
-                            <textarea name="noteOrder" rows="2" maxlength="250" class="p-2 w-full text-sm border-2 border-textColor bg-transparent outline-none rounded-lg" placeholder="Tidak wajib diisi..."></textarea>
-                        </div>
-
-                        <!-- Box 8 Rekening -->
-                        <div class="w-full py-2 px-6 col-start-3 col-end-5 row-start-2 ">
-                            <p class="text-sm">
-                                Mohon mengirimkan biaya order ke alamat berikut: <br>
-                                Bank Mandiri <br>
-                                No. Rek: 0100000000 <br>
-                                Muhammad Akbar
-
-                            </p>
-                        </div>
-
-                        <!-- Box 9 Terms & Conditions -->
-                        <div class="w-full py-2 px-6 col-start-3 col-end-5 row-start-4 flex flex-col justify-around ">
-                            <div class="flex space-x-2 justify-center">
-                                <input id="default-checkbox" type="checkbox" value="" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Peraturan & Ketentuan</a> yang berlaku.</label>
+                    <!-- Content Box Berangkat dan Tiba -->
+                    <div class="w-[70%] flex justify-around">
+                        <!-- Content Box Dari -->
+                        <div class="flex flex-col space-y-2">
+                            <span class="text-sm text-primaryBlue">Berangkat</span>
+                            <div class="flex space-x-2 text-base">
+                                <!-- <img src="images/svg/jakarta.svg" alt="Jakarta"> -->
+                                <span>20 April 2023</span>
                             </div>
                         </div>
 
-                        <!-- Box 10 Tombol -->
-                        <div class="col-start-3 col-end-5 row-start-5 flex flex-col">
-                            <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
-                                <button type="submit">Beli Bagasi</button>
+                        <!-- Content Box Tujuan -->
+                        <div class="flex flex-col space-y-2">
+                            <span class="text-sm text-primaryBlue">Tiba</span>
+                            <div class="flex space-x-2 text-base">
+                                <!-- <img src="images/svg/istanbul.svg" alt="Istanbul"> -->
+                                <span>21 April 2023</span>
                             </div>
-                            <span class=" mt-2 p-1 text-xs text-white bg-red-500 rounded-lg">Error MessageError MessageError MessageError MessageError MessageError MessageError Message</span>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Box 5 Berat - Sisa -->
+                <div class="w-full py-2 col-start-1 col-end-3 flex items-center justify-around bg-bodyBackColor rounded-lg">
+                    <!-- Icon -->
+                    <img src="images/svg/weight-kilogram.svg" class="w-12 h-auto" alt="Weight">
+
+                    <!-- Content Box Berat dan Sisa -->
+                    <div class="w-[70%] flex justify-around">
+                        <!-- Content Box Dari -->
+                        <div class="flex flex-col space-y-2">
+                            <span class="text-sm text-primaryBlue">Berat <span class="text-xs text-textColor">(Kg)</span></span>
+                            <div class="flex space-x-2 text-base">
+                                <!-- <img src="images/svg/jakarta.svg" alt="Jakarta"> -->
+                                <span>60</span>
+                            </div>
+                        </div>
+
+                        <!-- Content Box Tujuan -->
+                        <div class="flex flex-col space-y-2">
+                            <span class="text-sm text-primaryBlue">Sisa Bagasi <span class="text-xs text-textColor">(Kg)</span></span>
+                            <div class="flex space-x-2 text-base">
+                                <!-- <img src="images/svg/istanbul.svg" alt="Istanbul"> -->
+                                <span>30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 6 Harga -->
+                <div class="w-full py-2 flex items-center justify-around bg-bodyBackColor rounded-lg">
+                    <!-- Icon -->
+                    <img src="images/svg/payments-outline-rounded.svg" class="w-12 h-auto" alt="Date">
+
+                    <!-- Content Box Harga -->
+                    <div class="flex flex-col space-y-2">
+                        <span class="text-sm text-primaryBlue">Harga <span class="text-xs text-textColor">(@ Kg)</span></span>
+                        <span class="text-base">Rp. 150.000,00</span>
+                    </div>
+                </div>
+
+                    
+
+                <!-- Box 7 Catatan Traveler -->
+                <div class="w-full py-2 col-start-1 col-end-3 row-start-4 row-end-6 flex justify-around bg-bodyBackColor rounded-lg">
+                    <!-- Icon -->
+                    <img src="images/svg/warning-solid.svg" class="w-12 h-auto" alt="Date">
+
                         
-                    </form>
-                </div> <!-- Akhir Order Container -->
+                    <!-- Content Box Dari -->
+                    <div class="w-[70%] flex flex-col space-y-2">
+                        <span class="text-xs text-primaryBlue">Catatan Traveler</span>
+                        <p class="text-sm">
+                            1. Tidak menerima barang terlarang <br>
+                            2. Tidak menerima cairan
+
+                        </p>
+                    </div>
+                 </div>
+
+                 <!-- Error Message (Jika status bukan 'OPENED') -->
+                 <div class="w-full col-start-3 col-end-5 row-start-4 row-end-6 self-center flex justify-center">
+                     <span class="py-1 px-2 text-xs text-white bg-red-500 rounded-lg">
+                        Bagasi masih dalam proses konfirmasi, belum bisa di order. <br>
+                        Coba beberapa saat lagi ya kak...🙂
+                    </span>
+                 </div>
+            </div> <!-- Akhir Grid (Bagasi) Container -->
                 
+            <!-- ORDER -->
+            <div class="w-full mx-auto px-4">
+                    
+                <!-- Order Content Container -->
+                <form class="py-8 px-4 grid grid-cols-4 grid-rows-4 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md">
 
-                <!-- Message -->
-                <p class="mt-4 ml-8 text-base">
-                    Paragraf instruksi selanjutnya untuk Traveler. Isinya: <br>
-                    1. Bukti payment akan di periksa. <br>
-                    2. Jika valid akan di list. Jika tdk valid minta register lg. <br>
-                    3. Alamat Gudang Baka utk mengirim titipan Jastiper. 
-                </p>
-            </div> <!-- Akhir Content Container -->
+                    <!-- Box 1 Title -->
+                    <div class="w-full py-2 px-6 col-start-1 col-end-3 flex justify-center bg-bodyBackColor rounded-lg">
+                        <span class="self-center text-xl capitalize font-title">Detail Order:</span>
+                    </div>
 
+                    <!-- Box 2 Kg -->
+                    <div class="w-full py-2 px-6 col-start-1 col-end-2 row-start-2 flex flex-col justify-around bg-bodyBackColor rounded-lg">
+                        <label for="berat" class="text-sm text-primaryBlue">Berat <span class="text-xs text-textColor">(Kg)</span></label>
+                        <input type="number" min="1" max="60" required class="w-[50%] text-base text-center border-b-2 border-textColor outline-none bg-transparent">
+                    </div>
+
+                    <!-- Box 3 Biaya -->
+                    <div class="w-full py-2 px-6 col-start-2 col-end-3 row-start-2 flex flex-col justify-around bg-bodyBackColor rounded-lg">
+                        <label for="biaya" class="text-sm text-primaryBlue">Total Biaya <span class="text-xs text-textColor">(Rp)</span></label>
+                        <span class="text-base">150.000,00</span>
+                    </div>
+
+                    <!-- Box 4 Isi -->
+                    <div class="w-full py-2 px-6 col-start-1 col-end-2 row-start-3 flex flex-col justify-around bg-bodyBackColor rounded-lg">
+                        <label for="isi" class="text-sm text-primaryBlue">Isi Kiriman</label>
+                        <select name="tujuan" id="" required class="p-1 text-base bg-transparent border-b-2 border-textColor outline-none">
+                            <option class="text-left text-sm" value>Pilih Isi Kiriman</option>
+                            <option class="text-left text-sm" value="Makanan & Minuman">Makanan & Minuman</option>
+                            <option class="text-left text-sm" value="Pakaian">Pakaian</option>
+                            <option class="text-left text-sm" value="Buku">Buku</option>
+                            <option class="text-left text-sm" value="Bumbu Dapur">Bumbu Dapur</option>
+                            <option class="text-left text-sm" value="Elektronik">Elektronik</option>
+                            <option class="text-left text-sm" value="Lain-lain">Lain-lain</option>
+                        </select>
+                    </div>
+
+                    <!-- Box 5 WA -->
+                    <div class="w-full py-2 px-6 col-start-2 col-end-3 row-start-3 flex flex-col justify-around bg-bodyBackColor rounded-lg">
+                        <label for="wa" class="text-sm text-primaryBlue">Nomor WhatsApp</label>
+                        <input type="text" minlength="8" maxlength="15" required class="w-[80%] text-base text-left border-b-2 border-textColor outline-none bg-transparent">
+                    </div>
+
+                    <!-- Box 6 Document -->
+                    <div class="w-full py-2 px-6 col-start-1 col-end-3 row-start-4 flex flex-col space-y-4 bg-bodyBackColor rounded-lg">
+                        <label for="docPayment" class="text-sm text-primaryBlue">Upload Bukti Pembayaran <br> <span class="text-xs text-textColor">(File Type: PDF, PNG, JPG, atau JPEG. File Max: 5mb)</span></label> 
+                        <input type="file" id="docPayment" required class="text-base text-center text-textColor bg-transparent border-b-2 border-textColor outline-none cursor-pointer">
+                        <span class="hidden text-xs text-red-600">upload error</span>
+                    </div>
+
+                    <!-- Box 7 Catatan -->
+                    <div class="w-full py-2 px-6 col-start-1 col-end-3 row-start-5 flex flex-col space-y-2 bg-bodyBackColor rounded-lg">
+                        <label for="noteOrder" class="text-sm text-primaryBlue">Catatan Order <span class="text-xs text-textColor">(Pesan untuk Traveler)</span></label>
+                        <textarea name="noteOrder" rows="2" maxlength="250" class="p-2 w-full text-sm border-2 border-textColor bg-transparent outline-none rounded-lg" placeholder="Tidak wajib diisi..."></textarea>
+                    </div>
+
+                    <!-- Box 8 Instruksi -->
+                    <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-5 flex flex-col justify-between bg-slate-100 rounded-lg">
+                        <p class="text-xs">
+                            Pembayaran dilakukan ke alamat: <br>
+                            Bank Mandiri <br>
+                            No. Rek: 0100000000 <br>
+                            Muhammad Akbar
+
+                        </p>
+
+                        <div class="flex space-x-2 justify-center">
+                            <input id="default-checkbox" type="checkbox" value="" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Peraturan & Ketentuan</a> yang berlaku.</label>
+                        </div>
+                    </div>
+
+                    <!-- Box 9 Terms & Conditions -->
+                    <div class="w-full py-2 px-6 col-start-3 col-end-5 row-start-5 flex flex-col justify-between ">
+
+                        <!-- Tombol Submit -->
+                        <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
+                            <button type="submit">Beli Bagasi</button>
+                        </div>
+
+                        <!-- Success Message -->
+                        <!-- <span class=" py-1 px-2 self-center text-xs text-white text-center bg-green-600 rounded-lg">Permintaan berhasil dikirim 🙂</span> -->
+
+                        <!-- Error Message -->
+                        <span class=" py-1 px-2 self-center text-xs text-white text-center bg-red-500 rounded-lg">Terjadi gangguan. Coba beberapa saat lagi ya kak...😢</span>
+                    </div>
+                        
+                </form>
+            </div> <!-- Akhir Order Container -->
             
         </div> <!-- Akhir Wrapper -->
 
