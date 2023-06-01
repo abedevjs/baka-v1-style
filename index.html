@@ -42,30 +42,30 @@
                     <span class="text-sm">Area Bagasi</span>
                 </a>
 
-                <a href="jastip.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="jastip.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Area Jastip</span>
                 </a>
 
-                <a href="user.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="user.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Area User</span>
                 </a>
 
                 <!-- Nav 2 -->
-                <a href="rules.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/rule-folder-rounded.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Peraturan</span>
                 </a>
 
                 <!-- Nav 3 -->
-                <a href="faq.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Pertanyaan</span>
                 </a>
 
                 <!-- Nav 4 -->
-                <a href="about.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Hubungi kami</span>
                 </a>
@@ -314,7 +314,7 @@
             <!-- JUAL BAGASI Wrapper  -->
             <div class="w-full px-4 mb-8 mx-auto">
                 <!-- Form Jual Bagasi -->
-                <form action="" class="py-8 px-4 grid grid-cols-4 grid-rows-4 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md">
+                <form action="" class="py-8 px-4 grid grid-cols-4 grid-rows-6 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md">
 
                     <!-- Box 1 Dari - Tujuan -->
                     <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
@@ -323,7 +323,7 @@
                         <img src="images/svg/map-marker.svg" class="w-12" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-full flex justify-around">
+                        <div class="w-[80%] flex justify-around">
                             <!-- Label + Input Dari Box -->
                             <div class="flex flex-col justify-evenly">
                                 <label for="dari" class="text-sm text-primaryBlue">Dari</label>
@@ -357,7 +357,7 @@
                         <img src="images/svg/tear-off-calendar.svg" class="w-12" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-full flex justify-around">
+                        <div class="w-[80%] flex justify-around">
                             
                             <!-- Label + Input Berangkat -->
                             <div class="flex flex-col justify-evenly">
@@ -396,10 +396,11 @@
 
                         <!-- Label + Input Box -->
                         <div class="w-[50%] flex flex-col justify-evenly">
-                            
-                            <label for="harga" class="text-sm text-primaryBlue">Harga&nbsp;<span class="text-xs text-textColor">(Rupiah/Kg)</span></label>
-                            <input type="text" minlength="1" maxlength="7" id="harga" required class="text-base text-left bg-transparent border-b-2 border-textColor outline-none">
-                            
+                            <label for="harga" class="text-sm text-primaryBlue">Harga&nbsp;<span class="text-xs text-textColor">(@ Kg)</span></label>
+                            <div class="flex space-x-1">
+                                <span class="text-base">Rp.</span>
+                                <input type="text" minlength="1" maxlength="7" id="harga" required class="w-full text-base text-left bg-transparent border-b-2 border-textColor outline-none">
+                            </div>
                         </div>
                     </div>
 
@@ -450,7 +451,7 @@
                     
 
                     <!-- Box 8 Instruksi -->
-                    <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-5 flex flex-col justify-between bg-slate-100 rounded-lg">
+                    <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-6 flex flex-col justify-between bg-slate-100 rounded-lg">
                         <!-- Paragraf Pendukung Jual Bagasi -->
                         <p class="text-xs">
                             Paragraf instruksi selanjutnya untuk Traveler. Isinya: <br>
@@ -466,43 +467,27 @@
                     </div>
 
                     <!-- Box 9 Tombol -->
-                    <div class="col-start-3 col-end-5 row-start-5 flex flex-col justify-around">
+                    <div class="col-start-3 col-end-5 row-start-6 flex flex-col justify-evenly">
 
                         <!-- Tombol Submit -->
                         <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
                             <button type="submit">Jual Bagasi</button>
                         </div>
 
-                        
-                    </div>
-
-                    <!-- Box 10 Warning Messages -->
-                    <div class="col-start-3 col-end-5 row-start-6 justify-self-center flex flex-col">
-
                         <!-- Success Message -->
                         <span class=" py-1 px-2 self-center text-xs text-white text-center bg-green-600 rounded-lg">Permintaan berhasil dikirim 🙂</span>
 
                         <!-- Error Message -->
-                        <span class=" py-1 px-2 self-center text-xs text-white text-center bg-red-500 rounded-lg">Terjadi gangguan. Coba beberapa saat lagi ya kak..😢</span>
+                        <span class="hidden py-1 px-2 self-center text-xs text-white text-center bg-red-500 rounded-lg">Terjadi gangguan. Coba beberapa saat lagi ya kak..😢</span>
+
+                        
                     </div>
                     
                     
                 </form>
-
-                
             </div> <!-- JUAL BAGASI Wrapper end -->
+
         </div> <!-- Content Container end -->
-
-
-
-        
-
-
-
-
-
-
-
-    </div>
+    </div> <!-- Mother Container end -->
 </body>
 </html>
