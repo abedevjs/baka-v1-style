@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Livvic:wght@600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="/js/rules.js"></script>
     <title>STEPS</title>
 </head>
 <body>
@@ -116,15 +117,17 @@
                     <span class="mb-2 text-lg self-center">Pastikan sudah menjadi Member, kemudian ikuti langkah berikut:</span>
 
                     <!-- Steps Options Box -->
-                    <div class="w-full flex justify-evenly">
-                        <div class="">
-                            <a href="#" class="p-2 px-28 text-sm text-white cursor-pointer  opacity-100 bg-primaryBlueBold rounded-lg">
+                    <div class="tab_container w-full flex justify-evenly">
+                        <div class="tab__buttons tab__buttons--active p-2 px-28 rounded-lg text-sm text-white cursor-pointer " data-tab="1">
+                            <!-- <a href="#" class="p-2 px-28 rounded-lg text-sm text-white cursor-pointer transition-all duration-300 opacity-100 bg-primaryBlueBold"> -->
+                            <a href="#" class=" ">
                                 Traveler
                             </a>
                         </div>
 
-                        <div class="">
-                            <a href="#" class="p-2 px-28 text-sm text-white cursor-pointer bg-primaryBlue opacity-80 rounded-lg hover:opacity-100 hover:bg-primaryBlueBold transition-all duration-300 ">
+                        <div class="tab__buttons p-2 px-28 rounded-lg text-sm text-white cursor-pointer " data-tab="2">
+                            <a href="#" class=" ">
+                            <!-- <a href="#" class="p-2 px-28 rounded-lg text-sm text-white cursor-pointer transition-all duration-300 bg-primaryBlue opacity-80 hover:opacity-100 hover:bg-primaryBlueBold "> -->
                                 Jastiper
                             </a>
                         </div>
@@ -132,7 +135,7 @@
 
                     <!-- Steps Content -->
                     <!-- Steps Content Box -->
-                    <div class="relative flex flex-col self-start space-y-2">
+                    <div class="tab__contents tab__contents--1 tab__contents--active relative space-y-2">
 
                         <!-- Vertical Line -->
                         <div class="absolute top-8 left-[20px] w-[2px] h-[80%] bg-secondaryYellow "></div>
@@ -167,27 +170,66 @@
                             <span>Jika valid, akan di update ke Daftar Bagasi Traveler</span>
                         </div>
                     </div>
+                    <div class="tab__contents tab__contents--2  relative space-y-2">
+
+                        <!-- Vertical Line -->
+                        <div class="absolute top-8 left-[20px] w-[2px] h-[80%] bg-secondaryYellow "></div>
+
+                        <!-- Step 1 -->
+                        <div class="flex space-x-3 items-center z-10">
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">1</div>
+                            <span>Registrasi Order</span>
+                        </div>
+
+                         <!-- Step 2 -->
+                        <div class="flex space-x-3 items-center z-10">
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">2</div>
+                            <span>Upload Bukti Keberangkatan</span>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex space-x-3 items-center z-10">
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">3</div>
+                            <span>Admin memeriksa bukti keberangkatan</span>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex space-x-3 items-center z-10">
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">4</div>
+                            <span>Admin memberikan feedback</span>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="flex space-x-3 items-center z-10">
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">5</div>
+                            <span>Jika valid, akan di update ke Daftar Bagasi Traveler</span>
+                        </div>
+                    </div>
                     
                     <!-- Link Detail -->
                     <div class="w-full flex justify-center p-1 px-2 text-white cursor-pointer bg-primaryBlue opacity-80 rounded-lg hover:opacity-100 hover:bg-primaryBlueBold transition-all duration-300 ">
-                        <a href="#" class="text-lg ">Lihat Detail</a>
+                        <a href="faq.html" class="text-lg ">Lihat Tanya-Jawab</a>
 
                     </div>
                 </div><!-- akhir Steps Box -->
             </div> <!-- akhir Steps Container -->
 
             <!-- Link -->
-            <div class="mt-4 flex items-center justify-end">
+            <!-- <div class="mt-4 flex items-center justify-end">
                 <a href="faq.html" class="flex items-center text-sm text-textColor hover:translate-x-1 duration-300">
                     <span>Lihat List Tanya-Jawab</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#0b2471" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 17l5-5m0 0l-5-5"/></svg>
                 </a>
-            </div>
+            </div> -->
 
             <!-- Paragraf Container -->
-            <div class="flex flex-col p-6 space-y-2">
+            <div class="paragraf__contents paragraf__contents--1 paragraf__contents--active  p-6 space-y-2 ">
                 <span class="text-base">Poin 1:</span>
-                <p class="text-base">Disini paragragraf yang menjelaskan dari poin Steps diatas</p>
+                <p class="text-base">Bagasi</p>
+            </div>
+            <div class="paragraf__contents paragraf__contents--2 p-6 space-y-2">
+                <span class="text-base">Poin 1:</span>
+                <p class="text-base">Order</p>
             </div>
 
         </div> <!-- akhir Content -->
