@@ -54,8 +54,8 @@
 
                 <!-- Nav 2 -->
                 <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                    <img src="/images/svg/rule-folder-rounded.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Peraturan</span>
+                    <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                    <span class="text-sm">Syarat & Ketentuan</span>
                 </a>
 
                 <!-- Nav 3 -->
@@ -74,11 +74,11 @@
 
             <!-- Button Daftar/Masuk atau Jual/Beli -->
             <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a> -->
-            <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Keluar</a>
+            <a href="modal.html" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Keluar</a>
 
             <!-- Copyright -->
             <span class="text-xs"> 
-                © 2023 by @be ❤️. All rights reserved. <br> Online illustrations by 
+                © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
                 <a href="https://storyset.com/online"><span class="underline">Storyset</span></a>
             </span>
         </div>
@@ -87,12 +87,44 @@
         <div class="flex-1 ml-4 p-6 rounded-xl bg-secondaryYellowTint text-textColor font-text">
 
             <!-- Text Box -->
-            <div class="mb-12 text-textColor text-center mx-auto">
+            <div class="text-textColor text-center mx-auto">
                 <!-- Subtitle -->
                 <h3 class="text-xs tracking-widest font-title uppercase">~ layanan kami ~</h3>
 
                 <!-- Advantage Title -->
                 <h2 class=" text-3xl font-title capitalize">Area Bagasi</h2>
+            </div>
+
+            <!-- Illustration Container -->
+            <div class="flex justify-center -mt-4 mb-12">
+
+                <!-- Hero Title and Link Container -->
+                <div class="flex flex-col justify-center">
+
+                    <!-- Title Box -->
+                    <div class="max-w-xl mb-12 flex flex-col space-y-7">
+                        <!-- Title -->
+                        <h2 class=" text-3xl font-title">Kenali tim dibalik layar Baka</h2>
+
+                        <!-- Subtitle -->
+                        <span class="text-base">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illo mollitia odit maxime dolor provident vitae beatae rem consequuntur dolorum. <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, modi.
+                        </span>
+
+                    </div>
+                    
+                    <!-- Link -->
+                    <div class="flex justify-end space-x-2 items-center ">
+                        <a href="#" class="text-sm hover:translate-y-1 duration-300">Kenalan dengan tim kami 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Illustration -->
+                <img src="images/svg/Traveling-bro.svg" class="w-2/4" alt="Flying">
+                <!-- <img src="images/svg/Flying around the world-amico.svg" class="w-2/4" alt="Flying"> -->
             </div>
 
             <!-- DAFTAR BAGASI Title -->
@@ -176,7 +208,7 @@
                                     </div>
                                 </td>
                                 <td scope="row" class="px-6 py-3">
-                                    <a href="#" class="text-blue-600 hover:underline">Beli</a>
+                                    <a href="#" class="text-blue-600 uppercase hover:underline">Beli</a>
                                 </td>
                             </tr>
 
@@ -234,7 +266,7 @@
                                     </div>
                                 </td>
                                 <td scope="row" class="px-6 py-3">
-                                    <a href="#" class="text-blue-600 hover:underline">Beli</a>
+                                    <a href="#" class="text-blue-600 hover:underline uppercase">Beli</a>
                                 </td>
                             </tr>
 
@@ -419,23 +451,8 @@
                         </div>
                     </div>
 
-                    <!-- Box 6 WhatsApp -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-2 row-start-5 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/baseline-whatsapp.svg" class="w-12" alt="">
-
-                        <!-- Label + Input Box -->
-                        <div class="w-[50%] flex flex-col justify-evenly">
-                            
-                            <label for="WhatsApp" class="text-sm text-primaryBlue">Nomor&nbsp;WhatsApp </label>
-                            <input type="text" minlength="10" maxlength="15" id="WhatsApp" required class="text-base text-left bg-transparent border-b-2 border-textColor outline-none">
-                            
-                        </div>
-                    </div>
-
-                    <!-- Box 7 Catatan Traveler -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-6 flex justify-around bg-bodyBackColor rounded-lg">
+                    <!-- Box 6 Catatan Traveler -->
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-5 flex justify-around bg-bodyBackColor rounded-lg">
     
                         <!-- Icon -->
                         <img src="images/svg/comment.svg" class="w-12" alt="">
@@ -448,7 +465,20 @@
                         </div>
                     </div>
 
-                    
+                    <!-- Box 7 WhatsApp, TOGGLE FLEX / HIDDEN --> 
+                    <div class="w-full py-4 px-4 col-start-1 col-end-2 row-start-6 flex justify-around bg-bodyBackColor rounded-lg">
+    
+                        <!-- Icon -->
+                        <img src="images/svg/baseline-whatsapp.svg" class="w-12" alt="">
+
+                        <!-- Label + Input Box -->
+                        <div class="w-[50%] flex flex-col justify-evenly">
+                            
+                            <label for="WhatsApp" class="text-sm text-primaryBlue">Nomor&nbsp;WhatsApp </label>
+                            <input type="text" minlength="10" maxlength="15" id="WhatsApp" required class="text-base text-left bg-transparent border-b-2 border-textColor outline-none">
+                            
+                        </div>
+                    </div>
 
                     <!-- Box 8 Instruksi -->
                     <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-6 flex flex-col justify-between bg-slate-100 rounded-lg">
