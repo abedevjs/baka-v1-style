@@ -46,17 +46,10 @@
     background-size: cover;
 }
 
-.tab__buttons {
-    background-color: #2e4057;
-}
+.tab__buttons { background-color: #2e4057; }
+.tab__buttons:hover { background-color: #255cff; }
 
-.tab__buttons:hover {
-    background-color: #255cff;
-}
-
-.tab__buttons--active {
-    background-color: #255cff;
-}
+.tab__buttons--active { background-color: #255cff; }
 
 .tab__contents { display: none }
 .tab__contents--active {
@@ -70,6 +63,34 @@
     display: flex;
     flex-direction: column;
 }
+
+
+
+.auth__buttons { 
+    background-color: #2e4057; 
+    opacity: 0.7;
+    color: white;
+    transition: all;
+    transition-duration: .3s;
+    /* border: 2px solid #0b2471; */
+    border-color: transparent;
+    border-width: 2px;
+}
+.auth__buttons:hover { background-color: #255cff; }
+.auth__buttons--active { 
+    background-color: #255cff; 
+    opacity: 1;
+    color: white;
+    transform: translateY(-70%);
+    border: 2px solid #0b2471;
+}
+
+.auth__contents { display: none }
+.auth__contents--active { 
+    display: flex;
+    flex-direction: column;
+ }
+
 
 
 
