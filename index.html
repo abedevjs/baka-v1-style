@@ -8,13 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Livvic:wght@600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
-    <title>AREA BAGASI</title>
+    <script defer src="js/layout.js"></script>
+    <title>LAYOUT</title>
 </head>
 <body>
+
     <!-- Mother Container after Body -->
-    <div class="mother-container h-auto">
-        <!-- Bar Navigation -->
-        <div class="w-1/5 h-[42.5rem] sticky top-4 flex flex-col justify-between p-6 rounded-xl bg-primaryBlue text-white font-text">
+    <!-- flex flex-wrap content-center bg-bodyBackColor -->
+    <!-- grid grid-rows-1 grid-cols-[20%_1fr] gap-4 -->
+    <div class="h-auto p-4 flex flex-wrap content-center bg-bodyBackColor">
+
+        <!-- Bar Navigation LOGGED OUT -->
+        <aside id="" class="
+           w-1/5 h-max sticky top-4 flex flex-col space-y-[4.4rem] p-6 rounded-xl bg-primaryBlue text-white font-text
+            lg:hidden
+            ">
             
             <!-- Logo -->
             <img src="/images/dummy logo white.png" alt="Logo" class="h-auto w-28 self-center">
@@ -32,30 +40,30 @@
             <div class="flex flex-col space-y-3">
 
                 <!-- Nav 1 -->
-                <!-- <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
+                <a href="hero.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl">
                     <img src="/images/svg/home-rounded.svg" class="mr-3 w-5 ml-4 h-auto" alt="">
                     <span class="text-sm">Halaman utama</span>
-                </a> -->
+                </a>
 
-                <a href="#" class="flex justify-start p-1 py-3 cursor-pointer  opacity-100 bg-primaryBlueBold rounded-xl">
+                <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Area Bagasi</span>
+                    <span class="text-sm">Daftar Bagasi</span>
                 </a>
 
-                <a href="jastip.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Area Jastip</span>
+                    <span class="text-sm">Daftar Order</span>
                 </a>
 
-                <a href="user.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Area User</span>
-                </a>
+                    <span class="text-sm">Data Pengguna</span>
+                </a> -->
 
                 <!-- Nav 2 -->
                 <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Syarat & Ketentuan</span>
+                    <span class="text-sm">Peraturan</span>
                 </a>
 
                 <!-- Nav 3 -->
@@ -65,459 +73,387 @@
                 </a>
 
                 <!-- Nav 4 -->
-                <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Hubungi kami</span>
                 </a>
+
+                <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                    <img src="/images/svg/about.svg" class="mr-3 w-5 ml-4" alt="">
+                    <span class="text-sm">Tentang kami</span>
+                </a> -->
             </div>
 
 
             <!-- Button Daftar/Masuk atau Jual/Beli -->
-            <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a> -->
-            <a href="modal.html" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Keluar</a>
+            <a href="modal.html" target="_blank" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
+            <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Jual/Beli</a> -->
 
             <!-- Copyright -->
             <span class="text-xs"> 
-                © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
-                <a href="https://storyset.com/online"><span class="underline">Storyset</span></a>
+                © 2023 by abé with ❤️. All rights reserved. <br> All illustrations by 
+                <a href="https://storyset.com/online" class="underline">Storyset</a>
             </span>
-        </div>
+        </aside>
 
         <!-- Wrapper -->
-        <div class="flex-1 ml-4 p-6 rounded-xl bg-secondaryYellowTint text-textColor font-text">
+        <div class="
+            relative p-6 flex-1 ml-4 rounded-xl bg-secondaryYellowTint text-textColor font-text
+            lg:
+            ">
 
+            <!-- Hamburger Button -->
+            <div id="hamburger__btn" type="button" class="
+                hamburger absolute z-[200] hidden
+                lg:block
+                ">
+                <span class="hamburger-top bg-textColor"></span>
+                <span class="hamburger-middle bg-textColor"></span>
+                <span class="hamburger-bottom bg-textColor"></span>
+                
+            </div>
+            
             <!-- Text Box -->
-            <div class="text-textColor text-center mx-auto">
+            <div class="mb-7 text-textColor text-center mx-auto">
                 <!-- Subtitle -->
-                <h3 class="text-xs tracking-widest font-title uppercase">~ layanan kami ~</h3>
+                <h3 class="text-xs tracking-widest font-title uppercase">~ tanya kami ~</h3>
 
                 <!-- Advantage Title -->
-                <h2 class=" text-3xl font-title capitalize">Area Bagasi</h2>
+                <h2 class=" text-3xl font-title capitalize">Pertanyaan umum dan jawaban</h2>
             </div>
 
-            <!-- Illustration Container -->
-            <div class="flex justify-center -mt-4 mb-12">
+            <div class="mb-12 flex items-center justify-start font-text">
+                <a href="rules.html" class="flex items-center text-sm hover:-translate-x-1 duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="#0b2471" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m14 7l-5 5m0 0l5 5"/></svg>
+                    <span>Kembali ke Halaman Policy</span>
+                </a>
+            </div>
 
-                <!-- Hero Title and Link Container -->
-                <div class="flex flex-col justify-center">
+            <!-- Accordion Container -->
+            <div class="max-w-4xl mx-auto overflow-hidden space-y-2">
 
-                    <!-- Title Box -->
-                    <div class="max-w-xl mb-12 flex flex-col space-y-7">
-                        <!-- Title -->
-                        <h2 class=" text-3xl font-title">Kenali tim dibalik layar Baka</h2>
+                <!-- SubTitle -->
+                <h2 class="text-3xl font-title capitalize">akun</h2>
 
-                        <!-- Subtitle -->
-                        <span class="text-base">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illo mollitia odit maxime dolor provident vitae beatae rem consequuntur dolorum. <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, modi.
-                        </span>
+                <!-- Tab 1 -->
+                <div class="py-1 border-b outline-none group" tabindex="1">
 
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
+
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat akun?
+                        </div>
+
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
                     </div>
-                    
-                    <!-- Link -->
-                    <div class="flex justify-end space-x-2 items-center ">
-                        <a href="#" class="text-sm hover:translate-y-1 duration-300">Kenalan dengan tim kami 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
-                        </a>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
                     </div>
                 </div>
 
-                <!-- Hero Illustration -->
-                <img src="images/svg/Traveling-bro.svg" class="w-2/4" alt="Flying">
-                <!-- <img src="images/svg/Flying around the world-amico.svg" class="w-2/4" alt="Flying"> -->
-            </div>
+                <!-- Tab 2 -->
+                <div class="py-1 border-b outline-none group" tabindex="2">
 
-            <!-- DAFTAR BAGASI Title -->
-            <div class="mb-4 flex space-x-2 ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-auto fill-textColor" viewBox="0 0 24 24"><path d="M8.75 2a.75.75 0 0 0 0 1.5H9V5h-.75A3.25 3.25 0 0 0 5 8.25v9a3.25 3.25 0 0 0 2 3v1a.75.75 0 0 0 1.5 0v-.75h7v.75a.75.75 0 0 0 1.5 0v-1a3.25 3.25 0 0 0 2-3v-9A3.25 3.25 0 0 0 15.75 5H15V3.5h.25a.75.75 0 0 0 0-1.5h-6.5Zm4.75 1.5V5h-3V3.5h3ZM8 9.75A.75.75 0 0 1 8.75 9h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 8 9.75Z"/></svg>
-                <h2 class="text-base uppercase">daftar bagasi</h2>
-            </div>
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
 
-            <!-- Daftar & Pagination Container -->
-            <div class="mb-8 px-4 w-full flex flex-col">
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat akun?
+                        </div>
 
-                <!-- DAFTAR BAGASI -->
-                <div class="relative overflow-x-auto mb-7 shadow-md rounded-xl">
-                    <table class="w-full mx-auto text-sm text-left text-textColor">
-                        <thead class="text-xs text-gray-700 uppercase bg-secondaryYellow">
-                            <tr>
-                                <th scope="col" class="px-6 py-4">Berangkat</th>
-                                <!-- <th scope="col" class="px-6 py-4">Tiba</th> -->
-                                <th scope="col" class="px-6 py-4">Dari</th>
-                                <th scope="col" class="px-6 py-4">Tujuan</th>
-                                <!-- <th scope="col" class="px-6 py-4">Total (Kg)</th> -->
-                                <th scope="col" class="px-6 py-4">Sisa (Kg)</th>
-                                <th scope="col" class="px-6 py-4">Harga (@ Kg)</th>
-                                <th scope="col" class="px-6 py-4">Status</th>
-                                <th scope="col" class="px-6 py-4">Action</th>
-                            </tr>
-                        </thead>
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
 
-                        <tbody class="text-sm">
-                            <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                                <td scope="row" class="px-6 py-3">20 Maret 2023</td>
-                                <!-- <td scope="row" class="px-6 py-3">21 Maret 2023</td> -->
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                        <span>Jakarta</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/cairo.svg" alt="Cairo">
-                                        <span>Cairo</span>
-                                    </div>
-                                </td>
-                                <!-- <td scope="row" class="px-6 py-3">60</td> -->
-                                <td scope="row" class="px-6 py-3">60</td>
-                                <td scope="row" class="px-6 py-3">Rp. 200.000</td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/scheduled.svg" alt="Scheduled">
-                                        <span>Scheduled</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <a href="orderForm.html" class="text-blue-600 hover:underline">Lihat</a>
-                                </td>
-                            </tr>
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
 
-                            <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                                <td scope="row" class="px-6 py-3">25 Maret 2023</td>   
-                                <!-- <td scope="row" class="px-6 py-3">27 Maret 2023</td>    -->
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/istanbul.svg" alt="Istanbul">
-                                        <span>Istanbul</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                        <span>Jakarta</span>
-                                    </div>
-                                </td>
-                                <!-- <td scope="row" class="px-6 py-3">40</td> -->
-                                <td scope="row" class="px-6 py-3">15</td>
-                                <td scope="row" class="px-6 py-3">Rp. 150.000</td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/opened.svg" alt="Opened">
-                                        <span>Opened</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <a href="#" class="text-blue-600 uppercase hover:underline">Beli</a>
-                                </td>
-                            </tr>
+                <!-- Tab 3 -->
+                <div class="py-1 border-b outline-none group" tabindex="3">
 
-                            <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                                <td scope="row" class="px-6 py-3">02 April 2023</td>
-                                <!-- <td scope="row" class="px-6 py-3">03 April 2023</td> -->
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/cairo.svg" alt="Cairo">
-                                        <span>Cairo</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                        <span>Jakarta</span>
-                                    </div>
-                                </td>
-                                <!-- <td scope="row" class="px-6 py-3">30</td> -->
-                                <td scope="row" class="px-6 py-3">05</td>
-                                <td scope="row" class="px-6 py-3">Rp. 100.000</td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/closed.svg" alt="Closed">
-                                        <span>Closed</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <a href="#" class="text-blue-600 hover:underline">Lihat</a>
-                                </td>
-                            </tr>
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
 
-                            <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                                <td scope="row" class="px-6 py-3">11 April 2023</td>
-                                <!-- <td scope="row" class="px-6 py-3">12 April 2023</td> -->
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                        <span>Jakarta</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/dubai.svg" alt="Dubai">
-                                        <span>Dubai</span>
-                                    </div>
-                                </td>
-                                <!-- <td scope="row" class="px-6 py-3">50</td> -->
-                                <td scope="row" class="px-6 py-3">10</td>
-                                <td scope="row" class="px-6 py-3">Rp. 90.000</td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/opened.svg" alt="Opened">
-                                        <span>Opened</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <a href="#" class="text-blue-600 hover:underline uppercase">Beli</a>
-                                </td>
-                            </tr>
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat akun?
+                        </div>
 
-                            <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                                <td scope="row" class="px-6 py-3">09 Juni 2023</td>
-                                <!-- <td scope="row" class="px-6 py-3">10 Juni 2023</td> -->
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                        <span>Jakarta</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/istanbul.svg" alt="Istanbul">
-                                        <span>Istanbul</span>
-                                    </div>
-                                </td>
-                                <!-- <td scope="row" class="px-6 py-3">60</td> -->
-                                <td scope="row" class="px-6 py-3">60</td>
-                                <td scope="row" class="px-6 py-3">Rp. 190.000</td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/canceled.svg" alt="Canceled">
-                                        <span>Canceled</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <a href="#" class="text-blue-600 hover:underline">Lihat</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div> <!-- DAFTAR BAGASI end -->
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- SubTitle -->
+                <h2 class="text-3xl mt-4 font-title capitalize">bagasi</h2>
+
+                <!-- Tab 1 -->
+                <div class="py-1 border-b outline-none group" tabindex="1">
+
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
+
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat bagasi?
+                        </div>
+
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tab 2 -->
+                <div class="py-1 border-b outline-none group" tabindex="2">
+
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
+
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat bagasi?
+                        </div>
+
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tab 3 -->
+                <div class="py-1 border-b outline-none group" tabindex="3">
+
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
+
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat bagasi?
+                        </div>
+
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
                 
-                <!-- Pagination -->
-                <nav class="mx-auto text-sm">
-                    <ul class="inline-flex items-center -space-x-px">
-                        <li>
-                            <a href="#" class="block px-3 py-2 ml-0 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Previous</span>
-                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                        </li>
-                        <li>
-                            <a href="#" aria-current="page" class="z-10 px-3 py-2 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Next</span>
-                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div> <!-- Daftar & Pagination Container -->
 
-            <!-- JUAL BAGASI Title -->
-            <div class="mb-4 flex space-x-2 ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-auto fill-textColor" viewBox="0 0 24 24"><path d="M8.75 2a.75.75 0 0 0 0 1.5H9V5h-.75A3.25 3.25 0 0 0 5 8.25v9a3.25 3.25 0 0 0 2 3v1a.75.75 0 0 0 1.5 0v-.75h7v.75a.75.75 0 0 0 1.5 0v-1a3.25 3.25 0 0 0 2-3v-9A3.25 3.25 0 0 0 15.75 5H15V3.5h.25a.75.75 0 0 0 0-1.5h-6.5Zm4.75 1.5V5h-3V3.5h3ZM8 9.75A.75.75 0 0 1 8.75 9h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 8 9.75Z"/></svg>
-                <h2 class="text-base uppercase">jual bagasi</h2>
-            </div>
+                <!-- SubTitle -->
+                <h2 class="text-3xl mt-4 font-title capitalize">order</h2>
+
+                <!-- Tab 1 -->
+                <div class="py-1 border-b outline-none group" tabindex="1">
+
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
+
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat order?
+                        </div>
+
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tab 2 -->
+                <div class="py-1 border-b outline-none group" tabindex="2">
+
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
+
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat order?
+                        </div>
+
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tab 3 -->
+                <div class="py-1 border-b outline-none group" tabindex="3">
+
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between p-2 px-6 bg-bodyBackColor group-focus:bg-secondaryYellow rounded-xl transition duration-300 cursor-pointer group ease">
+
+                        <!-- Tab Title -->
+                        <div class="">
+                            Bagaimana cara membuat order?
+                        </div>
+
+                        <!-- Icon Arrow SVG -->
+                        <div class="transition duration-300 ease group-focus:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-300 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 px-6 text-justify transition duration-300">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident ullam modi animi veniam quia voluptates fuga culpa dolores. Tempora!
+                        </p>
+                    </div>
+                </div>
+
+
+             </div> <!-- Accordion Container -->
 
             
-            <!-- JUAL BAGASI Wrapper  -->
-            <div class="w-full px-4 mb-8 mx-auto">
-                <!-- Form Jual Bagasi -->
-                <form action="" class="py-8 px-4 grid grid-cols-4 grid-rows-6 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md">
+        </div> <!-- Wrapper end --> 
 
-                    <!-- Box 1 Dari - Tujuan -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/map-marker.svg" class="w-12" alt="">
+    </div> <!-- Mother Container end --> 
 
-                        <!-- Label + Input Box -->
-                        <div class="w-[80%] flex justify-around">
-                            <!-- Label + Input Dari Box -->
-                            <div class="flex flex-col justify-evenly">
-                                <label for="dari" class="text-sm text-primaryBlue">Dari</label>
-                                <select name="dari" id="" required class="p-1 text-base bg-transparent border-b-2 border-textColor outline-none">
-                                    <option class="text-left text-sm" value>Pilih Kota Asal</option>
-                                    <option class="text-left text-sm" value="Jakarta">Jakarta</option>
-                                    <option class="text-left text-sm" value="Istanbul">Istanbul</option>
-                                    <option class="text-left text-sm" value="Cairo">Cairo</option>
-                                    <option class="text-left text-sm" value="Dubai">Dubai</option>
-                                </select>
-                            </div>
+    <!-- Bar Navigation LOGGED OUT -->
+    <aside id="sidebar" class="
+        w-1/3 h-full fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-[4.4rem]  rounded-xl bg-primaryBlue text-white font-text duration-300
+        ">
+        
+        <!-- Logo -->
+        <img src="/images/dummy logo white.png" alt="Logo" class="h-auto w-28 self-center">
 
-                            <!-- Label + Input Tujuan Box -->
-                            <div class="flex flex-col justify-evenly">
-                                <label for="tujuan" class="text-sm text-primaryBlue">Tujuan</label>
-                                <select name="tujuan" id="" required class="p-1 text-base bg-transparent border-b-2 border-textColor outline-none">
-                                    <option class="text-left text-sm" value>Pilih Kota Tujuan</option>
-                                    <option class="text-left text-sm" value="Jakarta">Jakarta</option>
-                                    <option class="text-left text-sm" value="Istanbul">Istanbul</option>
-                                    <option class="text-left text-sm" value="Cairo">Cairo</option>
-                                    <option class="text-left text-sm" value="Dubai">Dubai</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Box 2 Berangkat - Tiba -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/tear-off-calendar.svg" class="w-12" alt="">
+        <!-- User Info -->
+        <div class="flex flex-col space-y-1">
+            <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+            <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
+        </div>
+        
 
-                        <!-- Label + Input Box -->
-                        <div class="w-[80%] flex justify-around">
-                            
-                            <!-- Label + Input Berangkat -->
-                            <div class="flex flex-col justify-evenly">
-                                <label for="berangkat" class="text-sm text-primaryBlue">Tanggal Berangkat</label>
-                                <input type="date" min="2023-01-01" id="berangkat" value="2023-01-01" required class="text-base bg-transparent border-b-2 border-textColor outline-none">
-                            </div>
 
-                            <!-- Label + Input Tiba -->
-                            <div class="flex flex-col justify-evenly">
-                                <label for="tiba" class="text-sm text-primaryBlue">Tanggal Tiba</label>
-                                <input type="date" min="2023-01-01" id="tiba" value="2023-01-01" required class="text-base bg-transparent border-b-2 border-textColor outline-none">
-                            </div>
-                        </div>
-                    </div>
+        <!-- Navigation Container -->
+        <div class="flex flex-col space-y-3">
 
-                    <!-- Box 3 Berat -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-2 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/weight-kilogram.svg" class="w-12" alt="">
+            <!-- Nav 1 -->
+            <a href="hero.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl">
+                <img src="/images/svg/home-rounded.svg" class="mr-3 w-5 ml-4 h-auto" alt="">
+                <span class="text-sm">Halaman utama</span>
+            </a>
 
-                        <!-- Label + Input Box -->
-                        <div class="w-[50%] flex flex-col justify-evenly">
-                            
-                            <label for="berat" class="text-sm text-primaryBlue">Berat&nbsp;<span class="text-xs text-textColor">(Kg)</span> </label>
-                            <input type="number" min="1" max="60" id="berat" required class="text-base text-center bg-transparent border-b-2 border-textColor outline-none">
-                            
-                        </div>
-                    </div>
+            <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Daftar Bagasi</span>
+            </a>
 
-                    <!-- Box 4 Harga -->
-                    <div class="w-full py-4 px-4 col-start-2 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/payments-outline-rounded.svg" class="w-12" alt="">
+            <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Daftar Order</span>
+            </a>
 
-                        <!-- Label + Input Box -->
-                        <div class="w-[50%] flex flex-col justify-evenly">
-                            <label for="harga" class="text-sm text-primaryBlue">Harga&nbsp;<span class="text-xs text-textColor">(@ Kg)</span></label>
-                            <div class="flex space-x-1">
-                                <span class="text-base">Rp.</span>
-                                <input type="text" minlength="1" maxlength="7" id="harga" required class="w-full text-base text-left bg-transparent border-b-2 border-textColor outline-none">
-                            </div>
-                        </div>
-                    </div>
+            <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Data Pengguna</span>
+            </a> -->
 
-                    <!-- Box 5 Upload Document -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-4 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/plane-ticket.svg" class="w-12" alt="">
+            <!-- Nav 2 -->
+            <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Peraturan</span>
+            </a>
 
-                        <!-- Label + Input Box -->
-                        <div class="w-[80%] flex flex-col justify-between">
-                            
-                            <label for="tiket" class="text-sm text-primaryBlue">Upload Tiket Penerbangan <br> <span class="text-xs text-textColor">(File Type: PDF, PNG, JPG, atau JPEG. File Max: 5mb)</span></label>
-                            <input type="file" id="tiket" required class="text-base text-center text-textColor bg-transparent border-b-2 border-textColor outline-none cursor-pointer">
-                            
-                        </div>
-                    </div>
+            <!-- Nav 3 -->
+            <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Pertanyaan</span>
+            </a>
 
-                    <!-- Box 6 Catatan Traveler -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-5 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/comment.svg" class="w-12" alt="">
+            <!-- Nav 4 -->
+            <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Hubungi kami</span>
+            </a>
 
-                        <!-- Label + Input Box -->
-                        <div class="w-[80%] flex flex-col space-y-2">
-                            
-                            <label for="noteTravel" class="text-sm text-primaryBlue">Catatan Traveler <span class="text-xs text-textColor">(Pesan untuk Jastiper)</span></label>
-                            <textarea name="noteTravel" rows="2" maxlength="250" class="p-2 w-full text-sm border-2 border-textColor bg-transparent outline-none rounded-lg" placeholder="Tidak wajib diisi..."></textarea>
-                        </div>
-                    </div>
+            <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/about.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Tentang kami</span>
+            </a> -->
+        </div>
 
-                    <!-- Box 7 WhatsApp, TOGGLE FLEX / HIDDEN --> 
-                    <div class="w-full py-4 px-4 col-start-1 col-end-2 row-start-6 flex justify-around bg-bodyBackColor rounded-lg">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/baseline-whatsapp.svg" class="w-12" alt="">
 
-                        <!-- Label + Input Box -->
-                        <div class="w-[50%] flex flex-col justify-evenly">
-                            
-                            <label for="WhatsApp" class="text-sm text-primaryBlue">Nomor&nbsp;WhatsApp </label>
-                            <input type="text" minlength="10" maxlength="15" id="WhatsApp" required class="text-base text-left bg-transparent border-b-2 border-textColor outline-none">
-                            
-                        </div>
-                    </div>
+        <!-- Button Daftar/Masuk atau Jual/Beli -->
+        <a href="modal.html" target="_blank" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
+        <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Jual/Beli</a> -->
 
-                    <!-- Box 8 Instruksi -->
-                    <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-6 flex flex-col justify-between bg-slate-100 rounded-lg">
-                        <!-- Paragraf Pendukung Jual Bagasi -->
-                        <p class="text-xs">
-                            Paragraf instruksi selanjutnya untuk Traveler. Isinya: <br>
-                            1. Tiket akan di periksa. <br>
-                            2. Jika valid akan di list. Jika tdk valid minta register lg. <br>
-                            3. Alamat Gudang Baka utk mengambil titipan Jastiper. 
-                        </p>
+        <!-- Copyright -->
+        <span class="text-xs"> 
+            © 2023 by abé with ❤️. All rights reserved. <br> All illustrations by 
+            <a href="https://storyset.com/online" class="underline">Storyset</a>
+        </span>
+    </aside>
 
-                        <div class="flex space-x-2 justify-center">
-                            <input id="default-checkbox" type="checkbox" value="" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Peraturan & Ketentuan</a> yang berlaku.</label>
-                        </div>
-                    </div>
-
-                    <!-- Box 9 Tombol -->
-                    <div class="col-start-3 col-end-5 row-start-6 flex flex-col justify-evenly">
-
-                        <!-- Tombol Submit -->
-                        <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
-                            <button type="submit">Jual Bagasi</button>
-                        </div>
-
-                        <!-- Success Message -->
-                        <span class=" py-1 px-2 self-center text-xs text-white text-center bg-green-600 rounded-lg">Permintaan berhasil dikirim 🙂</span>
-
-                        <!-- Error Message -->
-                        <span class="hidden py-1 px-2 self-center text-xs text-white text-center bg-red-500 rounded-lg">Terjadi gangguan. Coba beberapa saat lagi ya kak..😢</span>
-
-                        
-                    </div>
-                    
-                    
-                </form>
-            </div> <!-- JUAL BAGASI Wrapper end -->
-
-        </div> <!-- Content Container end -->
-    </div> <!-- Mother Container end -->
+    <!-- Blanket. TOGGLE  HIDDEN, OPACITY: 0 --> 
+    <div id="blanket" class="w-full h-full z-[100]  fixed left-0 top-0 hidden  justify-center items-center bg-black backdrop-blur-sm opacity-50 "></div>
 </body>
 </html>
