@@ -2067,7 +2067,7 @@ video {
   background-color: #255cff;
   opacity: 1;
   color: white;
-  transform: translateY(-70%);
+  transform: translateY(-50%);
   border: 2px solid #0b2471;
 }
 
@@ -2123,6 +2123,7 @@ video {
 
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
+  background: white;
 }
 
 .open .hamburger-middle {
@@ -2131,6 +2132,7 @@ video {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background: white;
 }
 
 .hover\:-translate-x-1:hover {
@@ -2363,6 +2365,14 @@ video {
 }
 
 @media (max-width: 976px) {
+  .lg\:left-\[50\%\] {
+    left: 50%;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2371,14 +2381,98 @@ video {
     display: none;
   }
 
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
+  .lg\:h-52 {
+    height: 13rem;
+  }
+
+  .lg\:h-3\/4 {
+    height: 75%;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-\[inherit\] {
+    height: inherit;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:items-stretch {
+    align-items: stretch;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-28 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(7rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(7rem * var(--tw-space-y-reverse));
   }
 }
 
 @media (max-width: 768px) {
+  .md\:left-\[24\%\] {
+    left: 24%;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:w-8\/12 {
@@ -2387,13 +2481,25 @@ video {
 }
 
 @media (max-width: 480px) {
+  .sm\:left-\[40\%\] {
+    left: 40%;
+  }
+
   .sm\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
+  .sm\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .sm\:ml-64 {
     margin-left: 16rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .sm\:block {
@@ -2412,8 +2518,48 @@ video {
     height: 100vh;
   }
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
+  .sm\:h-\[90\%\] {
+    height: 90%;
+  }
+
+  .sm\:h-4 {
+    height: 1rem;
+  }
+
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .sm\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .sm\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .sm\:w-\[65\%\] {
+    width: 65%;
+  }
+
+  .sm\:w-\[60\%\] {
+    width: 60%;
   }
 
   .sm\:max-w-lg {
@@ -2425,11 +2571,63 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+
+  .sm\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  }
+
   .sm\:p-0 {
     padding: 0px;
   }
 
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
+  .sm\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
   .sm\:align-middle {
     vertical-align: middle;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }

@@ -86,7 +86,7 @@
     background-color: #255cff; 
     opacity: 1;
     color: white;
-    transform: translateY(-70%);
+    transform: translateY(-50%);
     border: 2px solid #0b2471;
 }
 
@@ -135,6 +135,7 @@
 
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
+  background: white;
 }
 
 .open .hamburger-middle {
@@ -143,4 +144,5 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background: white;
 }

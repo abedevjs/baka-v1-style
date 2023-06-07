@@ -13,11 +13,10 @@ const sidebarToggle = function() {
     blanket.classList.toggle('flex');
     blanket.classList.toggle('hidden');
 
-    hamburger__top.classList.toggle('bg-white');
-    hamburger__bottom.classList.toggle('bg-white');
-
     hamburger__top.classList.toggle('bg-textColor');
     hamburger__bottom.classList.toggle('bg-textColor');
+
+    console.log('sidebarToggle fn executed');
 };
 
 hamburger__btn.addEventListener('click', sidebarToggle);
