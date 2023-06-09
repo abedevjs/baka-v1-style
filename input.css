@@ -34,12 +34,10 @@
 /* ///////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////// */
 .svgUp { 
-    height: 17rem;
     background-image: url('/images/svg/waveUp.svg'); 
 }
 
 .svgDown { 
-    height: 9rem;
     background-image: url('/images/svg/waveDown.svg');
 }
 

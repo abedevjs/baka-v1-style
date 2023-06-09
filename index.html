@@ -16,11 +16,14 @@
     <!-- Mother Container after Body -->
     <!-- flex flex-wrap content-center bg-bodyBackColor -->
     <!-- grid grid-rows-1 grid-cols-[20%_1fr] gap-4 -->
-    <div class="h-auto p-4 flex flex-wrap content-center bg-bodyBackColor">
+    <div class="
+        h-auto p-4 flex flex-wrap content-center bg-bodyBackColor
+        lg:p-0
+        ">
 
         <!-- Bar Navigation LOGGED OUT -->
         <aside id="" class="
-           w-1/5 h-max sticky top-4 flex flex-col space-y-[4.4rem] p-6 rounded-xl bg-primaryBlue text-white font-text
+            w-1/5 h-max sticky top-4 flex flex-col space-y-[4.4rem] p-6 rounded-xl bg-primaryBlue text-white font-text overflow-y-auto overflow-x-auto
             lg:hidden
             ">
             
@@ -97,7 +100,10 @@
         </aside>
 
         <!-- Wrapper -->
-        <div class="relative ml-4 p-6 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text">
+        <div class="
+        relative ml-4 p-6 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text
+        lg:h-screen lg:ml-0
+        ">
 
             <!-- Hamburger Button -->
             <div id="hamburger__btn" type="button" class="
