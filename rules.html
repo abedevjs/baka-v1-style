@@ -13,10 +13,16 @@
 </head>
 <body>
     <!-- Mother Container after Body -->
-    <div class="mother-container h-auto">
+    <div class="
+        h-auto p-4 flex flex-wrap content-center bg-bodyBackColor
+        lg:p-0
+        ">
 
         <!-- Bar Navigation -->
-        <div class="w-1/5 h-[42.5rem] sticky top-4 flex flex-col justify-between p-6 rounded-xl bg-primaryBlue text-white font-text">
+        <aside class="
+            w-1/5 h-max sticky top-4 flex flex-col space-y-[4.4rem] p-6 rounded-xl bg-primaryBlue text-white font-text
+            lg:hidden
+            ">
             
             <!-- Logo -->
             <img src="/images/dummy logo white.png" alt="Logo" class="h-auto w-28 self-center">
@@ -80,7 +86,7 @@
 
 
             <!-- Button Daftar/Masuk atau Jual/Beli -->
-            <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
+            <a href="#" id="btnLogin" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
             <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Jual/Beli</a> -->
 
             <!-- Copyright -->
@@ -88,10 +94,24 @@
                 © 2023 by @be ❤️. All rights reserved. <br> Online illustrations by 
                 <a href="https://storyset.com/online">Storyset</a>
             </span>
-        </div>
+        </aside>
 
-        <!-- Content -->
-        <div class="flex-1 ml-4 p-6 rounded-xl bg-secondaryYellowTint text-textColor font-text">
+        <!-- Wrapper -->
+        <div class="
+            relative ml-4 p-6 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text  overflow-y-auto overflow-x-auto
+            lg:h-screen lg:ml-0
+            ">
+
+            <!-- Hamburger Button -->
+            <div id="hamburger__btn" type="button" class="
+                hamburger absolute z-[200] hidden
+                lg:block
+                ">
+                <span class="hamburger-top bg-textColor "></span>
+                <span class="hamburger-middle bg-textColor"></span>
+                <span class="hamburger-bottom bg-textColor"></span>
+                
+            </div>
 
             <!-- Text Box -->
             <div class="mb-16 text-textColor text-center mx-auto">
@@ -99,14 +119,22 @@
                 <h3 class="text-xs tracking-widest font-title uppercase">~ Policy kami ~</h3>
 
                 <!-- Advantage Title -->
-                <h2 class=" text-3xl font-title capitalize">bagaimana cara kami bekerja</h2>
+                <h2 class=" text-3xl font-title capitalize sm:text-xl">bagaimana cara kami bekerja</h2>
             </div>
 
             <!-- Steps Container -->
-            <div class="flex justify-center space-x-4">
+            <div class="
+                flex justify-center space-x-4
+                lg:flex-col lg:space-x-0 lg:space-y-8
+                sm:space-y-6
+                ">
 
                 <!-- Illustration -->
-                <div class="w-[40%]">
+                <div class="
+                    w-[50%] 
+                    lg:self-center
+                    sm:w-[80%]
+                    ">
                     <img src="images/svg/policy.svg" class="" alt="">
                 </div>
 
@@ -114,18 +142,24 @@
                 <div class="flex-1 flex flex-col justify-between items-center space-y-4">
 
                     <!-- Steps Title -->
-                    <span class="mb-2 text-lg self-center">Pastikan sudah menjadi Member, kemudian ikuti langkah berikut:</span>
+                    <span class="mb-2 text-lg self-center sm:text-base">Pastikan sudah menjadi Member, kemudian ikuti langkah berikut:</span>
 
                     <!-- Steps Options Box -->
-                    <div class="tab_container w-full flex justify-evenly">
-                        <div class="tab__buttons tab__buttons--active p-2 px-28 rounded-lg text-sm text-white cursor-pointer " data-tab="1">
+                    <div class="tab_container w-full flex justify-evenly items-center">
+                        <div class="
+                            tab__buttons tab__buttons--active p-2 px-28 rounded-lg text-sm text-white cursor-pointer
+                            sm:px-14
+                            " data-tab="1">
                             <!-- <a href="#" class="p-2 px-28 rounded-lg text-sm text-white cursor-pointer transition-all duration-300 opacity-100 bg-primaryBlueBold"> -->
                             <a href="#" class=" ">
                                 Traveler
                             </a>
                         </div>
 
-                        <div class="tab__buttons p-2 px-28 rounded-lg text-sm text-white cursor-pointer " data-tab="2">
+                        <div class="
+                            tab__buttons p-2 px-28 rounded-lg text-sm text-white cursor-pointer 
+                            sm:px-14
+                            " data-tab="2">
                             <a href="#" class=" ">
                             <!-- <a href="#" class="p-2 px-28 rounded-lg text-sm text-white cursor-pointer transition-all duration-300 bg-primaryBlue opacity-80 hover:opacity-100 hover:bg-primaryBlueBold "> -->
                                 Jastiper
@@ -142,31 +176,31 @@
 
                         <!-- Step 1 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">1</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">1</div>
                             <span>Registrasi Bagasi</span>
                         </div>
 
                          <!-- Step 2 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">2</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">2</div>
                             <span>Upload Bukti Keberangkatan</span>
                         </div>
 
                         <!-- Step 3 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">3</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">3</div>
                             <span>Admin memeriksa bukti keberangkatan</span>
                         </div>
 
                         <!-- Step 4 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">4</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">4</div>
                             <span>Admin memberikan feedback</span>
                         </div>
 
                         <!-- Step 5 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">5</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">5</div>
                             <span>Jika valid, akan di update ke Daftar Bagasi Traveler</span>
                         </div>
                     </div>
@@ -177,31 +211,31 @@
 
                         <!-- Step 1 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">1</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">1</div>
                             <span>Registrasi Order</span>
                         </div>
 
                          <!-- Step 2 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">2</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">2</div>
                             <span>Upload Bukti Keberangkatan</span>
                         </div>
 
                         <!-- Step 3 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">3</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">3</div>
                             <span>Admin memeriksa bukti keberangkatan</span>
                         </div>
 
                         <!-- Step 4 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">4</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">4</div>
                             <span>Admin memberikan feedback</span>
                         </div>
 
                         <!-- Step 5 -->
                         <div class="flex space-x-3 items-center z-10">
-                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow">5</div>
+                            <div class="py-2 px-4 rounded-[50%] text-center text-base bg-secondaryYellow sm:text-sm">5</div>
                             <span>Jika valid, akan di update ke Daftar Bagasi Traveler</span>
                         </div>
                     </div>
@@ -223,18 +257,338 @@
             </div> -->
 
             <!-- Paragraf Container -->
-            <div class="paragraf__contents paragraf__contents--1 paragraf__contents--active  p-6 space-y-2 ">
+            <div class="
+                paragraf__contents paragraf__contents--1 paragraf__contents--active p-6 space-y-2 
+                sm:mt-2 sm:p-2 sm:space-y-0
+                ">
                 <span class="text-base">Poin 1:</span>
-                <p class="text-base">Bagasi</p>
+                <p class="p-2 text-base sm:text-sm">Bagasi</p>
             </div>
-            <div class="paragraf__contents paragraf__contents--2 p-6 space-y-2">
+            <div class="
+                paragraf__contents paragraf__contents--2 p-6 space-y-2 
+                sm:mt-2 sm:p-2 sm:space-y-0
+                ">
                 <span class="text-base">Poin 1:</span>
-                <p class="text-base">Order</p>
+                <p class="p-2 text-base sm:text-sm">Order</p>
             </div>
 
         </div> <!-- akhir Content -->
         
     </div> <!-- akhir Mother Container -->
+
+    <!-- Bar Navigation LOGGED OUT -->
+    <aside id="" class="
+        w-1/3 h-max fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-[4.4rem]  rounded-xl bg-primaryBlue text-white font-text duration-300
+        md:w-2/5 md:h-screen md:left-[24%] 
+        sm:w-2/3 sm:left-[40%]
+        ">
+        
+        <!-- Logo -->
+        <img src="/images/dummy logo white.png" alt="Logo" class="h-auto w-28 self-center">
+
+
+        <!-- User Info -->
+        <div class="flex flex-col space-y-1">
+            <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+            <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
+        </div>
+        
+
+
+        <!-- Navigation Container -->
+        <div class="flex flex-col space-y-3">
+
+            <!-- Nav 1 -->
+            <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
+                <img src="/images/svg/home-rounded.svg" class="mr-3 w-5 ml-4 h-auto" alt="">
+                <span class="text-sm">Halaman utama</span>
+            </a>
+
+            <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Daftar Bagasi</span>
+            </a>
+
+            <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Daftar Order</span>
+            </a>
+
+            <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Data Pengguna</span>
+            </a> -->
+
+            <!-- Nav 2 -->
+            <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl">
+                <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Syarat & Ketentuan</span>
+            </a>
+
+            <!-- Nav 3 -->
+            <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Pertanyaan</span>
+            </a>
+
+            <!-- Nav 4 -->
+            <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Hubungi kami</span>
+            </a>
+
+            <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/about.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Tentang kami</span>
+            </a> -->
+        </div>
+
+
+        <!-- Button Daftar/Masuk atau Jual/Beli -->
+        <a id="btnTes" href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
+        <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Jual/Beli</a> -->
+
+        <!-- Copyright -->
+        <span class="text-xs"> 
+            © 2023 by abé with ❤️. All rights reserved. <br> All illustrations by 
+            <a href="https://storyset.com/online" class="underline">Storyset</a>
+        </span>
+    </aside>
+
+    <!-- Bar Navigation LOGGED IN-->
+    <aside id="sidebar" class="
+        w-1/3 h-max fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-16 rounded-xl bg-primaryBlue text-white font-text duration-300
+        lg:w-[50%] lg:h-screen lg:left-[50%] 
+        md:w-3/4
+        sm:left-[40%] sm:space-y-12
+        ">
+            
+        <!-- Logo -->
+        <img src="/images/dummy logo white.png" alt="Logo" class="
+            w-28 h-auto  self-center
+            md:
+            sm:w-24
+        ">
+
+
+        <!-- User Info -->
+        <div class="flex flex-col space-y-1 ">
+            <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+            <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
+        </div>
+        
+
+
+        <!-- Navigation Container -->
+        <div class="flex flex-col space-y-3 sm:">
+
+            <a href="bagasi.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area Bagasi</span>
+            </a>
+
+            <a href="jastip.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area Jastip</span>
+            </a>
+
+            <a href="user.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area User</span>
+            </a>
+
+            <!-- Nav 2 -->
+            <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-100 bg-primaryBlueBold rounded-xl">
+                <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Syarat & Ketentuan</span>
+            </a>
+
+            <!-- Nav 3 -->
+            <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Pertanyaan</span>
+            </a>
+
+            <!-- Nav 4 -->
+            <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Hubungi kami</span>
+            </a>
+        </div>
+
+
+        <!-- Button Daftar/Masuk -->
+        <a href="#" class="
+            p-2 px-4 self-center text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100
+            md:
+            ">Keluar
+        </a>
+
+        <!-- Copyright -->
+        <span class="text-xs"> 
+            © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
+            <a href="https://storyset.com/online"><span class="underline">Storyset</span></a>
+        </span>
+    </aside>
+
+    <!-- Modal Container. TOGGLE  HIDDEN, OPACITY: 0 -->
+    <div id="modalContainer" class="
+        fixed w-2/3 h-auto p-4 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[1000] hidden bg-secondaryYellowTint rounded-lg shadow-lg 
+        sm:w-full 
+        ">
+
+        <!-- Tombol Close -->
+        <div class="relative ">
+                <img id="modalCloseBtn" src="images/svg/close-fill.svg" alt="Close" class="right-2 w-8 h-auto cursor-pointer absolute fill-red-8 ">
+        </div>
+        
+        <!-- Logo -->
+        <div class="flex">
+            <img src="images/Logo-dummy blue.png" class="h-12 w-auto sm:h-10"  alt="">
+        </div>
+
+        <!-- Greetings Text -->
+        <div class="w-full mx-auto text-center">
+            <span class="text-4xl text-textColor sm:text-3xl">Halo kak! 👋</span>
+            <!-- <span class="text-base text-textColor">Hai kak! 👋</span> -->
+        </div>
+
+        <!-- Content Container -->
+        <div class=
+            "w-full h-auto flex items-center justify-start text-textColor
+            lg:h-[inherit] lg:mt-20 lg:flex-col lg:gap-8
+            sm:h-auto sm:mt-10 sm:gap-4
+            ">
+
+            <!-- Box Left -->
+            <div class=
+                "flex flex-1 flex-col justify-center
+                lg:w-full
+                ">
+
+                <!-- Content -->
+                <div class=
+                "pt-2 pb-4 flex flex-col border-2 border-textColor rounded-lg bg-bodyBackColor shadow-md
+                sm:pt-1 sm:pb-2
+                ">
+
+                    <!-- Daftar/Login Container -->
+                    <div class="w-[90%] h-full mx-auto flex flex-col space-y-6 rounded-lg ">
+
+                        <!-- Tombols -->
+                        <div class="
+                        authBtns__container w-full flex space-x-2 text-base text-white font-semibold uppercase text-center
+                        sm:text-sm
+                        ">
+                            <a href="#" class="auth__buttons auth__buttons--active  w-full py-2 px-7 rounded-lg sm:px-4" data-tab="1">Daftar</a>
+                            <a href="#" class="auth__buttons w-full py-2 px-7 rounded-lg sm:px-4" data-tab="2">Masuk</a>
+                        </div>
+
+                        <!-- Content 1 -->
+                        <div class=
+                        "auth__contents auth__contents--1 auth__contents--active space-y-14 text-textColor 
+                        sm:space-y-10
+                        ">
+
+                            <!-- Title -->
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-xl">Jika ini pertama kali,</span>
+                                <span class="text-base sm:text-sm">Silahkan daftar dulu ya kak...</span>
+                            </div>
+
+                            <!-- Icons -->
+                            <div class=
+                                "w-full flex space-x-2 justify-center items-center 
+                                sm:flex-col
+                                ">
+                                <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
+                                    <a href="#" class="
+                                        flex items-center space-x-2 
+                                        lg:space-x-1 lg:text-center
+                                        ">
+                                        <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
+                                        <span class="text-sm font-thin sm:text-xs">Daftar dengan Google</span>
+                                    </a>
+                                </div>
+        
+                                <span class="text-sm ">atau</span>
+        
+                                <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
+                                    <a href="#" class="
+                                        flex items-center space-x-2 
+                                        lg:space-x-1 lg:text-center
+                                        ">
+                                        <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
+                                        <span class="text-sm font-thin sm:text-xs">Daftar dengan Facebook</span>
+                                    </a>
+                                </div> 
+                           </div>
+
+                        </div>
+
+                        <!-- Content 2 -->
+                        <div class="
+                            auth__contents auth__contents--2 space-y-14 text-textColor
+                            sm:space-y-10
+                            ">
+
+                            <!-- Title -->
+                            <div class="flex flex-col items-end">
+                                <span class="text-2xl sm:text-xl">Sudah pernah daftar? </span>
+                                <span class="text-base sm:text-sm">Langsung masuk saja ya kak...</span>
+                            </div>
+
+                            <!-- Icons -->
+                            <div class=
+                                "w-full flex space-x-2 justify-center items-center
+                                sm:flex-col
+                                ">
+                                <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
+                                    <a href="#" class="
+                                        flex items-center space-x-2 
+                                        lg:space-x-1 lg:text-center
+                                        ">
+                                        <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
+                                        <span class="text-sm font-thin sm:text-xs">Masuk dengan Google</span>
+                                    </a>
+                                </div>
+        
+                                <span class="text-sm ">atau</span>
+        
+                                <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
+                                        <a href="#" class="
+                                            flex items-center space-x-2 
+                                            lg:space-x-1 lg:text-center
+                                            ">
+                                            <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
+                                            <span class="text-sm font-thin sm:text-xs">Masuk dengan Facebook</span>
+                                        </a>
+                                    </div> 
+                           </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box Right -->
+            <div class=
+                "w-[45%] flex justify-center
+                lg:w-[60%]
+                sm:w-[65%]
+                ">
+                <img src="images/svg/Health passport-bro.svg" class="self-center lg:hidden" alt="">
+                <img src="images/Health passport-bro.png" class="self-center hidden lg:block" alt="">
+                <!-- <img src="images/svg/Mobile login-bro.svg" class="self-center" alt=""> -->
+                <!-- <img src="images/svg/Destination-bro.svg" class="self-center" alt=""> -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Blanket. TOGGLE  HIDDEN, OPACITY: 0 --> 
+    <div id="blanket" class="w-full h-full z-[100] fixed left-0 top-0 hidden justify-center items-center bg-black backdrop-blur-sm opacity-50 "></div>
     
 </body>
 </html>
