@@ -1,20 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Livvic:wght@600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>ABOUT</title>
-</head>
-<body>
-    <!-- Mother Container after Body -->
-    <div class="mother-container h-auto">
-        <!-- Bar Navigation -->
-        <div class="w-1/5 h-[42.5rem] sticky top-4 flex flex-col justify-between p-6 rounded-xl bg-primaryBlue text-white font-text">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Livvic:wght@600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <script defer src="js/about.js"></script>
+        <title>ABOUT</title>
+    </head>
+    <body>
+        <!-- Mother Container after Body -->
+        <div class="
+            h-auto p-4 flex flex-wrap content-center bg-bodyBackColor
+            lg:p-0
+            ">
+            <!-- Bar Navigation -->
+            <aside class="
+                w-1/5 h-max sticky top-4 flex flex-col space-y-[4.4rem] p-6 rounded-xl bg-primaryBlue text-white font-text
+                lg:hidden
+                ">
+                
+                <!-- Logo -->
+                <img src="/images/dummy logo white.png" alt="Logo" class="h-auto w-28 self-center">
+
+
+                <!-- User Info -->
+                <div class="flex flex-col space-y-1">
+                    <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+                    <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
+                </div>
+                
+
+
+                <!-- Navigation Container -->
+                <div class="flex flex-col space-y-3">
+
+                    <!-- Nav 1 -->
+                    <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
+                        <img src="/images/svg/home-rounded.svg" class="mr-3 w-5 ml-4 h-auto" alt="">
+                        <span class="text-sm">Halaman utama</span>
+                    </a>
+
+                    <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                        <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
+                        <span class="text-sm">Daftar Bagasi</span>
+                    </a>
+
+                    <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                        <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
+                        <span class="text-sm">Daftar Order</span>
+                    </a>
+
+                    <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                        <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
+                        <span class="text-sm">Data Pengguna</span>
+                    </a> -->
+
+                    <!-- Nav 2 -->
+                    <a href="rules.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                        <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                        <span class="text-sm">Syarat & Ketentuan</span>
+                    </a>
+
+                    <!-- Nav 3 -->
+                    <a href="faq.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                        <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
+                        <span class="text-sm">Pertanyaan</span>
+                    </a>
+
+                    <!-- Nav 4 -->
+                    <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl">
+                        <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                        <span class="text-sm">Hubungi kami</span>
+                    </a>
+
+                    <!-- <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                        <img src="/images/svg/about.svg" class="mr-3 w-5 ml-4" alt="">
+                        <span class="text-sm">Tentang kami</span>
+                    </a> -->
+                </div>
+
+
+                <!-- Button Daftar/Masuk atau Jual/Beli -->
+                <a href="#" id="btnLogin" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
+                <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Jual/Beli</a> -->
+
+                <!-- Copyright -->
+                <span class="text-xs"> 
+                    © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
+                    <a href="https://storyset.com/online">Storyset</a>
+                </span>
+            </aside>
+
+            <!-- Wrapper -->
+            <div class="
+                relative ml-4 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text overflow-y-auto overflow-x-auto
+                lg:h-screen lg:ml-0
+                ">
+                <!-- Hamburger Button -->
+                <div id="hamburger__btn" type="button" class="
+                    hamburger absolute z-[200] hidden
+                    lg:block
+                    ">
+                    <span class="hamburger-top bg-textColor "></span>
+                    <span class="hamburger-middle bg-textColor"></span>
+                    <span class="hamburger-bottom bg-textColor"></span>
+                    
+                </div>
+
+                <!-- Text Box -->
+                <div class="mt-7 text-textColor text-center mx-auto">
+                    <!-- Subtitle -->
+                    <h3 class="text-xs tracking-widest font-title uppercase">~ Tentang kami ~</h3>
+
+                    <!-- Advantage Title -->
+                    <h2 class=" text-3xl font-title capitalize sm:text-xl">berawal dari mahasiswa</h2>
+                </div>
+
+                <!-- About Container -->
+                <div class="-mt-4 px-6 flex justify-center  
+                    lg:mt-12
+                    sm:mt-2 sm:px-4 sm:flex-col-reverse sm:space-y-6
+                    ">
+
+                    <!-- Hero Title and Link Container -->
+                    <div class="flex flex-col justify-center">
+
+                        <!-- Title Box -->
+                        <div class="
+                            max-w-xl mb-12 flex flex-col space-y-7 
+                            sm:space-y-4 sm:self-center
+                            ">
+                            <!-- Title -->
+                            <h2 class=" text-3xl font-title lg:text-2xl sm:text-xl">Kenali tim dibalik layar Baka</h2>
+
+                            <!-- Subtitle -->
+                            <span class="text-base lg:text-sm">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illo mollitia odit maxime dolor provident vitae beatae rem consequuntur dolorum. <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, modi.
+                            </span>
+
+                        </div>
+                        
+                        <!-- Link -->
+                        <div class="flex justify-start space-x-2 items-center ">
+                            <a href="#team" class="text-sm hover:translate-y-1 duration-300 lg:text-xs">Kenalan dengan tim kami 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Illustration -->
+                    <img src="images/svg/team.svg" class="w-2/4 
+                        sm:w-[80%] sm:self-center
+                        " alt="Team">
+                </div>
+
+
+
+                <!-- Team Content -->
+                <div class="-mt-12 mb-12 sm:mb-4">
+                    <!-- SVG WaveUp -->
+                    <div class="svgUp h-[17rem]"></div>
+
+                    <!-- Content Container -->
+                    <div class="px-6 w-full h-[10] bg-primaryBlue">
+
+                        <!-- Text Box -->
+                        <div class="-mt-[4.5rem] mb-12 text-center mx-auto">
+                            <!-- Subtitle -->
+                            <h3 class="text-xs tracking-widest font-title text-white uppercase">~ Tim kami ~</h3>
+
+                            <!-- Table Bagasi Title -->
+                            <h2 class=" text-3xl font-title text-white capitalize sm:text-xl">Hubungi tim Baka</h2>
+                        </div>
+
+                        <!-- Tim Container -->
+                        <div id="team" class="
+                            grid grid-cols-3 justify-items-center 
+                            sm:grid-cols-1 sm:gap-12
+                            ">
+                            <!-- Person 1 -->
+                            <div class="flex flex-col">
+                                <!-- Foto -->
+                                <div class="w-[140px] h-[140px] border-2 border-solid border-secondaryYellowTint rounded-[50%]">
+                                    <img src="images/abe.png" alt="" class="block w-full h h-full rounded-[50%] object-cover -translate-x-[15px] -translate-y-[15px]">
+                                </div>
+
+                                <!-- Identity Box -->
+                                <div class="flex flex-col px-2 justify-center w-40 h-20 -translate-y-[10px] bg-secondaryYellowTint rounded-lg">
+                                    <span class="text-sm">Muhammad Akbar</span>
+                                    <span class="font-thin text-xs">Baka CEO</span>
+                                    <div class="flex mt-2 space-x-1">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#4267B2] duration-300" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#E4405F] duration-300" viewBox="0 0 15 15"><path d="M7.5 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"/><path fill-rule="evenodd" d="M4.5 0A4.5 4.5 0 0 0 0 4.5v6A4.5 4.5 0 0 0 4.5 15h6a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 4.5 0 0 0 10.5 0h-6ZM4 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0ZM11 4h1V3h-1v1Z" clip-rule="evenodd"/></svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#25D366] duration-300" viewBox="0 0 15 15"><path d="M5 4.768a.5.5 0 0 1 .761.34l.14.836a.5.5 0 0 1-.216.499l-.501.334A4.501 4.501 0 0 1 5 5.5v-.732ZM9.5 10a4.5 4.5 0 0 1-1.277-.184l.334-.5a.5.5 0 0 1 .499-.217l.836.14a.5.5 0 0 1 .34.761H9.5Z"/><path fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 3.253 6.182l-2.53 1.265a.5.5 0 0 1-.67-.67l1.265-2.53A7.467 7.467 0 0 1 0 7.5Zm4.23-3.42l.206-.138a1.5 1.5 0 0 1 2.311 1.001l.14.837a1.5 1.5 0 0 1-.648 1.495l-.658.438A4.522 4.522 0 0 0 7.286 9.42l.44-.658a1.5 1.5 0 0 1 1.494-.648l.837.14a1.5 1.5 0 0 1 1.001 2.311l-.138.207a.5.5 0 0 1-.42.229h-1A5.5 5.5 0 0 1 4 5.5v-1a.5.5 0 0 1 .23-.42Z" clip-rule="evenodd"/></svg></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Person 2 -->
+                            <div class="flex flex-col">
+                                <!-- Foto -->
+                                <div class="w-[140px] h-[140px] border-2 border-solid border-secondaryYellowTint rounded-[50%]">
+                                    <img src="images/dummy1.png" alt="" class="block w-full h h-full rounded-[50%] object-cover -translate-x-[15px] -translate-y-[15px]">
+                                </div>
+
+                                <!-- Identity Box -->
+                                <div class="flex flex-col px-2 justify-center w-40 h-20 -translate-y-[10px] bg-secondaryYellowTint rounded-lg">
+                                    <span class="text-sm">Gonzalo Paredes</span>
+                                    <span class="font-thin text-xs">Baka Jakarta</span>
+                                    <div class="flex mt-2 space-x-1">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#4267B2] duration-300" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#E4405F] duration-300" viewBox="0 0 15 15"><path d="M7.5 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"/><path fill-rule="evenodd" d="M4.5 0A4.5 4.5 0 0 0 0 4.5v6A4.5 4.5 0 0 0 4.5 15h6a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 4.5 0 0 0 10.5 0h-6ZM4 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0ZM11 4h1V3h-1v1Z" clip-rule="evenodd"/></svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#25D366] duration-300" viewBox="0 0 15 15"><path d="M5 4.768a.5.5 0 0 1 .761.34l.14.836a.5.5 0 0 1-.216.499l-.501.334A4.501 4.501 0 0 1 5 5.5v-.732ZM9.5 10a4.5 4.5 0 0 1-1.277-.184l.334-.5a.5.5 0 0 1 .499-.217l.836.14a.5.5 0 0 1 .34.761H9.5Z"/><path fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 3.253 6.182l-2.53 1.265a.5.5 0 0 1-.67-.67l1.265-2.53A7.467 7.467 0 0 1 0 7.5Zm4.23-3.42l.206-.138a1.5 1.5 0 0 1 2.311 1.001l.14.837a1.5 1.5 0 0 1-.648 1.495l-.658.438A4.522 4.522 0 0 0 7.286 9.42l.44-.658a1.5 1.5 0 0 1 1.494-.648l.837.14a1.5 1.5 0 0 1 1.001 2.311l-.138.207a.5.5 0 0 1-.42.229h-1A5.5 5.5 0 0 1 4 5.5v-1a.5.5 0 0 1 .23-.42Z" clip-rule="evenodd"/></svg></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Person 3 -->
+                            <div class="flex flex-col">
+                                <!-- Foto -->
+                                <div class="w-[140px] h-[140px] border-2 border-solid border-secondaryYellowTint rounded-[50%]">
+                                    <img src="images/dummy2.png" alt="" class="block w-full h h-full rounded-[50%] object-cover -translate-x-[15px] -translate-y-[15px]">
+                                </div>
+
+                                <!-- Identity Box -->
+                                <div class="flex flex-col px-2 justify-center w-40 h-20 -translate-y-[10px] bg-secondaryYellowTint rounded-lg">
+                                    <span class="text-sm">Susi Susanti</span>
+                                    <span class="font-thin text-xs">Baka Cairo</span>
+                                    <div class="flex mt-2 space-x-1">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#4267B2] duration-300" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#E4405F] duration-300" viewBox="0 0 15 15"><path d="M7.5 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"/><path fill-rule="evenodd" d="M4.5 0A4.5 4.5 0 0 0 0 4.5v6A4.5 4.5 0 0 0 4.5 15h6a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 4.5 0 0 0 10.5 0h-6ZM4 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0ZM11 4h1V3h-1v1Z" clip-rule="evenodd"/></svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#25D366] duration-300" viewBox="0 0 15 15"><path d="M5 4.768a.5.5 0 0 1 .761.34l.14.836a.5.5 0 0 1-.216.499l-.501.334A4.501 4.501 0 0 1 5 5.5v-.732ZM9.5 10a4.5 4.5 0 0 1-1.277-.184l.334-.5a.5.5 0 0 1 .499-.217l.836.14a.5.5 0 0 1 .34.761H9.5Z"/><path fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 3.253 6.182l-2.53 1.265a.5.5 0 0 1-.67-.67l1.265-2.53A7.467 7.467 0 0 1 0 7.5Zm4.23-3.42l.206-.138a1.5 1.5 0 0 1 2.311 1.001l.14.837a1.5 1.5 0 0 1-.648 1.495l-.658.438A4.522 4.522 0 0 0 7.286 9.42l.44-.658a1.5 1.5 0 0 1 1.494-.648l.837.14a1.5 1.5 0 0 1 1.001 2.311l-.138.207a.5.5 0 0 1-.42.229h-1A5.5 5.5 0 0 1 4 5.5v-1a.5.5 0 0 1 .23-.42Z" clip-rule="evenodd"/></svg></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- SVG WaveDown -->
+                    <div class="svgDown h-[9rem]"></div>
+                </div>
+
+                <!-- Text Box -->
+                <div class="text-textColor text-center mx-auto mb-8">
+                    <!-- Subtitle -->
+                    <h3 class="text-xs tracking-widest font-title uppercase">~ detail kami ~</h3>
+
+                    <!-- Advantage Title -->
+                    <h2 class=" text-3xl font-title capitalize sm:text-xl">informasi tentang Baka</h2>
+                </div>
+
+                <!-- Content -->
+                <div class="px-6 mb-16 w-full flex flex-col space-y-2 items-baseline">
+                    <!-- Nama Perusahaan -->
+                    <div class="
+                        flex justify-around 
+                        sm:flex-col
+                        ">
+                        <span class="w-60 font-thin text-base capitalize sm:text-lg">nama Perusahaan:</span>
+                        <p class="text-base">PT. Surya Citra Mandiri Sejahtera Abadi</p>
+                    </div>
+
+                    <!-- Alamat Kantor -->
+                    <div class="
+                        flex justify-around 
+                        sm:flex-col
+                        ">
+                        <span class="w-60 font-thin text-base capitalize sm:text-lg">alamat kantor:</span>
+                        <p class="text-base">PT. Surya Citra Mandiri Sejahtera Abadi</p>
+                    </div>
+
+                    <!-- Alamat Gudang -->
+                    <div class="
+                        flex justify-around 
+                        sm:flex-col
+                        ">
+                        <span class="w-60 font-thin text-base capitalize sm:text-lg">alamat gudang:</span>
+                        <p class="text-base">PT. Surya Citra Mandiri Sejahtera Abadi</p>
+                    </div>
+                </div>
+
+                
+
+
+            </div> <!-- Wrapper end -->
+        </div> <!-- Mother Container end -->
+
+        <!-- Bar Navigation LOGGED OUT -->
+        <aside id="" class="
+            w-1/3 h-max fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-[4.4rem]  rounded-xl bg-primaryBlue text-white font-text duration-300
+            md:w-2/5 md:h-screen md:left-[24%] 
+            sm:w-2/3 sm:left-[40%]
+            ">
             
             <!-- Logo -->
             <img src="/images/dummy logo white.png" alt="Logo" class="h-auto w-28 self-center">
@@ -32,7 +318,7 @@
             <div class="flex flex-col space-y-3">
 
                 <!-- Nav 1 -->
-                <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
+                <a href="hero.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl">
                     <img src="/images/svg/home-rounded.svg" class="mr-3 w-5 ml-4 h-auto" alt="">
                     <span class="text-sm">Halaman utama</span>
                 </a>
@@ -53,19 +339,19 @@
                 </a> -->
 
                 <!-- Nav 2 -->
-                <a href="rules.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Syarat & Ketentuan</span>
+                    <span class="text-sm">Peraturan</span>
                 </a>
 
                 <!-- Nav 3 -->
-                <a href="faq.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Pertanyaan</span>
                 </a>
 
                 <!-- Nav 4 -->
-                <a href="#" class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl">
+                <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
                     <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
                     <span class="text-sm">Hubungi kami</span>
                 </a>
@@ -78,192 +364,249 @@
 
 
             <!-- Button Daftar/Masuk atau Jual/Beli -->
-            <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
+            <a id="btnTes" href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a>
             <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Jual/Beli</a> -->
 
             <!-- Copyright -->
             <span class="text-xs"> 
-                © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
-                <a href="https://storyset.com/online">Storyset</a>
+                © 2023 by abé with ❤️. All rights reserved. <br> All illustrations by 
+                <a href="https://storyset.com/online" class="underline">Storyset</a>
             </span>
-        </div>
+        </aside>
 
-        <!-- Content -->
-        <div class="flex-1 ml-4 rounded-xl bg-secondaryYellowTint text-textColor font-text">
-
-            <!-- Text Box -->
-            <div class="mt-7 text-textColor text-center mx-auto">
-                <!-- Subtitle -->
-                <h3 class="text-xs tracking-widest font-title uppercase">~ Tentang kami ~</h3>
-
-                <!-- Advantage Title -->
-                <h2 class=" text-3xl font-title capitalize">berawal dari mahasiswa</h2>
-            </div>
-
-            <!-- About Container -->
-            <div class="flex justify-center -mt-4 px-6">
-
-                <!-- Hero Title and Link Container -->
-                <div class="flex flex-col justify-center">
-
-                    <!-- Title Box -->
-                    <div class="max-w-xl mb-12 flex flex-col space-y-7">
-                        <!-- Title -->
-                        <h2 class=" text-3xl font-title">Kenali tim dibalik layar Baka</h2>
-
-                        <!-- Subtitle -->
-                        <span class="text-base">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illo mollitia odit maxime dolor provident vitae beatae rem consequuntur dolorum. <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, modi.
-                        </span>
-
-                    </div>
-                    
-                    <!-- Link -->
-                    <div class="flex justify-end space-x-2 items-center ">
-                        <a href="#" class="text-sm hover:translate-y-1 duration-300">Kenalan dengan tim kami 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Hero Illustration -->
-                <img src="images/svg/team.svg" class="w-2/4" alt="Team">
-            </div>
-
-
-
-            <!-- Team Content -->
-            <div class="-mt-12 mb-12">
-                <!-- SVG WaveUp -->
-                <div class="svgUp"></div>
-
-                <!-- Content Container -->
-                <div class="px-6 w-full h-[10] bg-primaryBlue">
-
-                    <!-- Text Box -->
-                    <div class="-mt-[4.5rem] mb-12 text-center mx-auto">
-                        <!-- Subtitle -->
-                        <h3 class="text-xs tracking-widest font-title text-white uppercase">~ Tim kami ~</h3>
-
-                        <!-- Table Bagasi Title -->
-                        <h2 class=" text-3xl font-title text-white capitalize">Hubungi tim Baka</h2>
-                    </div>
-
-                    <!-- Tim Container -->
-                    <div class="grid grid-cols-3 justify-items-center">
-                        <!-- Person 1 -->
-                        <div class="flex flex-col">
-                            <!-- Foto -->
-                            <div class="w-[140px] h-[140px] border-2 border-solid border-secondaryYellowTint rounded-[50%]">
-                                <img src="images/abe.png" alt="" class="block w-full h h-full rounded-[50%] object-cover -translate-x-[15px] -translate-y-[15px]">
-                            </div>
-
-                            <!-- Identity Box -->
-                            <div class="flex flex-col px-2 justify-center w-40 h-20 -translate-y-[10px] bg-secondaryYellowTint rounded-lg">
-                                <span class="text-sm">Muhammad Akbar</span>
-                                <span class="text-xs">Baka CEO</span>
-                                <div class="flex mt-2 space-x-1">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#4267B2] duration-300" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg></a>
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#E4405F] duration-300" viewBox="0 0 15 15"><path d="M7.5 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"/><path fill-rule="evenodd" d="M4.5 0A4.5 4.5 0 0 0 0 4.5v6A4.5 4.5 0 0 0 4.5 15h6a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 4.5 0 0 0 10.5 0h-6ZM4 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0ZM11 4h1V3h-1v1Z" clip-rule="evenodd"/></svg></a>
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#25D366] duration-300" viewBox="0 0 15 15"><path d="M5 4.768a.5.5 0 0 1 .761.34l.14.836a.5.5 0 0 1-.216.499l-.501.334A4.501 4.501 0 0 1 5 5.5v-.732ZM9.5 10a4.5 4.5 0 0 1-1.277-.184l.334-.5a.5.5 0 0 1 .499-.217l.836.14a.5.5 0 0 1 .34.761H9.5Z"/><path fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 3.253 6.182l-2.53 1.265a.5.5 0 0 1-.67-.67l1.265-2.53A7.467 7.467 0 0 1 0 7.5Zm4.23-3.42l.206-.138a1.5 1.5 0 0 1 2.311 1.001l.14.837a1.5 1.5 0 0 1-.648 1.495l-.658.438A4.522 4.522 0 0 0 7.286 9.42l.44-.658a1.5 1.5 0 0 1 1.494-.648l.837.14a1.5 1.5 0 0 1 1.001 2.311l-.138.207a.5.5 0 0 1-.42.229h-1A5.5 5.5 0 0 1 4 5.5v-1a.5.5 0 0 1 .23-.42Z" clip-rule="evenodd"/></svg></a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Person 2 -->
-                        <div class="flex flex-col">
-                            <!-- Foto -->
-                            <div class="w-[140px] h-[140px] border-2 border-solid border-secondaryYellowTint rounded-[50%]">
-                                <img src="images/dummy1.png" alt="" class="block w-full h h-full rounded-[50%] object-cover -translate-x-[15px] -translate-y-[15px]">
-                            </div>
-
-                            <!-- Identity Box -->
-                            <div class="flex flex-col px-2 justify-center w-40 h-20 -translate-y-[10px] bg-secondaryYellowTint rounded-lg">
-                                <span class="text-sm">Gonzalo Paredes</span>
-                                <span class="text-xs">Baka Jakarta</span>
-                                <div class="flex mt-2 space-x-1">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#4267B2] duration-300" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg></a>
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#E4405F] duration-300" viewBox="0 0 15 15"><path d="M7.5 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"/><path fill-rule="evenodd" d="M4.5 0A4.5 4.5 0 0 0 0 4.5v6A4.5 4.5 0 0 0 4.5 15h6a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 4.5 0 0 0 10.5 0h-6ZM4 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0ZM11 4h1V3h-1v1Z" clip-rule="evenodd"/></svg></a>
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#25D366] duration-300" viewBox="0 0 15 15"><path d="M5 4.768a.5.5 0 0 1 .761.34l.14.836a.5.5 0 0 1-.216.499l-.501.334A4.501 4.501 0 0 1 5 5.5v-.732ZM9.5 10a4.5 4.5 0 0 1-1.277-.184l.334-.5a.5.5 0 0 1 .499-.217l.836.14a.5.5 0 0 1 .34.761H9.5Z"/><path fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 3.253 6.182l-2.53 1.265a.5.5 0 0 1-.67-.67l1.265-2.53A7.467 7.467 0 0 1 0 7.5Zm4.23-3.42l.206-.138a1.5 1.5 0 0 1 2.311 1.001l.14.837a1.5 1.5 0 0 1-.648 1.495l-.658.438A4.522 4.522 0 0 0 7.286 9.42l.44-.658a1.5 1.5 0 0 1 1.494-.648l.837.14a1.5 1.5 0 0 1 1.001 2.311l-.138.207a.5.5 0 0 1-.42.229h-1A5.5 5.5 0 0 1 4 5.5v-1a.5.5 0 0 1 .23-.42Z" clip-rule="evenodd"/></svg></a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Person 3 -->
-                        <div class="flex flex-col">
-                            <!-- Foto -->
-                            <div class="w-[140px] h-[140px] border-2 border-solid border-secondaryYellowTint rounded-[50%]">
-                                <img src="images/dummy2.png" alt="" class="block w-full h h-full rounded-[50%] object-cover -translate-x-[15px] -translate-y-[15px]">
-                            </div>
-
-                            <!-- Identity Box -->
-                            <div class="flex flex-col px-2 justify-center w-40 h-20 -translate-y-[10px] bg-secondaryYellowTint rounded-lg">
-                                <span class="text-sm">Susi Susanti</span>
-                                <span class="text-xs">Baka Cairo</span>
-                                <div class="flex mt-2 space-x-1">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#4267B2] duration-300" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg></a>
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#E4405F] duration-300" viewBox="0 0 15 15"><path d="M7.5 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"/><path fill-rule="evenodd" d="M4.5 0A4.5 4.5 0 0 0 0 4.5v6A4.5 4.5 0 0 0 4.5 15h6a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 4.5 0 0 0 10.5 0h-6ZM4 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0ZM11 4h1V3h-1v1Z" clip-rule="evenodd"/></svg></a>
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-auto fill-inherit cursor-pointer hover:fill-[#25D366] duration-300" viewBox="0 0 15 15"><path d="M5 4.768a.5.5 0 0 1 .761.34l.14.836a.5.5 0 0 1-.216.499l-.501.334A4.501 4.501 0 0 1 5 5.5v-.732ZM9.5 10a4.5 4.5 0 0 1-1.277-.184l.334-.5a.5.5 0 0 1 .499-.217l.836.14a.5.5 0 0 1 .34.761H9.5Z"/><path fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 3.253 6.182l-2.53 1.265a.5.5 0 0 1-.67-.67l1.265-2.53A7.467 7.467 0 0 1 0 7.5Zm4.23-3.42l.206-.138a1.5 1.5 0 0 1 2.311 1.001l.14.837a1.5 1.5 0 0 1-.648 1.495l-.658.438A4.522 4.522 0 0 0 7.286 9.42l.44-.658a1.5 1.5 0 0 1 1.494-.648l.837.14a1.5 1.5 0 0 1 1.001 2.311l-.138.207a.5.5 0 0 1-.42.229h-1A5.5 5.5 0 0 1 4 5.5v-1a.5.5 0 0 1 .23-.42Z" clip-rule="evenodd"/></svg></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- SVG WaveDown -->
-                <div class="svgDown"></div>
-            </div>
-
-            <!-- Text Box -->
-            <div class="text-textColor text-center mx-auto mb-8">
-                <!-- Subtitle -->
-                <h3 class="text-xs tracking-widest font-title uppercase">~ detail kami ~</h3>
-
-                <!-- Advantage Title -->
-                <h2 class=" text-3xl font-title capitalize">informasi tentang Baka</h2>
-            </div>
-
-            <!-- Content -->
-            <div class="px-6 mb-16 w-full flex flex-col space-y-2 items-baseline">
-                <!-- Nama Perusahaan -->
-                <div class="flex justify-around">
-                    <span class="w-60 text-base capitalize">nama Perusahaan:</span>
-                    <p class="text-base">PT. Surya Citra Mandiri Sejahtera Abadi</p>
-                </div>
-
-                <!-- Alamat Kantor -->
-                <div class="flex justify-around">
-                    <span class="w-60 text-base capitalize">alamat kantor:</span>
-                    <p class="text-base">PT. Surya Citra Mandiri Sejahtera Abadi</p>
-                </div>
-
-                <!-- Alamat Gudang -->
-                <div class="flex justify-around">
-                    <span class="w-60 text-base capitalize">alamat gudang:</span>
-                    <p class="text-base">PT. Surya Citra Mandiri Sejahtera Abadi</p>
-                </div>
-            </div>
-
+        <!-- Bar Navigation LOGGED IN-->
+        <aside id="sidebar" class="
+            w-1/3 h-max fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-16 rounded-xl bg-primaryBlue text-white font-text duration-300
+            lg:w-[50%] lg:h-screen lg:left-[50%] 
+            md:w-3/4
+            sm:left-[40%] sm:space-y-12
+            ">
             
+        <!-- Logo -->
+        <img src="/images/dummy logo white.png" alt="Logo" class="
+            w-28 h-auto  self-center
+            md:
+            sm:w-24
+        ">
 
 
-        </div> <!-- Content Container end -->
-
-
-
+        <!-- User Info -->
+        <div class="flex flex-col space-y-1 ">
+            <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+            <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
+        </div>
         
 
 
+        <!-- Navigation Container -->
+        <div class="flex flex-col space-y-3 sm:">
+
+            <a href="bagasi.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area Bagasi</span>
+            </a>
+
+            <a href="jastip.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area Jastip</span>
+            </a>
+
+            <a href="user.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area User</span>
+            </a>
+
+            <!-- Nav 2 -->
+            <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Syarat & Ketentuan</span>
+            </a>
+
+            <!-- Nav 3 -->
+            <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Pertanyaan</span>
+            </a>
+
+            <!-- Nav 4 -->
+            <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-100 bg-primaryBlueBold rounded-xl">
+                <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Hubungi kami</span>
+            </a>
+        </div>
 
 
+        <!-- Button Daftar/Masuk -->
+        <a href="#" class="
+            p-2 px-4 self-center text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100
+            md:
+            ">Keluar
+        </a>
 
+        <!-- Copyright -->
+        <span class="text-xs"> 
+            © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
+            <a href="https://storyset.com/online"><span class="underline">Storyset</span></a>
+        </span>
+        </aside>
 
+        <!-- Modal Container. TOGGLE  HIDDEN, OPACITY: 0 -->
+        <div id="modalContainer" class="
+        fixed w-2/3 h-auto p-4 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[1000] hidden bg-secondaryYellowTint rounded-lg shadow-lg 
+        sm:w-full 
+        ">
 
-    </div>
-</body>
+        <!-- Tombol Close -->
+        <div class="relative ">
+                <img id="modalCloseBtn" src="images/svg/close-fill.svg" alt="Close" class="right-2 w-8 h-auto cursor-pointer absolute fill-red-8 ">
+        </div>
+        
+        <!-- Logo -->
+        <div class="flex">
+            <img src="images/Logo-dummy blue.png" class="h-12 w-auto sm:h-10"  alt="">
+        </div>
+
+        <!-- Greetings Text -->
+        <div class="w-full mx-auto text-center">
+            <span class="text-4xl text-textColor sm:text-3xl">Halo kak! 👋</span>
+            <!-- <span class="text-base text-textColor">Hai kak! 👋</span> -->
+        </div>
+
+        <!-- Content Container -->
+        <div class=
+            "w-full h-auto flex items-center justify-start text-textColor
+            lg:h-[inherit] lg:mt-20 lg:flex-col lg:gap-8
+            sm:h-auto sm:mt-10 sm:gap-4
+            ">
+
+            <!-- Box Left -->
+            <div class=
+                "flex flex-1 flex-col justify-center
+                lg:w-full
+                ">
+
+                <!-- Content -->
+                <div class=
+                "pt-2 pb-4 flex flex-col border-2 border-textColor rounded-lg bg-bodyBackColor shadow-md
+                sm:pt-1 sm:pb-2
+                ">
+
+                    <!-- Daftar/Login Container -->
+                    <div class="w-[90%] h-full mx-auto flex flex-col space-y-6 rounded-lg ">
+
+                        <!-- Tombols -->
+                        <div class="
+                        authBtns__container w-full flex space-x-2 text-base text-white font-semibold uppercase text-center
+                        sm:text-sm
+                        ">
+                            <a href="#" class="auth__buttons auth__buttons--active  w-full py-2 px-7 rounded-lg sm:px-4" data-tab="1">Daftar</a>
+                            <a href="#" class="auth__buttons w-full py-2 px-7 rounded-lg sm:px-4" data-tab="2">Masuk</a>
+                        </div>
+
+                        <!-- Content 1 -->
+                        <div class=
+                        "auth__contents auth__contents--1 auth__contents--active space-y-14 text-textColor 
+                        sm:space-y-10
+                        ">
+
+                            <!-- Title -->
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-xl">Jika ini pertama kali,</span>
+                                <span class="text-base sm:text-sm">Silahkan daftar dulu ya kak...</span>
+                            </div>
+
+                            <!-- Icons -->
+                            <div class=
+                                "w-full flex space-x-2 justify-center items-center 
+                                sm:flex-col
+                                ">
+                                <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
+                                    <a href="#" class="
+                                        flex items-center space-x-2 
+                                        lg:space-x-1 lg:text-center
+                                        ">
+                                        <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
+                                        <span class="text-sm font-thin sm:text-xs">Daftar dengan Google</span>
+                                    </a>
+                                </div>
+        
+                                <span class="text-sm ">atau</span>
+        
+                                <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
+                                    <a href="#" class="
+                                        flex items-center space-x-2 
+                                        lg:space-x-1 lg:text-center
+                                        ">
+                                        <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
+                                        <span class="text-sm font-thin sm:text-xs">Daftar dengan Facebook</span>
+                                    </a>
+                                </div> 
+                        </div>
+
+                        </div>
+
+                        <!-- Content 2 -->
+                        <div class="
+                            auth__contents auth__contents--2 space-y-14 text-textColor
+                            sm:space-y-10
+                            ">
+
+                            <!-- Title -->
+                            <div class="flex flex-col items-end">
+                                <span class="text-2xl sm:text-xl">Sudah pernah daftar? </span>
+                                <span class="text-base sm:text-sm">Langsung masuk saja ya kak...</span>
+                            </div>
+
+                            <!-- Icons -->
+                            <div class=
+                                "w-full flex space-x-2 justify-center items-center
+                                sm:flex-col
+                                ">
+                                <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
+                                    <a href="#" class="
+                                        flex items-center space-x-2 
+                                        lg:space-x-1 lg:text-center
+                                        ">
+                                        <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
+                                        <span class="text-sm font-thin sm:text-xs">Masuk dengan Google</span>
+                                    </a>
+                                </div>
+        
+                                <span class="text-sm ">atau</span>
+        
+                                <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
+                                        <a href="#" class="
+                                            flex items-center space-x-2 
+                                            lg:space-x-1 lg:text-center
+                                            ">
+                                            <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
+                                            <span class="text-sm font-thin sm:text-xs">Masuk dengan Facebook</span>
+                                        </a>
+                                    </div> 
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box Right -->
+            <div class=
+                "w-[45%] flex justify-center
+                lg:w-[60%]
+                sm:w-[65%]
+                ">
+                <img src="images/svg/Health passport-bro.svg" class="self-center lg:hidden" alt="">
+                <img src="images/Health passport-bro.png" class="self-center hidden lg:block" alt="">
+                <!-- <img src="images/svg/Mobile login-bro.svg" class="self-center" alt=""> -->
+                <!-- <img src="images/svg/Destination-bro.svg" class="self-center" alt=""> -->
+            </div>
+
+        </div>
+
+        </div>
+
+        <!-- Blanket. TOGGLE  HIDDEN, OPACITY: 0 --> 
+        <div id="blanket" class="w-full h-full z-[100] fixed left-0 top-0 hidden justify-center items-center bg-black backdrop-blur-sm opacity-50 "></div>
+    </body>
 </html>
