@@ -23,6 +23,9 @@ module.exports = {
         textColor: '#0b2471',
         random: '#40A1FF',
       },
+      gridTemplateRows: {
+        '9': 'repeat(9, minmax(0, 1fr))',
+      }
     },
     
     fontFamily: {

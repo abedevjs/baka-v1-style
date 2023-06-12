@@ -8,21 +8,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Livvic:wght@600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/bagasi.js"></script>
     <title>AREA BAGASI</title>
 </head>
 <body>
     <!-- Mother Container after Body -->
-    <div class="mother-container h-auto">
+    <div class="
+        h-auto p-4 flex flex-wrap content-center bg-bodyBackColor
+        lg:p-0
+        ">
         
         <!-- Bar Navigation LOGGED IN-->
-        <aside class="w-1/5 h-max sticky top-4 flex flex-col p-6 rounded-xl bg-primaryBlue text-white font-text">
+        <aside class="
+            w-1/5 h-max p-6 sticky top-4 flex flex-col justify-between space-y-[2.68rem] rounded-xl bg-primaryBlue text-white font-text
+            lg:hidden
+            ">
             
             <!-- Logo -->
-            <img src="/images/dummy logo white.png" alt="Logo" class="w-28 h-auto mb-[3.2rem] self-center">
+            <img src="/images/dummy logo white.png" alt="Logo" class="w-28 h-auto self-center">
 
 
             <!-- User Info -->
-            <div class="mb-10 flex flex-col space-y-1">
+            <div class="flex flex-col space-y-1">
                 <span class="text-white text-xs">Jakarta, 03 April 2023</span>
                 <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
             </div>
@@ -30,7 +37,7 @@
 
 
             <!-- Navigation Container -->
-            <div class="mb-8 flex flex-col space-y-3">
+            <div class="flex flex-col space-y-3">
 
                 <a href="bagasi.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-100 bg-primaryBlueBold rounded-xl">
                     <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
@@ -68,7 +75,7 @@
 
 
             <!-- Button Daftar/Masuk -->
-            <a href="modal.html" class="mb-12 p-2 px-4 self-center text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Keluar</a>
+            <a href="#" id="btnLogin" class="p-2 px-4 self-center text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Keluar</a>
 
             <!-- Copyright -->
             <span class="text-xs"> 
@@ -78,7 +85,21 @@
         </aside>
 
         <!-- Wrapper -->
-        <div class="flex-1 ml-4 p-6 rounded-xl bg-secondaryYellowTint text-textColor font-text">
+        <div class="
+            relative ml-4 p-6 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text overflow-y-auto overflow-x-auto
+            lg:h-screen lg:ml-0
+            ">
+
+            <!-- Hamburger Button -->
+            <div id="hamburger__btn" type="button" class="
+                hamburger absolute z-[200] hidden
+                lg:block
+                ">
+                <span class="hamburger-top bg-textColor "></span>
+                <span class="hamburger-middle bg-textColor"></span>
+                <span class="hamburger-bottom bg-textColor"></span>
+            
+            </div>
 
             <!-- Text Box -->
             <div class="text-textColor text-center mx-auto">
@@ -86,22 +107,26 @@
                 <h3 class="text-xs tracking-widest font-title uppercase">~ layanan kami ~</h3>
 
                 <!-- Advantage Title -->
-                <h2 class=" text-3xl font-title capitalize">Area Bagasi</h2>
+                <h2 class=" text-3xl font-title capitalize sm:text-xl">Area Bagasi</h2>
             </div>
 
             <!-- Illustration Container -->
-            <div class="flex justify-center -mt-4 mb-12">
+            <div class="
+                flex justify-center -mt-4 mb-12 
+                lg:mt-12
+                sm:mt-2 sm:px-4 sm:flex-col-reverse
+                ">
 
                 <!-- Hero Title and Link Container -->
                 <div class="flex flex-col justify-center">
 
                     <!-- Title Box -->
-                    <div class="max-w-xl mb-12 flex flex-col space-y-7">
+                    <div class="max-w-xl mb-12 flex flex-col space-y-7 sm:space-y-4 sm:self-center">
                         <!-- Title -->
-                        <h2 class=" text-3xl font-title">Kenali tim dibalik layar Baka</h2>
+                        <h2 class=" text-3xl font-title lg:text-2xl sm:text-xl">Kenali tim dibalik layar Baka</h2>
 
                         <!-- Subtitle -->
-                        <span class="text-base">
+                        <span class="text-base lg:text-sm">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illo mollitia odit maxime dolor provident vitae beatae rem consequuntur dolorum. <br>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, modi.
                         </span>
@@ -109,15 +134,15 @@
                     </div>
                     
                     <!-- Link -->
-                    <div class="flex justify-end space-x-2 items-center ">
-                        <a href="#" class="text-sm hover:translate-y-1 duration-300">Kenalan dengan tim kami 
+                    <div class="flex justify-start space-x-2 items-center ">
+                        <a href="#daftar__bagasi" class="text-sm hover:translate-y-1 duration-300">Kenalan dengan tim kami 
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Hero Illustration -->
-                <img src="images/svg/Traveling-bro.svg" class="w-2/4" alt="Flying">
+                <img src="images/svg/Traveling-bro.svg" class="w-2/4 sm:w-[80%] sm:mb-8 sm:self-center" alt="Flying">
                 <!-- <img src="images/svg/Flying around the world-amico.svg" class="w-2/4" alt="Flying"> -->
             </div>
 
@@ -128,11 +153,15 @@
             </div>
 
             <!-- Daftar & Pagination Container -->
-            <div class="mb-8 px-4 w-full flex flex-col">
+            <div id="daftar__bagasi" class="mb-8 px-4 w-full flex flex-col lg:px-0">
 
                 <!-- DAFTAR BAGASI -->
-                <div class="relative overflow-x-auto mb-7 shadow-md rounded-xl">
-                    <table class="w-full mx-auto text-sm text-left text-textColor">
+                <div class="
+                    overflow-y-auto overflow-x-auto mb-7 shadow-md rounded-xl
+                    md:w-[45rem] md:mx-auto
+                    sm:w-[20rem] 
+                    ">
+                    <table class="w-full max-w-none border-collapse text-sm text-left text-textColor">
                         <thead class="text-xs text-gray-700 uppercase bg-secondaryYellow">
                             <tr>
                                 <th scope="col" class="px-6 py-4">Berangkat</th>
@@ -338,144 +367,172 @@
 
             
             <!-- JUAL BAGASI Wrapper  -->
-            <div class="w-full px-4 mb-8 mx-auto">
+            <div class="w-full px-4 mb-8 mx-auto lg:px-0">
                 <!-- Form Jual Bagasi -->
-                <form action="" class="py-8 px-4 grid grid-cols-4 grid-rows-6 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md">
+                <!-- grid-rows-[200px_minmax(900px,_1fr)_100px] -->
+                <form action="" class="
+                    py-8 px-4 grid grid-cols-4 grid-rows-6 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md
+                    lg:grid-rows-9
+                    ">
 
                     <!-- Box 1 Dari - Tujuan -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg 
+                        lg:col-end-5
+                        sm:p-2 sm:flex-col
+                        ">
     
                         <!-- Icon -->
-                        <img src="images/svg/map-marker.svg" class="w-12" alt="">
+                        <img src="images/svg/map-marker.svg" class="w-12 sm:w-10 sm:self-center" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-[80%] flex justify-around">
+                        <div class="w-[80%] flex justify-around sm:w-auto">
                             <!-- Label + Input Dari Box -->
                             <div class="flex flex-col justify-evenly">
-                                <label for="dari" class="text-sm text-primaryBlue">Dari</label>
-                                <select name="dari" id="" required class="p-1 text-base bg-transparent border-b-2 border-textColor outline-none">
-                                    <option class="text-left text-sm" value>Pilih Kota Asal</option>
-                                    <option class="text-left text-sm" value="Jakarta">Jakarta</option>
-                                    <option class="text-left text-sm" value="Istanbul">Istanbul</option>
-                                    <option class="text-left text-sm" value="Cairo">Cairo</option>
-                                    <option class="text-left text-sm" value="Dubai">Dubai</option>
+                                <label for="dari" class="text-sm text-primaryBlue sm:text-xs">Dari</label>
+                                <select name="dari" id="" required class="p-1 text-base sm:text-xs bg-transparent border-b-2 border-textColor outline-none">
+                                    <option class="text-left text-sm sm:text-xs" value>Pilih Kota Asal</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Jakarta">Jakarta</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Istanbul">Istanbul</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Cairo">Cairo</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Dubai">Dubai</option>
                                 </select>
                             </div>
 
                             <!-- Label + Input Tujuan Box -->
                             <div class="flex flex-col justify-evenly">
-                                <label for="tujuan" class="text-sm text-primaryBlue">Tujuan</label>
-                                <select name="tujuan" id="" required class="p-1 text-base bg-transparent border-b-2 border-textColor outline-none">
-                                    <option class="text-left text-sm" value>Pilih Kota Tujuan</option>
-                                    <option class="text-left text-sm" value="Jakarta">Jakarta</option>
-                                    <option class="text-left text-sm" value="Istanbul">Istanbul</option>
-                                    <option class="text-left text-sm" value="Cairo">Cairo</option>
-                                    <option class="text-left text-sm" value="Dubai">Dubai</option>
+                                <label for="tujuan" class="text-sm text-primaryBlue sm:text-xs">Tujuan</label>
+                                <select name="tujuan" id="" required class="p-1  sm:text-xs text-base bg-transparent border-b-2 border-textColor outline-none">
+                                    <option class="text-left text-sm sm:text-xs" value>Pilih Kota Tujuan</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Jakarta">Jakarta</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Istanbul">Istanbul</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Cairo">Cairo</option>
+                                    <option class="text-left text-sm sm:text-xs" value="Dubai">Dubai</option>
                                 </select>
                             </div>
                         </div>
                     </div>
 
                     <!-- Box 2 Berangkat - Tiba -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 flex justify-around bg-bodyBackColor rounded-lg  
+                        lg:col-end-5
+                        sm:p-2 sm:flex-col
+                        ">
     
                         <!-- Icon -->
-                        <img src="images/svg/tear-off-calendar.svg" class="w-12" alt="">
+                        <img src="images/svg/tear-off-calendar.svg" class="w-12 sm:w-10 sm:self-center" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-[80%] flex justify-around">
+                        <div class="w-[80%] flex justify-around sm:w-auto">
                             
                             <!-- Label + Input Berangkat -->
                             <div class="flex flex-col justify-evenly">
-                                <label for="berangkat" class="text-sm text-primaryBlue">Tanggal Berangkat</label>
-                                <input type="date" min="2023-01-01" id="berangkat" value="2023-01-01" required class="text-base bg-transparent border-b-2 border-textColor outline-none">
+                                <label for="berangkat" class="text-sm text-primaryBlue sm:text-xs">Tanggal Berangkat</label>
+                                <input type="date" min="2023-01-01" id="berangkat" value="2023-01-01" required class="text-base sm:text-xs bg-transparent border-b-2 border-textColor outline-none">
                             </div>
 
                             <!-- Label + Input Tiba -->
                             <div class="flex flex-col justify-evenly">
-                                <label for="tiba" class="text-sm text-primaryBlue">Tanggal Tiba</label>
-                                <input type="date" min="2023-01-01" id="tiba" value="2023-01-01" required class="text-base bg-transparent border-b-2 border-textColor outline-none">
+                                <label for="tiba" class="text-sm text-primaryBlue sm:text-xs">Tanggal Tiba</label>
+                                <input type="date" min="2023-01-01" id="tiba" value="2023-01-01" required class="text-base sm:text-xs bg-transparent border-b-2 border-textColor outline-none">
                             </div>
                         </div>
                     </div>
 
                     <!-- Box 3 Berat -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-2 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-2 flex justify-around bg-bodyBackColor rounded-lg  
+                        lg:col-end-3
+                        sm:p-2 sm:flex-col
+                        ">
     
                         <!-- Icon -->
-                        <img src="images/svg/weight-kilogram.svg" class="w-12" alt="">
+                        <img src="images/svg/weight-kilogram.svg" class="w-12 sm:w-10 sm:self-center" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-[50%] flex flex-col justify-evenly">
+                        <div class="w-[50%] flex flex-col justify-evenly sm:w-auto">
                             
-                            <label for="berat" class="text-sm text-primaryBlue">Berat&nbsp;<span class="text-xs text-textColor">(Kg)</span> </label>
-                            <input type="number" min="1" max="60" id="berat" required class="text-base text-center bg-transparent border-b-2 border-textColor outline-none">
+                            <label for="berat" class="text-sm text-primaryBlue sm:text-xs">Berat&nbsp;<span class="text-xs text-textColor">(Kg)</span> </label>
+                            <input type="number" min="1" max="60" id="berat" required class="text-base sm:text-xs text-center bg-transparent border-b-2 border-textColor outline-none">
                             
                         </div>
                     </div>
 
                     <!-- Box 4 Harga -->
-                    <div class="w-full py-4 px-4 col-start-2 col-end-3 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-2 col-end-3 flex justify-around bg-bodyBackColor rounded-lg 
+                        lg:col-start-3 lg:col-end-5
+                        sm:p-2 sm:flex-col
+                        ">
     
                         <!-- Icon -->
-                        <img src="images/svg/payments-outline-rounded.svg" class="w-12" alt="">
+                        <img src="images/svg/payments-outline-rounded.svg" class="w-12 sm:w-10 sm:self-center" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-[50%] flex flex-col justify-evenly">
-                            <label for="harga" class="text-sm text-primaryBlue">Harga&nbsp;<span class="text-xs text-textColor">(@ Kg)</span></label>
+                        <div class="w-[50%] flex flex-col justify-evenly sm:w-auto">
+                            <label for="harga" class="text-sm text-primaryBlue sm:text-xs">Harga&nbsp;<span class="text-xs text-textColor">(@ Kg)</span></label>
                             <div class="flex space-x-1">
-                                <span class="text-base">Rp.</span>
-                                <input type="text" minlength="1" maxlength="7" id="harga" required class="w-full text-base text-left bg-transparent border-b-2 border-textColor outline-none">
+                                <span class="text-base sm:text-xs">Rp.</span>
+                                <input type="text" minlength="1" maxlength="7" id="harga" required class="w-full text-base sm:text-xs text-left bg-transparent border-b-2 border-textColor outline-none">
                             </div>
                         </div>
                     </div>
 
                     <!-- Box 5 Upload Document -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-4 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-4 flex justify-around bg-bodyBackColor rounded-lg 
+                        lg:col-end-5
+                        sm:p-2 sm:flex-col
+                        ">
     
                         <!-- Icon -->
-                        <img src="images/svg/plane-ticket.svg" class="w-12" alt="">
+                        <img src="images/svg/plane-ticket.svg" class="w-12 sm:w-10 sm:self-center" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-[80%] flex flex-col justify-between">
+                        <div class="w-[80%] flex flex-col justify-between sm:w-auto">
                             
-                            <label for="tiket" class="text-sm text-primaryBlue">Upload Tiket Penerbangan <br> <span class="text-xs text-textColor">(File Type: PDF, PNG, JPG, atau JPEG. File Max: 5mb)</span></label>
-                            <input type="file" id="tiket" required class="text-base text-center text-textColor bg-transparent border-b-2 border-textColor outline-none cursor-pointer">
+                            <label for="tiket" class="text-sm text-primaryBlue sm:text-xs">Upload Tiket Penerbangan <br> <span class="text-xs text-textColor">(File Type: PDF, PNG, JPG, atau JPEG. File Max: 5mb)</span></label>
+                            <input type="file" id="tiket" required class="text-base sm:text-xs text-center text-textColor bg-transparent border-b-2 border-textColor outline-none cursor-pointer">
                             
                         </div>
                     </div>
 
                     <!-- Box 6 Catatan Traveler -->
-                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-5 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-3 row-start-5 flex justify-around bg-bodyBackColor rounded-lg 
+                        lg:col-end-5
+                        sm:p-2 sm:flex-col
+                        ">
     
                         <!-- Icon -->
-                        <img src="images/svg/comment.svg" class="w-12" alt="">
+                        <img src="images/svg/comment.svg" class="w-12 sm:w-10 sm:self-center" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-[80%] flex flex-col space-y-2">
+                        <div class="w-[80%] flex flex-col space-y-2 sm:w-auto">
                             
-                            <label for="noteTravel" class="text-sm text-primaryBlue">Catatan Traveler <span class="text-xs text-textColor">(Pesan untuk Jastiper)</span></label>
-                            <textarea name="noteTravel" rows="2" maxlength="250" class="p-2 w-full text-sm border-2 border-textColor bg-transparent outline-none rounded-lg" placeholder="Tidak wajib diisi..."></textarea>
+                            <label for="noteTravel" class="text-sm text-primaryBlue sm:text-xs">Catatan Traveler <span class="text-xs text-textColor">(Pesan untuk Jastiper)</span></label>
+                            <textarea name="noteTravel" rows="2" maxlength="250" class="p-2 w-full text-sm sm:text-xs border-2 border-textColor bg-transparent outline-none rounded-lg" placeholder="Tidak wajib diisi..."></textarea>
                         </div>
                     </div>
 
                     <!-- Box 7 WhatsApp, TOGGLE FLEX / HIDDEN --> 
-                    <div class="w-full py-4 px-4 col-start-1 col-end-2 row-start-6 flex justify-around bg-bodyBackColor rounded-lg">
+                    <div class="w-full py-4 px-4 col-start-1 col-end-2 row-start-6 flex justify-around bg-bodyBackColor rounded-lg
+                        lg:col-end-3
+                        sm:p-2 sm:flex-col
+                        ">
     
                         <!-- Icon -->
-                        <img src="images/svg/baseline-whatsapp.svg" class="w-12" alt="">
+                        <img src="images/svg/baseline-whatsapp.svg" class="w-12 sm:w-10 sm:self-center" alt="">
 
                         <!-- Label + Input Box -->
-                        <div class="w-[50%] flex flex-col justify-evenly">
+                        <div class="w-[50%] flex flex-col justify-evenly sm:w-auto">
                             
-                            <label for="WhatsApp" class="text-sm text-primaryBlue">Nomor&nbsp;WhatsApp </label>
-                            <input type="text" minlength="10" maxlength="15" id="WhatsApp" required class="text-base text-left bg-transparent border-b-2 border-textColor outline-none">
+                            <label for="WhatsApp" class="text-sm text-primaryBlue sm:text-xs">Nomor&nbsp;WhatsApp </label>
+                            <input type="text" minlength="10" maxlength="15" id="WhatsApp" required class="text-base sm:text-xs text-left bg-transparent border-b-2 border-textColor outline-none">
                             
                         </div>
                     </div>
 
                     <!-- Box 8 Instruksi -->
-                    <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-6 flex flex-col justify-between bg-slate-100 rounded-lg">
+                    <div class="w-full p-4 col-start-3 col-end-5 row-start-1 row-end-6 flex flex-col justify-between bg-slate-100 rounded-lg 
+                            lg:row-start-7 lg:row-end-[9] lg:col-start-1 lg:col-end-5
+                            sm:p-2
+                            ">
                         <!-- Paragraf Pendukung Jual Bagasi -->
                         <p class="text-xs">
                             Paragraf instruksi selanjutnya untuk Traveler. Isinya: <br>
@@ -486,12 +543,13 @@
 
                         <div class="flex space-x-2 justify-center">
                             <input id="default-checkbox" type="checkbox" value="" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Peraturan & Ketentuan</a> yang berlaku.</label>
+                            <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Syarat & Ketentuan</a> yang berlaku.</label>
                         </div>
                     </div>
 
                     <!-- Box 9 Tombol -->
-                    <div class="col-start-3 col-end-5 row-start-6 flex flex-col justify-evenly">
+                    <div class="col-start-3 col-end-5 row-start-6 flex flex-col justify-evenly 
+                        lg:row-start-[9] lg:col-start-1 lg:col-end-5 ">
 
                         <!-- Tombol Submit -->
                         <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
@@ -513,5 +571,245 @@
 
         </div> <!-- Content Container end -->
     </div> <!-- Mother Container end -->
+
+    <!-- Bar Navigation LOGGED IN-->
+    <aside id="sidebar" class="
+        w-1/3 h-max fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-16 rounded-xl bg-primaryBlue text-white font-text duration-300
+        lg:w-[50%] lg:h-screen lg:left-[50%] 
+        md:w-3/4
+        sm:left-[40%] sm:space-y-12
+        ">
+    
+        <!-- Logo -->
+        <img src="/images/dummy logo white.png" alt="Logo" class="
+            w-28 h-auto  self-center
+            md:
+            sm:w-24
+        ">
+
+
+        <!-- User Info -->
+        <div class="flex flex-col space-y-1 ">
+            <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+            <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
+        </div>
+
+
+
+        <!-- Navigation Container -->
+        <div class="mb-8 flex flex-col space-y-3">
+
+            <a href="bagasi.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-100 bg-primaryBlueBold rounded-xl">
+                <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area Bagasi</span>
+            </a>
+
+            <a href="jastip.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area Jastip</span>
+            </a>
+
+            <a href="user.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Area User</span>
+            </a>
+
+            <!-- Nav 2 -->
+            <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Syarat & Ketentuan</span>
+            </a>
+
+            <!-- Nav 3 -->
+            <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Pertanyaan</span>
+            </a>
+
+            <!-- Nav 4 -->
+            <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
+                <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
+                <span class="text-sm">Hubungi kami</span>
+            </a>
+        </div>
+
+
+
+        <!-- Button Daftar/Masuk -->
+        <a href="#" class="
+            p-2 px-4 self-center text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100
+            md:
+            ">Keluar
+        </a>
+
+        <!-- Copyright -->
+        <span class="text-xs"> 
+            © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
+            <a href="https://storyset.com/online"><span class="underline">Storyset</span></a>
+        </span>
+    </aside>
+
+    <!-- Modal Container. TOGGLE  HIDDEN, OPACITY: 0 -->
+    <div id="modalContainer" class="
+        fixed w-2/3 h-auto p-4 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[1000] hidden bg-secondaryYellowTint rounded-lg shadow-lg 
+        sm:w-full 
+        ">
+
+        <!-- Tombol Close -->
+        <div class="relative ">
+                <img id="modalCloseBtn" src="images/svg/close-fill.svg" alt="Close" class="right-2 w-8 h-auto cursor-pointer absolute fill-red-8 ">
+        </div>
+        
+        <!-- Logo -->
+        <div class="flex">
+            <img src="images/Logo-dummy blue.png" class="h-12 w-auto sm:h-10"  alt="">
+        </div>
+
+        <!-- Greetings Text -->
+        <div class="w-full mx-auto text-center">
+            <span class="text-4xl text-textColor sm:text-3xl">Halo kak! 👋</span>
+            <!-- <span class="text-base text-textColor">Hai kak! 👋</span> -->
+        </div>
+
+    <!-- Content Container -->
+    <div class=
+        "w-full h-auto flex items-center justify-start text-textColor
+        lg:h-[inherit] lg:mt-20 lg:flex-col lg:gap-8
+        sm:h-auto sm:mt-10 sm:gap-4
+        ">
+
+        <!-- Box Left -->
+        <div class=
+            "flex flex-1 flex-col justify-center
+            lg:w-full
+            ">
+
+            <!-- Content -->
+            <div class=
+                "pt-2 pb-4 flex flex-col border-2 border-textColor rounded-lg bg-bodyBackColor shadow-md
+                sm:pt-1 sm:pb-2
+                ">
+
+                <!-- Daftar/Login Container -->
+                <div class="w-[90%] h-full mx-auto flex flex-col space-y-6 rounded-lg ">
+
+                    <!-- Tombols -->
+                    <div class="
+                    authBtns__container w-full flex space-x-2 text-base text-white font-semibold uppercase text-center
+                    sm:text-sm
+                    ">
+                        <a href="#" class="auth__buttons auth__buttons--active  w-full py-2 px-7 rounded-lg sm:px-4" data-tab="1">Daftar</a>
+                        <a href="#" class="auth__buttons w-full py-2 px-7 rounded-lg sm:px-4" data-tab="2">Masuk</a>
+                    </div>
+
+                    <!-- Content 1 -->
+                    <div class=
+                    "auth__contents auth__contents--1 auth__contents--active space-y-14 text-textColor 
+                    sm:space-y-10
+                    ">
+
+                        <!-- Title -->
+                        <div class="flex flex-col">
+                            <span class="text-2xl sm:text-xl">Jika ini pertama kali,</span>
+                            <span class="text-base sm:text-sm">Silahkan daftar dulu ya kak...</span>
+                        </div>
+
+                        <!-- Icons -->
+                        <div class=
+                            "w-full flex space-x-2 justify-center items-center 
+                            sm:flex-col
+                            ">
+                            <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
+                                <a href="#" class="
+                                    flex items-center space-x-2 
+                                    lg:space-x-1 lg:text-center
+                                    ">
+                                    <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
+                                    <span class="text-sm font-thin sm:text-xs">Daftar dengan Google</span>
+                                </a>
+                            </div>
+    
+                            <span class="text-sm ">atau</span>
+    
+                            <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
+                                <a href="#" class="
+                                    flex items-center space-x-2 
+                                    lg:space-x-1 lg:text-center
+                                    ">
+                                    <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
+                                    <span class="text-sm font-thin sm:text-xs">Daftar dengan Facebook</span>
+                                </a>
+                            </div> 
+                    </div>
+
+                    </div>
+
+                    <!-- Content 2 -->
+                    <div class="
+                        auth__contents auth__contents--2 space-y-14 text-textColor
+                        sm:space-y-10
+                        ">
+
+                        <!-- Title -->
+                        <div class="flex flex-col items-end">
+                            <span class="text-2xl sm:text-xl">Sudah pernah daftar? </span>
+                            <span class="text-base sm:text-sm">Langsung masuk saja ya kak...</span>
+                        </div>
+
+                        <!-- Icons -->
+                        <div class=
+                            "w-full flex space-x-2 justify-center items-center
+                            sm:flex-col
+                            ">
+                            <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
+                                <a href="#" class="
+                                    flex items-center space-x-2 
+                                    lg:space-x-1 lg:text-center
+                                    ">
+                                    <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
+                                    <span class="text-sm font-thin sm:text-xs">Masuk dengan Google</span>
+                                </a>
+                            </div>
+    
+                            <span class="text-sm ">atau</span>
+    
+                            <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
+                                    <a href="#" class="
+                                        flex items-center space-x-2 
+                                        lg:space-x-1 lg:text-center
+                                        ">
+                                        <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
+                                        <span class="text-sm font-thin sm:text-xs">Masuk dengan Facebook</span>
+                                    </a>
+                                </div> 
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box Right -->
+        <div class=
+            "w-[45%] flex justify-center
+            lg:w-[60%]
+            sm:w-[65%]
+            ">
+            <img src="images/svg/Health passport-bro.svg" class="self-center lg:hidden" alt="">
+            <img src="images/Health passport-bro.png" class="self-center hidden lg:block" alt="">
+            <!-- <img src="images/svg/Mobile login-bro.svg" class="self-center" alt=""> -->
+            <!-- <img src="images/svg/Destination-bro.svg" class="self-center" alt=""> -->
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- Blanket. TOGGLE  HIDDEN, OPACITY: 0 --> 
+    <div id="blanket" class="w-full h-full z-[100] fixed left-0 top-0 hidden justify-center items-center bg-black backdrop-blur-sm opacity-50 "></div>
+
+
+
+    
 </body>
 </html>
