@@ -33,15 +33,15 @@ const close = function() {
 
 iconClose.addEventListener('click', close);
 
-btnLogin.addEventListener('click', (e) => {
-    e.preventDefault();
+// btnLogin.addEventListener('click', (e) => {
+//     e.preventDefault();
 
-    console.log('btnLogin');
-    blanket.classList.toggle('hidden');
-    blanket.classList.toggle('flex');
-    modal.classList.toggle('hidden');
-    modal.classList.toggle('block');
-});
+//     console.log('btnLogin');
+//     blanket.classList.toggle('hidden');
+//     blanket.classList.toggle('flex');
+//     modal.classList.toggle('hidden');
+//     modal.classList.toggle('block');
+// });
 
 
 const sidebarToggle = function() {
