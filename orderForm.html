@@ -123,9 +123,9 @@
 
             <!-- BAGASI DETAIL Container -->
             <div class="w-full mb-4 px-4 grid grid-cols-4 grid-rows-3 gap-2 mx-auto 
-            lg:px-0
-            sm:grid-rows-8
-            ">
+                lg:px-0
+                sm:grid-rows-8
+                ">
 
                 <!-- Box 1 Title -->
                 <div class="w-full py-2 col-start-1 col-end-3 flex items-center justify-center bg-bodyBackColor rounded-lg sm:col-end-5">
@@ -138,7 +138,7 @@
                     sm:col-start-1 sm:col-end-3
                     ">
                     <!-- Icon -->
-                    <img src="images/svg/opened.svg" class="w-12 h-auto sm:w-10" alt="Date">
+                    <img src="images/svg/opened.svg" class="w-12 h-auto lg:w-10" alt="Date">
 
                     <!-- Content Box Status -->
                     <div class="flex flex-col space-y-2">
@@ -149,11 +149,11 @@
 
                 <!-- Box 3 Maskapai -->
                 <div class="
-                w-full py-2 col-start-4 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg
-                sm:col-start-3 sm:col-end-5
-                ">
+                    w-full py-2 col-start-4 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg
+                    sm:col-start-3 sm:col-end-5
+                    ">
                     <!-- Icon -->
-                    <img src="images/svg/airlines-rounded.svg" class="w-12 h-auto sm:w-10" alt="Date">
+                    <img src="images/svg/airlines-rounded.svg" class="w-12 h-auto lg:w-10" alt="Date">
 
                     <!-- Content Box Status -->
                     <div class="flex flex-col space-y-2">
@@ -165,10 +165,10 @@
                 <!-- Box 3 Dari - Tujuan -->
                 <div class="
                 w-full py-2 col-start-1 col-end-3 flex items-center justify-around bg-bodyBackColor rounded-lg
-                sm:px-2 sm:col-start-1 sm:col-end-5
+                sm:px-2 sm:col-start-1 sm:col-end-5 sm:flex-col
                 ">
                     <!-- Icon -->
-                    <img src="images/svg/map-marker.svg" class="w-12 h-auto sm:w-10" alt="Marker">
+                    <img src="images/svg/map-marker.svg" class="w-12 h-auto lg:w-10 sm:self-center" alt="Marker">
 
                     <!-- Content Box Dari dan Tujuan -->
                     <div class="w-[70%] flex justify-around sm:w-full">
@@ -184,7 +184,7 @@
                         <!-- Content Box Tujuan -->
                         <div class="flex flex-col space-y-2">
                             <span class="text-sm text-primaryBlue">Tujuan</span>
-                            <div class="flex space-x-2 text-base">
+                            <div class="flex space-x-2 text-base sm:text-sm">
                                 <img src="images/svg/istanbul.svg" alt="Istanbul">
                                 <span>Istanbul</span>
                             </div>
@@ -194,11 +194,11 @@
 
                 <!-- Box 4 Berangkat - Tiba -->
                 <div class="
-                w-full py-2 col-start-3 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg
-                sm:px-2 sm:row-start-4 sm:col-start-1 sm:col-end-5
-                ">
+                    w-full py-2 col-start-3 col-end-5 flex items-center justify-around bg-bodyBackColor rounded-lg
+                    sm:px-2 sm:row-start-4 sm:col-start-1 sm:col-end-5 sm:flex-col
+                    ">
                         <!-- Icon -->
-                    <img src="images/svg/tear-off-calendar.svg" class="w-12 h-auto sm:w-10" alt="Date">
+                    <img src="images/svg/tear-off-calendar.svg" class="w-12 h-auto lg:w-10 sm:self-center" alt="Date">
 
                     <!-- Content Box Berangkat dan Tiba -->
                     <div class="w-[70%] flex justify-around sm:w-full">
@@ -224,11 +224,11 @@
 
                 <!-- Box 5 Berat - Sisa -->
                 <div class="
-                w-full py-2 col-start-1 col-end-3 flex items-center justify-around bg-bodyBackColor rounded-lg
-                sm:px-2 sm:col-start-1 sm:col-end-5
-                ">
+                    w-full py-2 col-start-1 col-end-3 flex items-center justify-around bg-bodyBackColor rounded-lg
+                    sm:px-2 sm:col-start-1 sm:col-end-5 sm:flex-col
+                    ">
                     <!-- Icon -->
-                    <img src="images/svg/weight-kilogram.svg" class="w-12 h-auto sm:w-10" alt="Weight">
+                    <img src="images/svg/weight-kilogram.svg" class="w-12 h-auto lg:w-10 sm:self-center" alt="Weight">
 
                     <!-- Content Box Berat dan Sisa -->
                     <div class="w-[70%] flex justify-around sm:w-full">
@@ -258,7 +258,7 @@
                     sm:row-start-6 sm:col-start-1 sm:col-end-3
                     ">
                     <!-- Icon -->
-                    <img src="images/svg/payments-outline-rounded.svg" class="w-12 h-auto sm:w-10" alt="Date">
+                    <img src="images/svg/payments-outline-rounded.svg" class="w-12 h-auto lg:w-10" alt="Price">
 
                     <!-- Content Box Harga -->
                     <div class="flex flex-col space-y-2">
@@ -275,7 +275,7 @@
                     sm:px-2 sm:row-start-7 sm:row-end-[9] sm:col-start-1 sm:col-end-5 sm:space-x-4
                     ">
                     <!-- Icon -->
-                    <img src="images/svg/warning-solid.svg" class="w-12 h-auto sm:w-10" alt="Date">
+                    <img src="images/svg/warning-solid.svg" class="w-12 h-auto lg:w-10" alt="Date">
 
                         
                     <!-- Content Box Dari -->
@@ -332,7 +332,7 @@
                         sm:row-start-2 sm:col-start-3 sm:col-end-5
                         ">
                         <label for="biaya" class="text-sm text-primaryBlue lg:text-xs">Total Biaya <span class="text-xs text-textColor">(Incl. Tax 3%) </span></label>
-                        <span class="text-base lg:text-sm">Rp. 150.000,00</span>
+                        <span class="text-base lg:text-sm">Rp. 150.000</span>
                     </div>
 
                     <!-- Box 4 Isi -->
@@ -395,7 +395,7 @@
 
                         <div class="flex space-x-2 justify-center">
                             <input id="default-checkbox" type="checkbox" value="" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Peraturan & Ketentuan</a> yang berlaku.</label>
+                            <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Syarat & Ketentuan</a> yang berlaku.</label>
                         </div>
                     </div>
 
