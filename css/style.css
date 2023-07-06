@@ -706,6 +706,10 @@ video {
   grid-row-end: 7;
 }
 
+.row-end-3 {
+  grid-row-end: 3;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -785,6 +789,10 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -1110,6 +1118,10 @@ video {
   grid-template-rows: 200px minmax(900px, 1fr) 100px;
 }
 
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1168,6 +1180,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .-space-x-px > :not([hidden]) ~ :not([hidden]) {
@@ -1458,6 +1474,11 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .fill-inherit {
@@ -2191,8 +2212,17 @@ video {
     grid-row-start: 9;
   }
 
+  .lg\:row-start-6 {
+    grid-row-start: 6;
+  }
+
   .lg\:row-end-\[9\] {
     grid-row-end: 9;
+  }
+
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .lg\:ml-0 {
@@ -2205,6 +2235,10 @@ video {
 
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:block {
@@ -2271,6 +2305,10 @@ video {
     grid-template-rows: repeat(9, minmax(0, 1fr));
   }
 
+  .lg\:grid-rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+  }
+
   .lg\:flex-col {
     flex-direction: column;
   }
@@ -2321,6 +2359,10 @@ video {
     align-self: center;
   }
 
+  .lg\:rounded-none {
+    border-radius: 0px;
+  }
+
   .lg\:p-0 {
     padding: 0px;
   }
@@ -2355,6 +2397,19 @@ video {
 
   .lg\:py-4 {
     padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .lg\:pb-4 {
     padding-bottom: 1rem;
   }
 
@@ -2436,6 +2491,10 @@ video {
     grid-column-end: 5;
   }
 
+  .sm\:col-end-4 {
+    grid-column-end: 4;
+  }
+
   .sm\:row-start-2 {
     grid-row-start: 2;
   }
@@ -2470,6 +2529,10 @@ video {
 
   .sm\:row-start-\[9\] {
     grid-row-start: 9;
+  }
+
+  .sm\:row-start-\[7\] {
+    grid-row-start: 7;
   }
 
   .sm\:row-end-\[10\] {
@@ -2591,6 +2654,14 @@ video {
 
   .sm\:grid-rows-9 {
     grid-template-rows: repeat(9, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-10 {
+    grid-template-rows: repeat(10, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
   .sm\:flex-col {

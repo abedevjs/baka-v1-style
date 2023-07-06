@@ -93,7 +93,7 @@
         <!-- Wrapper -->
         <div class="
             relative ml-4 p-6 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text overflow-y-auto overflow-x-auto
-            lg:h-screen lg:ml-0
+            lg:h-screen lg:ml-0  lg:rounded-none
             ">
 
             <!-- Hamburger Button -->
@@ -122,11 +122,11 @@
             </div>
 
             <!-- JUAL BAGASI Wrapper  -->
-            <div class="w-full mb-8 px-4 mx-auto lg:px-0">
+            <div class="w-full mb-8 py-8 px-4 mx-auto font-text text-textColor bg-secondaryYellow rounded-lg shadow-md lg:px-0">
                 <!-- Form Jual Bagasi -->
                 <form action="" class="
-                    py-8 px-4 grid grid-cols-4 grid-rows-6 gap-4 font-text text-textColor bg-secondaryYellow rounded-lg shadow-md
-                    sm:py-4 sm:grid-rows-11 sm:gap-2
+                    px-4 grid grid-cols-4 grid-rows-6 gap-4
+                    sm:py-4 sm:grid-rows-10 sm:gap-2
                     ">
 
                     <!-- Box 1 Dari - Tujuan -->
@@ -312,30 +312,14 @@
                         </div>
                     </div>
 
-                    <!-- Box 9 Upload Document -->
-                    <div class="
-                        w-full py-4 px-4 col-start-1 col-end-3 row-start-6 flex justify-around bg-bodyBackColor rounded-lg
-                        sm:py-2 sm:px-2 sm:row-start-7 sm:col-end-5
-                        ">
-    
-                        <!-- Icon -->
-                        <img src="images/svg/plane-ticket.svg" class="w-12 lg:w-10" alt="">
-
-                        <!-- Label + Input Box -->
-                        <div class="w-[80%] flex flex-col justify-between">
-                            
-                            <label for="tiket" class="text-sm text-primaryBlue lg:text-xs">Upload Tiket Penerbangan <br> <span class="text-xs text-textColor">(File Type: PDF, PNG, JPG, atau JPEG. File Max: 5mb)</span></label>
-                            <input type="file" id="tiket" required class="text-base lg:text-sm text-center text-textColor bg-transparent border-b-2 border-textColor outline-none cursor-pointer">
-                            
-                        </div>
-                    </div>
+                
 
                     
 
                     <!-- Box 10 Catatan Traveler -->
                     <div class="
-                    w-full py-4 px-4 col-start-1 col-end-3 row-start-7 flex justify-around bg-bodyBackColor rounded-lg
-                    sm:py-2 sm:px-2 sm:row-start-[8] sm:col-end-5
+                    w-full py-4 px-4 col-start-1 col-end-3 row-start-6 flex justify-around bg-bodyBackColor rounded-lg
+                    sm:py-2 sm:px-2 sm:row-start-[7] sm:col-end-5
                     ">
     
                         <!-- Icon -->
@@ -352,7 +336,7 @@
                     <!-- Box 11 Instruksi -->
                     <div class="
                     w-full p-4 col-start-3 col-end-5 row-start-2 row-end-7 flex flex-col justify-between bg-slate-100 rounded-lg 
-                    sm:row-start-[9] sm:row-end-[11] sm:col-start-1 sm:col-end-5
+                    sm:row-start-[8] sm:row-end-[11] sm:col-start-1 sm:col-end-5
                     ">
                         <!-- Paragraf Pendukung Jual Bagasi -->
                         <p class="text-xs">
@@ -369,7 +353,7 @@
                     </div>
 
                     <!-- Box 12 Tombol -->
-                    <div class="col-start-3 col-end-5 row-start-7 flex flex-col justify-evenly sm:row-start-[11] sm:col-start-1 sm:col-end-5">
+                    <div class="col-start-1 col-end-5 row-start-7 flex flex-col justify-evenly sm:row-start-[11] sm:col-start-1 sm:col-end-5">
 
                         <!-- Tombol Submit -->
                         <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
@@ -381,6 +365,55 @@
 
                         <!-- Error Message -->
                         <span class="hidden py-1 px-2 self-center text-xs text-white text-center bg-red-500 rounded-lg">Terjadi gangguan. Coba beberapa saat lagi ya kak..😢</span>
+                    </div>
+                </form>
+
+                <form action="" class="mt-8 px-4 grid grid-cols-4 grid-rows-2 gap-1 font-text bg-bodyBackColor rounded-lg lg:mx-4 lg:pb-4">
+                    <!-- Box 1 Upload Instruksi -->
+                    <div class="w-full p-4 col-start-1 col-end-5 row-start-1 flex flex-col justify-between  
+                            lg:row-end-[9] lg:col-start-1 lg:col-end-5
+                            sm:p-2
+                            ">
+                        <!-- Paragraf Pendukung Jual Bagasi -->
+                        <p class="text-xs">
+                            Paragraf instruksi selanjutnya untuk Traveler. Isinya: <br>
+                            1. Tiket akan di periksa. <br>
+                            2. Jika valid akan di list. Jika tdk valid minta register lg. <br>
+                            3. Alamat Gudang Baka utk mengambil titipan Jastiper. 
+                        </p>
+
+                        <!-- <div class="flex space-x-2 justify-center">
+                            <input id="default-checkbox" type="checkbox" value="" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="terms" class="text-xs">Dengan ini saya menyatakan setuju dengan <a href="rules.html" target="_blank" class="underline">Syarat & Ketentuan</a> yang berlaku.</label>
+                        </div> -->
+                    </div>
+
+                    <!-- Box 2 Upload Document -->
+                    <div class="w-full py-2 px-6 col-start-1 col-end-3 row-start-2 flex flex-col space-y-4 bg-bodyBackColor rounded-lg 
+                    lg:py-1 lg:px-3 lg:col-end-5
+                    sm:col-end-5 sm:space-y-0 sm:justify-around
+                    ">
+                        <label for="docPayment" class="text-sm text-primaryBlue lg:text-xs">Upload Bukti Pembayaran <br> <span class="text-xs text-textColor">(File Type: PDF, PNG, JPG, atau JPEG. File Max: 5mb)</span></label> 
+                        <input type="file" id="docPayment" required class="text-base lg:text-sm text-center text-textColor bg-transparent border-b-2 border-textColor outline-none cursor-pointer">
+                        <span class="hidden text-xs text-red-600">upload error</span>
+                    </div>
+
+                    <!-- Box 3 Upload Button -->
+                    <div class="col-start-3 col-end-5 row-start-2 flex flex-col justify-evenly 
+                        lg:row-start-[9] lg:col-start-1 lg:col-end-5 ">
+
+                        <!-- Tombol Submit -->
+                        <div class="p-2 px-4 justify-self-center self-center text-sm text-white text-center rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
+                            <button type="submit">Upload Dokumen</button>
+                        </div>
+
+                        <!-- Success Message -->
+                        <span class=" py-1 px-2 self-center text-xs text-white text-center bg-green-600 rounded-lg">Permintaan berhasil dikirim 🙂</span>
+
+                        <!-- Error Message -->
+                        <span class="hidden py-1 px-2 self-center text-xs text-white text-center bg-red-500 rounded-lg">Terjadi gangguan. Coba beberapa saat lagi ya kak..😢</span>
+
+                        
                     </div>
                 </form>
             </div> <!-- JUAL BAGASI Wrapper end -->

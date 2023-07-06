@@ -1,0 +1,12 @@
+06/07/23
+✅ 1. Wrapper di mobile tdk ada rounded nya
+❗ 2. Hamburger menu shrsnya sticky. ❗Refute: Conflict css props: Position: Absolute/Sticky
+✅ 3. Wa dan kg occupy satu grid col-end-5 ketika dlm bentuk mobile
+❗ 4. Harga, input type number, max 999999. ❗Refute: Input type=Text
+✅ 5. Perbaiki table bagasi agar Rp. 100.000 ga makan space
+❗ 6. Login modal page mobile mode, padding container nya di tambah.❗Refute: Unnecessary
+✅ 7. Seharusnya ada data Bagasi detail pada fitur Update Order di Area User
+✅ 8. Membuat form khusus utk upload document yg aktif setelah create dan upload success.
+
+
+06/07/23
