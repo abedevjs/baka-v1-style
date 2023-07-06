@@ -10,9 +10,9 @@ const hamburger__top = document.querySelector('.hamburger-top');
 const hamburger__bottom = document.querySelector('.hamburger-bottom');
 const sidebar = document.querySelector('#sidebar');
 
-const authBtns__container = document.querySelector('.authBtns__container');
-const auth__buttons = document.querySelectorAll('.auth__buttons');
-const auth__contents = document.querySelectorAll('.auth__contents');
+// const authBtns__container = document.querySelector('.authBtns__container');
+// const auth__buttons = document.querySelectorAll('.auth__buttons');
+// const auth__contents = document.querySelectorAll('.auth__contents');
 
 let blanketActive = false;
 let modalActive = false;
@@ -85,24 +85,24 @@ btnTes.addEventListener('click', (e) => {
 
 
 
-authBtns__container.addEventListener('click', (e) => {
+// authBtns__container.addEventListener('click', (e) => {
 
-    const clicked = e.target.closest('.auth__buttons');
+//     const clicked = e.target.closest('.auth__buttons');
 
-    if (!clicked) return;
+//     if (!clicked) return;
 
-    //Remove active class on Button
-    auth__buttons.forEach(btn => btn.classList.remove('auth__buttons--active'));
+//     //Remove active class on Button
+//     auth__buttons.forEach(btn => btn.classList.remove('auth__buttons--active'));
 
-    //Remove active class on Content
-    auth__contents.forEach(btn => btn.classList.remove('auth__contents--active'));
+//     //Remove active class on Content
+//     auth__contents.forEach(btn => btn.classList.remove('auth__contents--active'));
 
-    //Add active class on Button
-    clicked.classList.add('auth__buttons--active');
+//     //Add active class on Button
+//     clicked.classList.add('auth__buttons--active');
 
-    //Activate Auth Content
-    document.querySelector(`.auth__contents--${clicked.dataset.tab}`).classList.add('auth__contents--active');
-});
+//     //Activate Auth Content
+//     document.querySelector(`.auth__contents--${clicked.dataset.tab}`).classList.add('auth__contents--active');
+// });
 
 ////////////////////////////////////////////////////////////////////////////
 
