@@ -1,589 +1,786 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Livvic:wght@600;700;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Livvic:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/jastip.js"></script>
     <title>JASTIP/ORDER</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Mother Container after Body -->
-    <div class="
-        h-auto p-4 flex flex-wrap content-center bg-bodyBackColor
-        lg:p-0
-        ">
-        <!-- Bar Navigation LOGGED IN-->
-        <aside class="
-            w-1/5 h-max p-6 sticky top-4 flex flex-col justify-between space-y-[2.68rem] rounded-xl bg-primaryBlue text-white font-text
-            lg:hidden
-            ">
-            
-            <!-- Logo -->
-            <img src="/images/dummy logo white.png" alt="Logo" class="h-auto w-28 self-center">
+    <div
+      class="h-auto p-4 flex flex-wrap content-center bg-bodyBackColor lg:p-0"
+    >
+      <!-- Bar Navigation LOGGED IN-->
+      <aside
+        class="w-1/5 h-max p-6 sticky top-4 flex flex-col justify-between space-y-[2.68rem] rounded-xl bg-primaryBlue text-white font-text lg:hidden"
+      >
+        <!-- Logo -->
+        <img
+          src="/images/dummy logo white.png"
+          alt="Logo"
+          class="h-auto w-28 self-center"
+        />
 
+        <!-- User Info -->
+        <div class="flex flex-col space-y-1">
+          <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+          <span class="text-white text-xs">Hello, Muhammad Akbar 👋</span>
+        </div>
 
-            <!-- User Info -->
-            <div class="flex flex-col space-y-1">
-                <span class="text-white text-xs">Jakarta, 03 April 2023</span>
-                <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
-            </div>
-            
-
-
-            <!-- Navigation Container -->
-            <div class="flex flex-col space-y-3">
-
-                <!-- Nav 1 -->
-                <!-- <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
+        <!-- Navigation Container -->
+        <div class="flex flex-col space-y-3">
+          <!-- Nav 1 -->
+          <!-- <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
                     <img src="/images/svg/home-rounded.svg" class="mr-3 w-5 ml-4 h-auto" alt="">
                     <span class="text-sm">Halaman utama</span>
                 </a> -->
 
-                <a href="index.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                    <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Area Bagasi</span>
-                </a>
+          <a
+            href="index.html"
+            class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+          >
+            <img
+              src="/images/svg/luggage-48-filled.svg"
+              class="mr-3 w-5 ml-4"
+              alt=""
+            />
+            <span class="text-sm">Area Bagasi</span>
+          </a>
 
-                <a href="jastip.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-100 bg-primaryBlueBold rounded-xl ">
-                    <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Area Jastip</span>
-                </a>
+          <a
+            href="jastip.html"
+            class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl"
+          >
+            <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="" />
+            <span class="text-sm">Area Jastip</span>
+          </a>
 
-                <a href="user.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                    <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Area User</span>
-                </a>
+          <a
+            href="user.html"
+            class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+          >
+            <img
+              src="/images/svg/account-card.svg"
+              class="mr-3 w-5 ml-4"
+              alt=""
+            />
+            <span class="text-sm">Area User</span>
+          </a>
 
-                <!-- Nav 2 -->
-                <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                    <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Syarat & Ketentuan</span>
-                </a>
+          <!-- Nav 2 -->
+          <a
+            href="rules.html"
+            class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+          >
+            <img
+              src="/images/svg/rule-rounded.svg"
+              class="mr-3 w-5 ml-4"
+              alt=""
+            />
+            <span class="text-sm">Syarat & Ketentuan</span>
+          </a>
 
-                <!-- Nav 3 -->
-                <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                    <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Pertanyaan</span>
-                </a>
+          <!-- Nav 3 -->
+          <a
+            href="faq.html"
+            class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+          >
+            <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="" />
+            <span class="text-sm">Pertanyaan</span>
+          </a>
 
-                <!-- Nav 4 -->
-                <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                    <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
-                    <span class="text-sm">Hubungi kami</span>
-                </a>
-            </div>
-
-
-            <!-- Button Daftar/Masuk atau Jual/Beli -->
-            <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a> -->
-            <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Keluar</a>
-
-            <!-- Copyright -->
-            <span class="text-xs"> 
-                © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
-                <a href="https://storyset.com/online"><span class="underline">Storyset</span></a>
-            </span>
-        </aside>
-
-        <!-- Wrapper -->
-        <div class="
-            relative ml-4 p-6 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text overflow-y-auto overflow-x-auto
-            lg:h-screen lg:ml-0  lg:rounded-none
-            ">
-            
-            <!-- Hamburger Button -->
-            <div id="hamburger__btn" type="button" class="
-                hamburger absolute z-[200] hidden
-                lg:block
-                ">
-                <span class="hamburger-top bg-textColor "></span>
-                <span class="hamburger-middle bg-textColor"></span>
-                <span class="hamburger-bottom bg-textColor"></span>
-            
-            </div>
-
-            <!-- Text Box -->
-            <div class="text-textColor text-center mx-auto">
-                <!-- Subtitle -->
-                <h3 class="text-xs tracking-widest font-title uppercase">~ layanan kami ~</h3>
-
-                <!-- Advantage Title -->
-                <h2 class=" text-3xl font-title capitalize sm:text-xl">Area Jastip</h2>
-            </div>
-
-            <!-- Illustration Container -->
-            <div class="
-                flex justify-center -mt-4 mb-12 
-                lg:mt-12
-                sm:mt-2 sm:px-4 sm:flex-col-reverse
-                ">
-
-                <!-- Hero Title and Link Container -->
-                <div class="flex flex-col justify-center">
-
-                    <!-- Title Box -->
-                    <div class="max-w-xl mb-12 flex flex-col space-y-7 sm:space-y-4 sm:self-center">
-                        <!-- Title -->
-                        <h2 class=" text-3xl font-title sm:text-xl">Kenali tim dibalik layar Baka</h2>
-
-                        <!-- Subtitle -->
-                        <span class="text-base lg:text-sm">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illo mollitia odit maxime dolor provident vitae beatae rem consequuntur dolorum. <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, modi.
-                        </span>
-
-                    </div>
-                    
-                    <!-- Link -->
-                    <div class="flex justify-end space-x-2 items-center ">
-                        <a href="#" class="text-sm hover:translate-y-1 duration-300">Kenalan dengan tim kami 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Hero Illustration -->
-                <img src="images/svg/Around the world-bro.svg" class="w-2/4 sm:w-[80%] sm:mb-8 sm:self-center" alt="Team">
-            </div>
-
-            <!-- DAFTAR JASTIP Title -->
-            <div class="mb-4 flex space-x-2 ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-auto h-5 fill-textColor" viewBox="0 0 25 24"><path d="M22.184 3.979h-5.506v-1.44a2.546 2.546 0 0 0-2.541-2.542H10.75a2.546 2.546 0 0 0-2.542 2.541v1.44H2.702A2.705 2.705 0 0 0-.002 6.683v13.26a2.7 2.7 0 0 0 2.701 2.701h.796a1.36 1.36 0 1 0 2.712-.005v.005h12.456a1.356 1.356 0 1 0 2.712 0h.796a2.7 2.7 0 0 0 2.701-2.701V6.661a2.683 2.683 0 0 0-2.683-2.683h-.007zm-12.085-1.44c0-.36.292-.652.652-.652h3.386c.36 0 .652.292.652.652v1.44h-4.683v-1.44zm-4.527 17.22h-.001a2.201 2.201 0 1 1 2.201-2.201v.001c0 1.215-.985 2.2-2.2 2.201zm3.579-8.88l1.44-3.867l3.867 1.44l-1.44 3.868zm6.24 8.336l-.956-3.305l7.269-2.097l.956 3.305z"/></svg>
-                <h2 class="text-base uppercase">daftar jastip</h2>
-            </div>
-
-
-            <!-- Daftar & Pagination Container -->
-            <div class="w-full mb-16 px-4 flex flex-col lg:px-0">
-
-                <!-- ORDER Content Table -->
-                <div class="
-                    overflow-y-auto overflow-x-auto mb-7 shadow-md rounded-xl
-                    md:w-[45rem] md:mx-auto
-                    sm:w-[20rem] 
-                    ">
-                    <table class="w-full max-w-none border-collapse text-sm text-left text-textColor">
-                        <thead class="text-xs text-gray-700 uppercase bg-secondaryYellow">
-                            <tr>
-                                <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Berangkat</th>
-                                <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Dari</th>
-                                <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Tujuan</th>
-                                <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Total&nbsp;(Kg)</th>
-                                <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Status</th>
-                            </tr>
-                        </thead>
-
-                        <tbody class="lg:text-center sm:text-xs">
-                            <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                                <td scope="row" class="px-6 py-3">20/Mar/23</td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                        <span>Jakarta</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/cairo.svg" alt="Cairo">
-                                        <span>Cairo</span>
-                                    </div>
-                                </td>
-                                <td scope="row" class="px-6 py-3">10</td>
-                                <td scope="row" class="px-6 py-3">
-                                    <div class="flex justify-left space-x-2">
-                                        <img src="images/svg/preparing.svg" alt="Preparing">
-                                        <span>Preparing</span>
-                                    </div>
-                                </td>
-                            </tr>
-
-                        <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                        <td scope="row" class="px-6 py-3">25/Mar/23</td>   
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/istanbul.svg" alt="Istanbul">
-                                <span>Istanbul</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                <span>Jakarta</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">25</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/ready.svg" alt="Ready">
-                                <span>Ready</span>
-                            </div>
-                        </td>
-                        </tr>
-
-                        <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                        <td scope="row" class="px-6 py-3">02/Apr/23</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/cairo.svg" alt="Cairo">
-                                <span>Cairo</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                <span>Jakarta</span>
-                            </div>
-                        </td>
-                        <td scope="row" class="px-6 py-3">50</td>
-                        <td scope="row" class="px-6 py-3">
-                            <div class="flex justify-left space-x-2">
-                                <img src="images/svg/delivered.svg" alt="Delivered">
-                                <span>Delivered</span>
-                            </div>
-                        </td>
-                        </tr>
-
-                        <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                            <td scope="row" class="px-6 py-3">11/Apr/23</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                    <span>Jakarta</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/dubai.svg" alt="Dubai">
-                                    <span>Dubai</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">15</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/ready.svg" alt="Ready">
-                                    <span>Ready</span>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
-                            <td scope="row" class="px-6 py-3">09/Jun/23</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/jakarta.svg" alt="Jakarta">
-                                    <span>Jakarta</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/istanbul.svg" alt="Istanbul">
-                                    <span>Istanbul</span>
-                                </div>
-                            </td>
-                            <td scope="row" class="px-6 py-3">05</td>
-                            <td scope="row" class="px-6 py-3">
-                                <div class="flex justify-left space-x-2">
-                                    <img src="images/svg/delivered.svg" alt="Delivered">
-                                    <span>Delivered</span>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div> <!-- ORDER Content Table end -->
-                
-                <!-- Pagination -->
-                <nav class="mx-auto text-sm">
-                    <ul class="inline-flex items-center -space-x-px">
-                        <li>
-                            <a href="#" class="block px-3 py-2 ml-0 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Previous</span>
-                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                        </li>
-                        <li>
-                            <a href="#" aria-current="page" class="z-10 px-3 py-2 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                        </li>
-                        <li>
-                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Next</span>
-                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div> <!-- Daftar & Pagination Container -->
-
-            
-
-            <!-- CTA Content -->
-            <div class=" w-full flex flex-col space-y-2"> 
-                <span class="text-base self-center">Mau jastip juga?</span>
-                <div class="p-2 px-2 self-center text-center text-sm text-white rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold">
-                    <a href="index.html" target="_blank">Beli Bagasi</a>
-                </div>
-            </div>
-
-        </div>  <!-- Wrapper End -->
-    </div> <!-- Mother Container end -->
-
-    <!-- Bar Navigation LOGGED IN-->
-    <aside id="sidebar" class="
-        w-1/3 h-max fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-16 rounded-xl bg-primaryBlue text-white font-text duration-300
-        lg:w-[50%] lg:h-screen lg:left-[50%] 
-        md:w-3/4
-        sm:left-[40%] sm:space-y-12
-        ">
-    
-        <!-- Logo -->
-        <img src="/images/dummy logo white.png" alt="Logo" class="
-            w-28 h-auto  self-center
-            md:
-            sm:w-24
-        ">
-
-
-        <!-- User Info -->
-        <div class="flex flex-col space-y-1 ">
-            <span class="text-white text-xs">Jakarta, 03 April 2023</span>
-            <span class="text-white text-xs ">Hello, Muhammad Akbar 👋</span>
+          <!-- Nav 4 -->
+          <a
+            href="about.html"
+            class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+          >
+            <img
+              src="/images/svg/connect-without-contact-rounded.svg"
+              class="mr-3 w-5 ml-4"
+              alt=""
+            />
+            <span class="text-sm">Hubungi kami</span>
+          </a>
         </div>
 
+        <!-- Button Daftar/Masuk atau Jual/Beli -->
+        <!-- <a href="#" class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100">Daftar/Masuk</a> -->
+        <a
+          href="#"
+          class="self-center p-2 px-4 text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100"
+          >Keluar</a
+        >
 
+        <!-- Copyright -->
+        <span class="text-xs">
+          © 2023 by @be ❤️. All rights reserved. <br />
+          All illustrations by
+          <a href="https://storyset.com/online"
+            ><span class="underline">Storyset</span></a
+          >
+        </span>
+      </aside>
 
-        <!-- Navigation Container -->
-        <div class="flex flex-col space-y-3">
+      <!-- Wrapper -->
+      <div
+        class="relative ml-4 p-6 flex-1 rounded-xl bg-secondaryYellowTint text-textColor font-text overflow-y-auto overflow-x-auto lg:h-screen lg:ml-0 lg:rounded-none"
+      >
+        <!-- Hamburger Button -->
+        <div
+          id="hamburger__btn"
+          type="button"
+          class="hamburger absolute z-[200] hidden lg:block"
+        >
+          <span class="hamburger-top bg-textColor"></span>
+          <span class="hamburger-middle bg-textColor"></span>
+          <span class="hamburger-bottom bg-textColor"></span>
+        </div>
 
-            <!-- Nav 1 -->
-            <!-- <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
+        <!-- Text Box -->
+        <div class="text-textColor text-center mx-auto">
+          <!-- Subtitle -->
+          <h3 class="text-xs tracking-widest font-title uppercase">
+            ~ layanan kami ~
+          </h3>
+
+          <!-- Advantage Title -->
+          <h2 class="text-3xl font-title capitalize sm:text-xl">Area Jastip</h2>
+        </div>
+
+        <!-- Illustration Container -->
+        <div
+          class="flex justify-center -mt-4 mb-12 lg:mt-12 sm:mt-2 sm:px-4 sm:flex-col-reverse"
+        >
+          <!-- Hero Title and Link Container -->
+          <div class="flex flex-col justify-center">
+            <!-- Title Box -->
+            <div
+              class="max-w-xl mb-12 flex flex-col space-y-7 sm:space-y-4 sm:self-center"
+            >
+              <!-- Title -->
+              <h2 class="text-3xl font-title sm:text-xl">
+                Kenali tim dibalik layar Baka
+              </h2>
+
+              <!-- Subtitle -->
+              <span class="text-base lg:text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam illo mollitia odit maxime dolor provident vitae beatae
+                rem consequuntur dolorum. <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatem, modi.
+              </span>
+            </div>
+
+            <!-- Link -->
+            <div class="flex justify-end space-x-2 items-center">
+              <a href="#" class="text-sm hover:translate-y-1 duration-300"
+                >Kenalan dengan tim kami
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    d="m7 10l5 5m0 0l5-5"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Illustration -->
+          <img
+            src="images/svg/Around the world-bro.svg"
+            class="w-2/4 sm:w-[80%] sm:mb-8 sm:self-center"
+            alt="Team"
+          />
+        </div>
+
+        <!-- DAFTAR JASTIP Title -->
+        <div class="mb-4 flex space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-auto h-5 fill-textColor"
+            viewBox="0 0 25 24"
+          >
+            <path
+              d="M22.184 3.979h-5.506v-1.44a2.546 2.546 0 0 0-2.541-2.542H10.75a2.546 2.546 0 0 0-2.542 2.541v1.44H2.702A2.705 2.705 0 0 0-.002 6.683v13.26a2.7 2.7 0 0 0 2.701 2.701h.796a1.36 1.36 0 1 0 2.712-.005v.005h12.456a1.356 1.356 0 1 0 2.712 0h.796a2.7 2.7 0 0 0 2.701-2.701V6.661a2.683 2.683 0 0 0-2.683-2.683h-.007zm-12.085-1.44c0-.36.292-.652.652-.652h3.386c.36 0 .652.292.652.652v1.44h-4.683v-1.44zm-4.527 17.22h-.001a2.201 2.201 0 1 1 2.201-2.201v.001c0 1.215-.985 2.2-2.2 2.201zm3.579-8.88l1.44-3.867l3.867 1.44l-1.44 3.868zm6.24 8.336l-.956-3.305l7.269-2.097l.956 3.305z"
+            />
+          </svg>
+          <h2 class="text-base uppercase">daftar jastip</h2>
+        </div>
+
+        <!-- Daftar & Pagination Container -->
+        <div class="w-full mb-16 px-4 flex flex-col lg:px-0">
+          <!-- ORDER Content Table -->
+          <div
+            class="overflow-y-auto overflow-x-auto mb-7 shadow-md rounded-xl md:w-[45rem] md:mx-auto sm:w-[20rem]"
+          >
+            <table
+              class="w-full max-w-none border-collapse text-sm text-left text-textColor"
+            >
+              <thead class="text-xs text-gray-700 uppercase bg-secondaryYellow">
+                <tr>
+                  <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">
+                    Berangkat
+                  </th>
+                  <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Dari</th>
+                  <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Tujuan</th>
+                  <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">
+                    Total&nbsp;(Kg)
+                  </th>
+                  <th scope="col" class="py-4 px-6 sm:py-2 sm:px-4">Status</th>
+                </tr>
+              </thead>
+
+              <tbody class="lg:text-center sm:text-xs">
+                <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
+                  <td scope="row" class="px-6 py-3">20/Mar/23</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/jakarta.svg" alt="Jakarta" />
+                      <span>Jakarta</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/cairo.svg" alt="Cairo" />
+                      <span>Cairo</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">10</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/preparing.svg" alt="Preparing" />
+                      <span>Preparing</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
+                  <td scope="row" class="px-6 py-3">25/Mar/23</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/istanbul.svg" alt="Istanbul" />
+                      <span>Istanbul</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/jakarta.svg" alt="Jakarta" />
+                      <span>Jakarta</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">25</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/ready.svg" alt="Ready" />
+                      <span>Ready</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
+                  <td scope="row" class="px-6 py-3">02/Apr/23</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/cairo.svg" alt="Cairo" />
+                      <span>Cairo</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/jakarta.svg" alt="Jakarta" />
+                      <span>Jakarta</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">50</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/delivered.svg" alt="Delivered" />
+                      <span>Delivered</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
+                  <td scope="row" class="px-6 py-3">11/Apr/23</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/jakarta.svg" alt="Jakarta" />
+                      <span>Jakarta</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/dubai.svg" alt="Dubai" />
+                      <span>Dubai</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">15</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/ready.svg" alt="Ready" />
+                      <span>Ready</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="bg-bodyBackColor hover:bg-stone-200 duration-300">
+                  <td scope="row" class="px-6 py-3">09/Jun/23</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/jakarta.svg" alt="Jakarta" />
+                      <span>Jakarta</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/istanbul.svg" alt="Istanbul" />
+                      <span>Istanbul</span>
+                    </div>
+                  </td>
+                  <td scope="row" class="px-6 py-3">05</td>
+                  <td scope="row" class="px-6 py-3">
+                    <div class="flex justify-left space-x-2">
+                      <img src="images/svg/delivered.svg" alt="Delivered" />
+                      <span>Delivered</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- ORDER Content Table end -->
+
+          <!-- Pagination -->
+          <nav class="mx-auto text-sm">
+            <ul class="inline-flex items-center -space-x-px">
+              <li>
+                <a
+                  href="#"
+                  class="block px-3 py-2 ml-0 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  <span class="sr-only">Previous</span>
+                  <svg
+                    aria-hidden="true"
+                    class="w-4 h-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-current="page"
+                  class="z-10 px-3 py-2 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+                  >3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >4</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >5</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-3 py-2 leading-tight text-gray-500 bg-bodyBackColor border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  <span class="sr-only">Next</span>
+                  <svg
+                    aria-hidden="true"
+                    class="w-4 h-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Daftar & Pagination Container -->
+
+        <!-- CTA Content -->
+        <div class="w-full flex flex-col space-y-2">
+          <span class="text-base self-center">Mau jastip juga?</span>
+          <div
+            class="p-2 px-2 self-center text-center text-sm text-white rounded-xl bg-primaryBlue duration-300 cursor-pointer hover:bg-primaryBlueBold"
+          >
+            <a href="index.html" target="_blank">Beli Bagasi</a>
+          </div>
+        </div>
+      </div>
+      <!-- Wrapper End -->
+    </div>
+    <!-- Mother Container end -->
+
+    <!-- Bar Navigation LOGGED IN-->
+    <aside
+      id="sidebar"
+      class="w-1/3 h-max fixed p-6 top-[52%] left-[20%] -translate-x-[50%] -translate-y-[50%] z-[500] hidden flex-col space-y-16 rounded-xl bg-primaryBlue text-white font-text duration-300 lg:w-[50%] lg:h-screen lg:left-[50%] md:w-3/4 sm:left-[40%] sm:space-y-12"
+    >
+      <!-- Logo -->
+      <img
+        src="/images/dummy logo white.png"
+        alt="Logo"
+        class="w-28 h-auto self-center md: sm:w-24"
+      />
+
+      <!-- User Info -->
+      <div class="flex flex-col space-y-1">
+        <span class="text-white text-xs">Jakarta, 03 April 2023</span>
+        <span class="text-white text-xs">Hello, Muhammad Akbar 👋</span>
+      </div>
+
+      <!-- Navigation Container -->
+      <div class="flex flex-col space-y-3">
+        <!-- Nav 1 -->
+        <!-- <a href="hero.html" target="_blank" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl rounded-xl">
                 <img src="/images/svg/home-rounded.svg" class="mr-3 w-5 ml-4 h-auto" alt="">
                 <span class="text-sm">Halaman utama</span>
             </a> -->
 
-            <a href="index.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                <img src="/images/svg/luggage-48-filled.svg" class="mr-3 w-5 ml-4" alt="">
-                <span class="text-sm">Area Bagasi</span>
-            </a>
-
-            <a href="jastip.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-100 bg-primaryBlueBold rounded-xl ">
-                <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="">
-                <span class="text-sm">Area Jastip</span>
-            </a>
-
-            <a href="user.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                <img src="/images/svg/account-card.svg" class="mr-3 w-5 ml-4" alt="">
-                <span class="text-sm">Area User</span>
-            </a>
-
-            <!-- Nav 2 -->
-            <a href="rules.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                <img src="/images/svg/rule-rounded.svg" class="mr-3 w-5 ml-4" alt="">
-                <span class="text-sm">Syarat & Ketentuan</span>
-            </a>
-
-            <!-- Nav 3 -->
-            <a href="faq.html" class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="">
-                <span class="text-sm">Pertanyaan</span>
-            </a>
-
-            <!-- Nav 4 -->
-            <a href="about.html" class="flex justify-start p-1 py-3 cursor-pointer  opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300 ">
-                <img src="/images/svg/connect-without-contact-rounded.svg" class="mr-3 w-5 ml-4" alt="">
-                <span class="text-sm">Hubungi kami</span>
-            </a>
-        </div>
-
-
-
-        <!-- Button Daftar/Masuk -->
-        <a href="#" class="
-            p-2 px-4 self-center text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100
-            md:
-            ">Keluar
+        <a
+          href="index.html"
+          class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+        >
+          <img
+            src="/images/svg/luggage-48-filled.svg"
+            class="mr-3 w-5 ml-4"
+            alt=""
+          />
+          <span class="text-sm">Area Bagasi</span>
         </a>
 
-        <!-- Copyright -->
-        <span class="text-xs"> 
-            © 2023 by @be ❤️. All rights reserved. <br> All illustrations by 
-            <a href="https://storyset.com/online"><span class="underline">Storyset</span></a>
-        </span>
+        <a
+          href="jastip.html"
+          class="flex justify-start p-1 py-3 cursor-pointer opacity-100 bg-primaryBlueBold rounded-xl"
+        >
+          <img src="/images/svg/cart.svg" class="mr-3 w-5 ml-4" alt="" />
+          <span class="text-sm">Area Jastip</span>
+        </a>
+
+        <a
+          href="user.html"
+          class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+        >
+          <img
+            src="/images/svg/account-card.svg"
+            class="mr-3 w-5 ml-4"
+            alt=""
+          />
+          <span class="text-sm">Area User</span>
+        </a>
+
+        <!-- Nav 2 -->
+        <a
+          href="rules.html"
+          class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+        >
+          <img
+            src="/images/svg/rule-rounded.svg"
+            class="mr-3 w-5 ml-4"
+            alt=""
+          />
+          <span class="text-sm">Syarat & Ketentuan</span>
+        </a>
+
+        <!-- Nav 3 -->
+        <a
+          href="faq.html"
+          class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+        >
+          <img src="/images/svg/faq.svg" class="mr-3 w-5 ml-4" alt="" />
+          <span class="text-sm">Pertanyaan</span>
+        </a>
+
+        <!-- Nav 4 -->
+        <a
+          href="about.html"
+          class="flex justify-start p-1 py-3 cursor-pointer opacity-80 hover:opacity-100 hover:bg-primaryBlueBold hover:rounded-xl transition-all duration-300"
+        >
+          <img
+            src="/images/svg/connect-without-contact-rounded.svg"
+            class="mr-3 w-5 ml-4"
+            alt=""
+          />
+          <span class="text-sm">Hubungi kami</span>
+        </a>
+      </div>
+
+      <!-- Button Daftar/Masuk -->
+      <a
+        href="#"
+        class="p-2 px-4 self-center text-sm text-slate-800 rounded-xl bg-secondaryYellow duration-300 opacity-80 hover:opacity-100 md:"
+        >Keluar
+      </a>
+
+      <!-- Copyright -->
+      <span class="text-xs">
+        © 2023 by @be ❤️. All rights reserved. <br />
+        All illustrations by
+        <a href="https://storyset.com/online"
+          ><span class="underline">Storyset</span></a
+        >
+      </span>
     </aside>
 
     <!-- Modal Container. TOGGLE  HIDDEN, OPACITY: 0 -->
-    <div id="modalContainer" class="
-        fixed w-2/3 h-auto p-4 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[1000] hidden bg-secondaryYellowTint rounded-lg shadow-lg 
-        sm:w-full 
-        ">
+    <div
+      id="modalContainer"
+      class="fixed w-2/3 h-auto p-4 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[1000] hidden bg-secondaryYellowTint rounded-lg shadow-lg sm:w-full"
+    >
+      <!-- Tombol Close -->
+      <div class="relative">
+        <img
+          id="modalCloseBtn"
+          src="images/svg/close-fill.svg"
+          alt="Close"
+          class="right-2 w-8 h-auto cursor-pointer absolute fill-red-8"
+        />
+      </div>
 
-        <!-- Tombol Close -->
-        <div class="relative ">
-                <img id="modalCloseBtn" src="images/svg/close-fill.svg" alt="Close" class="right-2 w-8 h-auto cursor-pointer absolute fill-red-8 ">
-        </div>
-        
-        <!-- Logo -->
-        <div class="flex">
-            <img src="images/Logo-dummy blue.png" class="h-12 w-auto sm:h-10"  alt="">
-        </div>
+      <!-- Logo -->
+      <div class="flex">
+        <img
+          src="images/Logo-dummy blue.png"
+          class="h-12 w-auto sm:h-10"
+          alt=""
+        />
+      </div>
 
-        <!-- Greetings Text -->
-        <div class="w-full mx-auto text-center">
-            <span class="text-4xl text-textColor sm:text-3xl">Halo kak! 👋</span>
-            <!-- <span class="text-base text-textColor">Hai kak! 👋</span> -->
-        </div>
+      <!-- Greetings Text -->
+      <div class="w-full mx-auto text-center">
+        <span class="text-4xl text-textColor sm:text-3xl">Halo kak! 👋</span>
+        <!-- <span class="text-base text-textColor">Hai kak! 👋</span> -->
+      </div>
 
-    <!-- Content Container -->
-    <div class=
-        "w-full h-auto flex items-center justify-start text-textColor
-        lg:h-[inherit] lg:mt-20 lg:flex-col lg:gap-8
-        sm:h-auto sm:mt-10 sm:gap-4
-        ">
-
+      <!-- Content Container -->
+      <div
+        class="w-full h-auto flex items-center justify-start text-textColor lg:h-[inherit] lg:mt-20 lg:flex-col lg:gap-8 sm:h-auto sm:mt-10 sm:gap-4"
+      >
         <!-- Box Left -->
-        <div class=
-            "flex flex-1 flex-col justify-center
-            lg:w-full
-            ">
+        <div class="flex flex-1 flex-col justify-center lg:w-full">
+          <!-- Content -->
+          <div
+            class="pt-2 pb-4 flex flex-col border-2 border-textColor rounded-lg bg-bodyBackColor shadow-md sm:pt-1 sm:pb-2"
+          >
+            <!-- Daftar/Login Container -->
+            <div
+              class="w-[90%] h-full mx-auto flex flex-col space-y-6 rounded-lg"
+            >
+              <!-- Tombols -->
+              <div
+                class="authBtns__container w-full flex space-x-2 text-base text-white font-semibold uppercase text-center sm:text-sm"
+              >
+                <a
+                  href="#"
+                  class="auth__buttons auth__buttons--active w-full py-2 px-7 rounded-lg sm:px-4"
+                  data-tab="1"
+                  >Daftar</a
+                >
+                <a
+                  href="#"
+                  class="auth__buttons w-full py-2 px-7 rounded-lg sm:px-4"
+                  data-tab="2"
+                  >Masuk</a
+                >
+              </div>
 
-            <!-- Content -->
-            <div class=
-                "pt-2 pb-4 flex flex-col border-2 border-textColor rounded-lg bg-bodyBackColor shadow-md
-                sm:pt-1 sm:pb-2
-                ">
-
-                <!-- Daftar/Login Container -->
-                <div class="w-[90%] h-full mx-auto flex flex-col space-y-6 rounded-lg ">
-
-                    <!-- Tombols -->
-                    <div class="
-                    authBtns__container w-full flex space-x-2 text-base text-white font-semibold uppercase text-center
-                    sm:text-sm
-                    ">
-                        <a href="#" class="auth__buttons auth__buttons--active  w-full py-2 px-7 rounded-lg sm:px-4" data-tab="1">Daftar</a>
-                        <a href="#" class="auth__buttons w-full py-2 px-7 rounded-lg sm:px-4" data-tab="2">Masuk</a>
-                    </div>
-
-                    <!-- Content 1 -->
-                    <div class=
-                    "auth__contents auth__contents--1 auth__contents--active space-y-14 text-textColor 
-                    sm:space-y-10
-                    ">
-
-                        <!-- Title -->
-                        <div class="flex flex-col">
-                            <span class="text-2xl sm:text-xl">Jika ini pertama kali,</span>
-                            <span class="text-base sm:text-sm">Silahkan daftar dulu ya kak...</span>
-                        </div>
-
-                        <!-- Icons -->
-                        <div class=
-                            "w-full flex space-x-2 justify-center items-center 
-                            sm:flex-col
-                            ">
-                            <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
-                                <a href="#" class="
-                                    flex items-center space-x-2 
-                                    lg:space-x-1 lg:text-center
-                                    ">
-                                    <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
-                                    <span class="text-sm font-thin sm:text-xs">Daftar dengan Google</span>
-                                </a>
-                            </div>
-    
-                            <span class="text-sm ">atau</span>
-    
-                            <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
-                                <a href="#" class="
-                                    flex items-center space-x-2 
-                                    lg:space-x-1 lg:text-center
-                                    ">
-                                    <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
-                                    <span class="text-sm font-thin sm:text-xs">Daftar dengan Facebook</span>
-                                </a>
-                            </div> 
-                    </div>
-
-                    </div>
-
-                    <!-- Content 2 -->
-                    <div class="
-                        auth__contents auth__contents--2 space-y-14 text-textColor
-                        sm:space-y-10
-                        ">
-
-                        <!-- Title -->
-                        <div class="flex flex-col items-end">
-                            <span class="text-2xl sm:text-xl">Sudah pernah daftar? </span>
-                            <span class="text-base sm:text-sm">Langsung masuk saja ya kak...</span>
-                        </div>
-
-                        <!-- Icons -->
-                        <div class=
-                            "w-full flex space-x-2 justify-center items-center
-                            sm:flex-col
-                            ">
-                            <div class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3">
-                                <a href="#" class="
-                                    flex items-center space-x-2 
-                                    lg:space-x-1 lg:text-center
-                                    ">
-                                    <img src="/images/svg/google.svg" class="w-8 h-auto sm:h-4" alt="">
-                                    <span class="text-sm font-thin sm:text-xs">Masuk dengan Google</span>
-                                </a>
-                            </div>
-    
-                            <span class="text-sm ">atau</span>
-    
-                            <div class="py-2 px-4  flex border border-gray-500 rounded-md sm:px-3">
-                                    <a href="#" class="
-                                        flex items-center space-x-2 
-                                        lg:space-x-1 lg:text-center
-                                        ">
-                                        <img src="/images/svg/facebook.svg" class="w-8 h-auto sm:h-4" alt="">
-                                        <span class="text-sm font-thin sm:text-xs">Masuk dengan Facebook</span>
-                                    </a>
-                                </div> 
-                    </div>
-
-                    </div>
+              <!-- Content 1 -->
+              <div
+                class="auth__contents auth__contents--1 auth__contents--active space-y-14 text-textColor sm:space-y-10"
+              >
+                <!-- Title -->
+                <div class="flex flex-col">
+                  <span class="text-2xl sm:text-xl"
+                    >Jika ini pertama kali,</span
+                  >
+                  <span class="text-base sm:text-sm"
+                    >Silahkan daftar dulu ya kak...</span
+                  >
                 </div>
+
+                <!-- Icons -->
+                <div
+                  class="w-full flex space-x-2 justify-center items-center sm:flex-col"
+                >
+                  <div
+                    class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3"
+                  >
+                    <a
+                      href="#"
+                      class="flex items-center space-x-2 lg:space-x-1 lg:text-center"
+                    >
+                      <img
+                        src="/images/svg/google.svg"
+                        class="w-8 h-auto sm:h-4"
+                        alt=""
+                      />
+                      <span class="text-sm font-thin sm:text-xs"
+                        >Daftar dengan Google</span
+                      >
+                    </a>
+                  </div>
+
+                  <span class="text-sm">atau</span>
+
+                  <div
+                    class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3"
+                  >
+                    <a
+                      href="#"
+                      class="flex items-center space-x-2 lg:space-x-1 lg:text-center"
+                    >
+                      <img
+                        src="/images/svg/facebook.svg"
+                        class="w-8 h-auto sm:h-4"
+                        alt=""
+                      />
+                      <span class="text-sm font-thin sm:text-xs"
+                        >Daftar dengan Facebook</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content 2 -->
+              <div
+                class="auth__contents auth__contents--2 space-y-14 text-textColor sm:space-y-10"
+              >
+                <!-- Title -->
+                <div class="flex flex-col items-end">
+                  <span class="text-2xl sm:text-xl">Sudah pernah daftar? </span>
+                  <span class="text-base sm:text-sm"
+                    >Langsung masuk saja ya kak...</span
+                  >
+                </div>
+
+                <!-- Icons -->
+                <div
+                  class="w-full flex space-x-2 justify-center items-center sm:flex-col"
+                >
+                  <div
+                    class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3"
+                  >
+                    <a
+                      href="#"
+                      class="flex items-center space-x-2 lg:space-x-1 lg:text-center"
+                    >
+                      <img
+                        src="/images/svg/google.svg"
+                        class="w-8 h-auto sm:h-4"
+                        alt=""
+                      />
+                      <span class="text-sm font-thin sm:text-xs"
+                        >Masuk dengan Google</span
+                      >
+                    </a>
+                  </div>
+
+                  <span class="text-sm">atau</span>
+
+                  <div
+                    class="py-2 px-4 flex border border-gray-500 rounded-md sm:px-3"
+                  >
+                    <a
+                      href="#"
+                      class="flex items-center space-x-2 lg:space-x-1 lg:text-center"
+                    >
+                      <img
+                        src="/images/svg/facebook.svg"
+                        class="w-8 h-auto sm:h-4"
+                        alt=""
+                      />
+                      <span class="text-sm font-thin sm:text-xs"
+                        >Masuk dengan Facebook</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- Box Right -->
-        <div class=
-            "w-[45%] flex justify-center
-            lg:w-[60%]
-            sm:w-[65%]
-            ">
-            <img src="images/svg/Health passport-bro.svg" class="self-center lg:hidden" alt="">
-            <img src="images/Health passport-bro.png" class="self-center hidden lg:block" alt="">
-            <!-- <img src="images/svg/Mobile login-bro.svg" class="self-center" alt=""> -->
-            <!-- <img src="images/svg/Destination-bro.svg" class="self-center" alt=""> -->
+        <div class="w-[45%] flex justify-center lg:w-[60%] sm:w-[65%]">
+          <img
+            src="images/svg/Health passport-bro.svg"
+            class="self-center lg:hidden"
+            alt=""
+          />
+          <img
+            src="images/Health passport-bro.png"
+            class="self-center hidden lg:block"
+            alt=""
+          />
+          <!-- <img src="images/svg/Mobile login-bro.svg" class="self-center" alt=""> -->
+          <!-- <img src="images/svg/Destination-bro.svg" class="self-center" alt=""> -->
         </div>
-
+      </div>
     </div>
 
-    </div>
-
-    <!-- Blanket. TOGGLE  HIDDEN, OPACITY: 0 --> 
-    <div id="blanket" class="w-full h-full z-[100] fixed left-0 top-0 hidden justify-center items-center bg-black backdrop-blur-sm opacity-50 "></div>
-</body>
+    <!-- Blanket. TOGGLE  HIDDEN, OPACITY: 0 -->
+    <div
+      id="blanket"
+      class="w-full h-full z-[100] fixed left-0 top-0 hidden justify-center items-center bg-black backdrop-blur-sm opacity-50"
+    ></div>
+  </body>
 </html>

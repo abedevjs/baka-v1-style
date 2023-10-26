@@ -11,3 +11,7 @@
 
 07/07/23
 ✅ 1. Re-design Login modal
+
+10/07/23
+1. Hapus "Kita Check in dlu ya kak'
+✅
